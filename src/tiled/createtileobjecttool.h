@@ -21,6 +21,8 @@
 #pragma once
 
 #include "createobjecttool.h"
+#include "tilestamp.h"
+
 #include "tilelayer.h"
 #include "tileset.h"
 
@@ -34,7 +36,23 @@ class CreateTileObjectTool : public CreateObjectTool
 public:
     CreateTileObjectTool(QObject *parent);
 
+    /**
+     * Sets the stamp that is drawn when filling.
+     */
+    void setStamp(const TileStamp &stamp);
+
+    /**
+     * This returns the current stamp used for filling.
+     */
+    const TileStamp &stamp() const { return mStamp; }
+
+    void doUseStamp(bool bUse){ useStamp=bUse; }
+
     void languageChanged() override;
+
+    void copySpecificProperties(MapObject* newMapObject, Tile* pTile);
+    void copySpecificPropertiesFromObject(MapObject* newMapObject, const MapObject* pSourceObject);
+    void randomizeProperties(MapObject* newMapObject, Tile* pTile, int iObjectIDIncrement=0, bool bClearRandomizedProperties=false);
 
 protected:
     void mouseMovedWhileCreatingObject(const QPointF &pos,
@@ -47,6 +65,8 @@ protected:
     void flipVertically() override;
     void rotateLeft() override;
     void rotateRight() override;
+
+    TileStamp mStamp;
 
 private:
     void languageChangedImpl();

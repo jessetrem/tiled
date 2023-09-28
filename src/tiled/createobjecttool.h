@@ -79,6 +79,8 @@ protected:
 
     MapObjectItem *mNewMapObjectItem;   // owned by mObjectGroupItem if set
 
+    bool useStamp;
+
 private:
     void objectGroupChanged(const ObjectGroupChangeEvent &event);
     void updateNewObjectGroupItemPos();
