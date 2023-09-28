@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{5968f3cf-b920-4b2c-a04a-7c449c5171b2}</UniqueIdentifier>
+      <Extensions>c;C;cpp;cxx;c++;cc;cs;def;java;m;mm</Extensions>
+      <ParseFiles>True</ParseFiles>
+      <SourceControlFiles>True</SourceControlFiles>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{7cd40168-d8b6-4237-8ef3-b68c2d0e6e5c}</UniqueIdentifier>
+      <Extensions>h;H;hpp;hxx;h++</Extensions>
+      <ParseFiles>True</ParseFiles>
+      <SourceControlFiles>True</SourceControlFiles>
+    </Filter>
+    <Filter Include="Form Files">
+      <UniqueIdentifier>{55b44115-1564-4f9e-bbc0-e096eaaadd0e}</UniqueIdentifier>
+      <Extensions>ui</Extensions>
+      <ParseFiles>True</ParseFiles>
+      <SourceControlFiles>True</SourceControlFiles>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{0e37f688-b5df-4a63-ac5e-47712ef64d43}</UniqueIdentifier>
+      <Extensions>qrc;rc;*</Extensions>
+      <ParseFiles>False</ParseFiles>
+      <SourceControlFiles>True</SourceControlFiles>
+    </Filter>
+    <Filter Include="Generated Files">
+      <UniqueIdentifier>{3e5fd820-ceaa-492d-b4d5-a1fec4d31c9d}</UniqueIdentifier>
+      <Extensions>moc</Extensions>
+      <ParseFiles>True</ParseFiles>
+      <SourceControlFiles>False</SourceControlFiles>
+    </Filter>
+    <Filter Include="Translation Files">
+      <UniqueIdentifier>{095a4168-6f48-4814-85d6-307fca3defff}</UniqueIdentifier>
+      <Extensions>ts</Extensions>
+      <ParseFiles>False</ParseFiles>
+      <SourceControlFiles>True</SourceControlFiles>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="$(ProjectDir)src/plugins/python/python.qbs" />
+    <None Include="$(ProjectDir)src/plugins/python/plugin.json" />
+    <None Include="$(ProjectDir)src/plugins/python/qtbinding.py" />
+    <None Include="$(ProjectDir)src/plugins/python/tiledbinding.py" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="$(ProjectDir)src/plugins/python/pythonbind.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="$(ProjectDir)src/plugins/python/pythonplugin.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="$(ProjectDir)src/plugins/python/pythonplugin.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

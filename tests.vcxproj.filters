@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+    <ItemGroup>
+        <Filter Include="Source Files">
+            <UniqueIdentifier>{2e04c657-bd97-4bbc-be34-212e1043e84a}</UniqueIdentifier>
+            <Extensions>c;C;cpp;cxx;c++;cc;cs;def;java;m;mm</Extensions>
+            <ParseFiles>True</ParseFiles>
+            <SourceControlFiles>True</SourceControlFiles>
+        </Filter>
+        <Filter Include="Header Files">
+            <UniqueIdentifier>{473528c4-997a-4709-a3a2-ef71100b479c}</UniqueIdentifier>
+            <Extensions>h;H;hpp;hxx;h++</Extensions>
+            <ParseFiles>True</ParseFiles>
+            <SourceControlFiles>True</SourceControlFiles>
+        </Filter>
+        <Filter Include="Form Files">
+            <UniqueIdentifier>{8fa521aa-fcbf-4d93-aae5-19205d1b77c6}</UniqueIdentifier>
+            <Extensions>ui</Extensions>
+            <ParseFiles>True</ParseFiles>
+            <SourceControlFiles>True</SourceControlFiles>
+        </Filter>
+        <Filter Include="Resource Files">
+            <UniqueIdentifier>{f333ed1d-df86-4a27-bc5d-bd6e56d89f09}</UniqueIdentifier>
+            <Extensions>qrc;rc;*</Extensions>
+            <ParseFiles>False</ParseFiles>
+            <SourceControlFiles>True</SourceControlFiles>
+        </Filter>
+        <Filter Include="Generated Files">
+            <UniqueIdentifier>{20d2ff54-4c1e-4398-8aa3-dfac28bcb31d}</UniqueIdentifier>
+            <Extensions>moc</Extensions>
+            <ParseFiles>True</ParseFiles>
+            <SourceControlFiles>False</SourceControlFiles>
+        </Filter>
+        <Filter Include="Translation Files">
+            <UniqueIdentifier>{f7dc595d-d8f2-4677-beb8-abda0b9d52f4}</UniqueIdentifier>
+            <Extensions>ts</Extensions>
+            <ParseFiles>False</ParseFiles>
+            <SourceControlFiles>True</SourceControlFiles>
+        </Filter>
+    </ItemGroup>
+</Project>

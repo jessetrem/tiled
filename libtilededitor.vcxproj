@@ -1,0 +1,807 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="release|Win32">
+      <Configuration>release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="release|x64">
+      <Configuration>release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{fcb7e115-da2d-4a8c-a059-e698a9ed4276}</ProjectGuid>
+    <QbsProductName>libtilededitor</QbsProductName>
+  </PropertyGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(SolutionDir)\qbs.props" Condition="Exists('$(SolutionDir)\qbs.props')" />
+    <Import Project="$(SolutionDir)\qbs-shared.props" />
+  </ImportGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='release|Win32'" Label="Configuration">
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <OutDir>$(SolutionDir)$(Configuration)\libtilededitor.877b2b3a\</OutDir>
+    <TargetName>tilededitor</TargetName>
+    <PlatformToolset>v142</PlatformToolset>
+    <ConfigurationType>Makefile</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <DebuggerFlavor>WindowsLocalDebugger</DebuggerFlavor>
+    <LocalDebuggerCommand>$(OutDir)$(TargetName)$(TargetExt)</LocalDebuggerCommand>
+    <LocalDebuggerWorkingDirectory>$(OutDir)</LocalDebuggerWorkingDirectory>
+    <LocalDebuggerEnvironment>PATH=$(SolutionDir)$(Configuration)\install-root;Z:\dev\QT\6.5.2\msvc2019_64\bin;Z:\dev\QT\6.5.2\msvc2019_64\lib</LocalDebuggerEnvironment>
+    <NMakeBuildCommandLine>$(QbsBuildCommandLine) </NMakeBuildCommandLine>
+    <NMakeReBuildCommandLine>$(QbsReBuildCommandLine) </NMakeReBuildCommandLine>
+    <NMakeCleanCommandLine>$(QbsCleanCommandLine) </NMakeCleanCommandLine>
+    <NMakeOutput>$(OutDir)$(TargetName)$(TargetExt)</NMakeOutput>
+    <NMakePreprocessorDefinitions>TILED_EDITOR_LIBRARY;TILED_VERSION=1.10.1;QT_DISABLE_DEPRECATED_BEFORE=QT_VERSION_CHECK(5,15,0);QT_NO_DEPRECATED_WARNINGS;QT_NO_CAST_FROM_ASCII;QT_NO_CAST_TO_ASCII;QT_NO_FOREACH;QT_NO_URL_CAST_FROM_STRING;_USE_MATH_DEFINES;TILED_WINDOWS_LAYOUT;QT_SVG_LIB;QT_OPENGLWIDGETS_LIB;QT_CONCURRENT_LIB;QT_WIDGETS_LIB;QT_QMLINTEGRATION_LIB;QT_QML_LIB;QT_OPENGL_LIB;QT_NETWORK_LIB;QT_GUI_LIB;QT_CORE_LIB;QT_NO_DEBUG;_ENABLE_EXTENDED_ALIGNED_STORAGE</NMakePreprocessorDefinitions>
+    <NMakeIncludeSearchPath>Z:/dev/eden_industries/extinction_wars/SketchEngine/tools/Tiled3.0/tiled/src/tiled;Z:/dev/eden_industries/extinction_wars/SketchEngine/tools/Tiled3.0/tiled/src/qtsingleapplication/src;Z:/dev/eden_industries/extinction_wars/SketchEngine/tools/Tiled3.0/tiled/src/qtpropertybrowser/src;Z:/dev/eden_industries/extinction_wars/SketchEngine/tools/Tiled3.0/tiled/src/libtiled;Z:/dev/eden_industries/extinction_wars/SketchEngine/tools/Tiled3.0/tiled/release/libtilededitor.877b2b3a/qt.headers;Z:/dev/QT/6.5.2/msvc2019_64/include;Z:/dev/QT/6.5.2/msvc2019_64/include/QtSvg;Z:/dev/QT/6.5.2/msvc2019_64/include/QtQml/6.5.2;Z:/dev/QT/6.5.2/msvc2019_64/include/QtQml/6.5.2/QtQml;Z:/dev/QT/6.5.2/msvc2019_64/include;Z:/dev/QT/6.5.2/msvc2019_64/include/QtOpenGLWidgets;Z:/dev/QT/6.5.2/msvc2019_64/include/QtGui/6.5.2;Z:/dev/QT/6.5.2/msvc2019_64/include/QtGui/6.5.2/QtGui;Z:/dev/QT/6.5.2/msvc2019_64/include;Z:/dev/QT/6.5.2/msvc2019_64/include/QtConcurrent;Z:/dev/QT/6.5.2/msvc2019_64/include;Z:/dev/QT/6.5.2/msvc2019_64/include/QtWidgets;Z:/dev/QT/6.5.2/msvc2019_64/include;Z:/dev/QT/6.5.2/msvc2019_64/include/QtQmlIntegration;Z:/dev/QT/6.5.2/msvc2019_64/include;Z:/dev/QT/6.5.2/msvc2019_64/include/QtQml;Z:/dev/QT/6.5.2/msvc2019_64/include;Z:/dev/QT/6.5.2/msvc2019_64/include/QtOpenGL;Z:/dev/QT/6.5.2/msvc2019_64/include;Z:/dev/QT/6.5.2/msvc2019_64/include/QtNetwork;Z:/dev/QT/6.5.2/msvc2019_64/include/QtCore/6.5.2;Z:/dev/QT/6.5.2/msvc2019_64/include/QtCore/6.5.2/QtCore;Z:/dev/QT/6.5.2/msvc2019_64/include;Z:/dev/QT/6.5.2/msvc2019_64/include/QtGui;Z:/dev/QT/6.5.2/msvc2019_64/include;Z:/dev/QT/6.5.2/msvc2019_64/include/QtCore;Z:/dev/QT/6.5.2/msvc2019_64/mkspecs/win32-msvc</NMakeIncludeSearchPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='release|x64'" Label="Configuration">
+    <TargetName>tilededitor</TargetName>
+    <PlatformToolset>v142</PlatformToolset>
+    <ConfigurationType>Makefile</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <DebuggerFlavor>WindowsLocalDebugger</DebuggerFlavor>
+    <LocalDebuggerCommand>$(OutDir)$(TargetName)$(TargetExt)</LocalDebuggerCommand>
+    <LocalDebuggerWorkingDirectory>$(OutDir)</LocalDebuggerWorkingDirectory>
+    <LocalDebuggerEnvironment>PATH=$(SolutionDir)$(Configuration)\install-root;Z:\dev\QT\6.5.2\msvc2019_64\bin;Z:\dev\QT\6.5.2\msvc2019_64\lib</LocalDebuggerEnvironment>
+    <NMakeBuildCommandLine>$(QbsBuildCommandLine) </NMakeBuildCommandLine>
+    <NMakeReBuildCommandLine>$(QbsReBuildCommandLine) </NMakeReBuildCommandLine>
+    <NMakeCleanCommandLine>$(QbsCleanCommandLine) </NMakeCleanCommandLine>
+    <NMakeOutput>$(OutDir)$(TargetName)$(TargetExt)</NMakeOutput>
+    <NMakePreprocessorDefinitions>TILED_EDITOR_LIBRARY;TILED_VERSION=1.10.1;QT_DISABLE_DEPRECATED_BEFORE=QT_VERSION_CHECK(5,15,0);QT_NO_DEPRECATED_WARNINGS;QT_NO_CAST_FROM_ASCII;QT_NO_CAST_TO_ASCII;QT_NO_FOREACH;QT_NO_URL_CAST_FROM_STRING;_USE_MATH_DEFINES;TILED_WINDOWS_LAYOUT;QT_SVG_LIB;QT_OPENGLWIDGETS_LIB;QT_CONCURRENT_LIB;QT_WIDGETS_LIB;QT_QMLINTEGRATION_LIB;QT_QML_LIB;QT_OPENGL_LIB;QT_NETWORK_LIB;QT_GUI_LIB;QT_CORE_LIB;QT_NO_DEBUG;_ENABLE_EXTENDED_ALIGNED_STORAGE</NMakePreprocessorDefinitions>
+    <NMakeIncludeSearchPath>Z:/dev/eden_industries/extinction_wars/SketchEngine/tools/Tiled3.0/tiled/src/tiled;Z:/dev/eden_industries/extinction_wars/SketchEngine/tools/Tiled3.0/tiled/src/qtsingleapplication/src;Z:/dev/eden_industries/extinction_wars/SketchEngine/tools/Tiled3.0/tiled/src/qtpropertybrowser/src;Z:/dev/eden_industries/extinction_wars/SketchEngine/tools/Tiled3.0/tiled/src/libtiled;Z:/dev/eden_industries/extinction_wars/SketchEngine/tools/Tiled3.0/tiled/release/libtilededitor.877b2b3a/qt.headers;Z:/dev/QT/6.5.2/msvc2019_64/include;Z:/dev/QT/6.5.2/msvc2019_64/include/QtSvg;Z:/dev/QT/6.5.2/msvc2019_64/include/QtQml/6.5.2;Z:/dev/QT/6.5.2/msvc2019_64/include/QtQml/6.5.2/QtQml;Z:/dev/QT/6.5.2/msvc2019_64/include;Z:/dev/QT/6.5.2/msvc2019_64/include/QtOpenGLWidgets;Z:/dev/QT/6.5.2/msvc2019_64/include/QtGui/6.5.2;Z:/dev/QT/6.5.2/msvc2019_64/include/QtGui/6.5.2/QtGui;Z:/dev/QT/6.5.2/msvc2019_64/include;Z:/dev/QT/6.5.2/msvc2019_64/include/QtConcurrent;Z:/dev/QT/6.5.2/msvc2019_64/include;Z:/dev/QT/6.5.2/msvc2019_64/include/QtWidgets;Z:/dev/QT/6.5.2/msvc2019_64/include;Z:/dev/QT/6.5.2/msvc2019_64/include/QtQmlIntegration;Z:/dev/QT/6.5.2/msvc2019_64/include;Z:/dev/QT/6.5.2/msvc2019_64/include/QtQml;Z:/dev/QT/6.5.2/msvc2019_64/include;Z:/dev/QT/6.5.2/msvc2019_64/include/QtOpenGL;Z:/dev/QT/6.5.2/msvc2019_64/include;Z:/dev/QT/6.5.2/msvc2019_64/include/QtNetwork;Z:/dev/QT/6.5.2/msvc2019_64/include/QtCore/6.5.2;Z:/dev/QT/6.5.2/msvc2019_64/include/QtCore/6.5.2/QtCore;Z:/dev/QT/6.5.2/msvc2019_64/include;Z:/dev/QT/6.5.2/msvc2019_64/include/QtGui;Z:/dev/QT/6.5.2/msvc2019_64/include;Z:/dev/QT/6.5.2/msvc2019_64/include/QtCore;Z:/dev/QT/6.5.2/msvc2019_64/mkspecs/win32-msvc</NMakeIncludeSearchPath>
+    <UseDebugLibraries>false</UseDebugLibraries>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='release|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>Z:/dev/eden_industries/extinction_wars/SketchEngine/tools/Tiled3.0/tiled/src/tiled;Z:/dev/eden_industries/extinction_wars/SketchEngine/tools/Tiled3.0/tiled/src/qtsingleapplication/src;Z:/dev/eden_industries/extinction_wars/SketchEngine/tools/Tiled3.0/tiled/src/qtpropertybrowser/src;Z:/dev/eden_industries/extinction_wars/SketchEngine/tools/Tiled3.0/tiled/src/libtiled;Z:/dev/eden_industries/extinction_wars/SketchEngine/tools/Tiled3.0/tiled/release/libtilededitor.877b2b3a/qt.headers;Z:/dev/QT/6.5.2/msvc2019_64/include;Z:/dev/QT/6.5.2/msvc2019_64/include/QtSvg;Z:/dev/QT/6.5.2/msvc2019_64/include/QtQml/6.5.2;Z:/dev/QT/6.5.2/msvc2019_64/include/QtQml/6.5.2/QtQml;Z:/dev/QT/6.5.2/msvc2019_64/include;Z:/dev/QT/6.5.2/msvc2019_64/include/QtOpenGLWidgets;Z:/dev/QT/6.5.2/msvc2019_64/include/QtGui/6.5.2;Z:/dev/QT/6.5.2/msvc2019_64/include/QtGui/6.5.2/QtGui;Z:/dev/QT/6.5.2/msvc2019_64/include;Z:/dev/QT/6.5.2/msvc2019_64/include/QtConcurrent;Z:/dev/QT/6.5.2/msvc2019_64/include;Z:/dev/QT/6.5.2/msvc2019_64/include/QtWidgets;Z:/dev/QT/6.5.2/msvc2019_64/include;Z:/dev/QT/6.5.2/msvc2019_64/include/QtQmlIntegration;Z:/dev/QT/6.5.2/msvc2019_64/include;Z:/dev/QT/6.5.2/msvc2019_64/include/QtQml;Z:/dev/QT/6.5.2/msvc2019_64/include;Z:/dev/QT/6.5.2/msvc2019_64/include/QtOpenGL;Z:/dev/QT/6.5.2/msvc2019_64/include;Z:/dev/QT/6.5.2/msvc2019_64/include/QtNetwork;Z:/dev/QT/6.5.2/msvc2019_64/include/QtCore/6.5.2;Z:/dev/QT/6.5.2/msvc2019_64/include/QtCore/6.5.2/QtCore;Z:/dev/QT/6.5.2/msvc2019_64/include;Z:/dev/QT/6.5.2/msvc2019_64/include/QtGui;Z:/dev/QT/6.5.2/msvc2019_64/include;Z:/dev/QT/6.5.2/msvc2019_64/include/QtCore;Z:/dev/QT/6.5.2/msvc2019_64/mkspecs/win32-msvc;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <PreprocessorDefinitions>TILED_EDITOR_LIBRARY;TILED_VERSION=1.10.1;QT_DISABLE_DEPRECATED_BEFORE=QT_VERSION_CHECK(5,15,0);QT_NO_DEPRECATED_WARNINGS;QT_NO_CAST_FROM_ASCII;QT_NO_CAST_TO_ASCII;QT_NO_FOREACH;QT_NO_URL_CAST_FROM_STRING;_USE_MATH_DEFINES;TILED_WINDOWS_LAYOUT;QT_SVG_LIB;QT_OPENGLWIDGETS_LIB;QT_CONCURRENT_LIB;QT_WIDGETS_LIB;QT_QMLINTEGRATION_LIB;QT_QML_LIB;QT_OPENGL_LIB;QT_NETWORK_LIB;QT_GUI_LIB;QT_CORE_LIB;QT_NO_DEBUG;_ENABLE_EXTENDED_ALIGNED_STORAGE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+    </ClCompile>
+    <Link>
+      <AdditionalLibraryDirectories>Z:/dev/QT/6.5.2/msvc2019_64/lib</AdditionalLibraryDirectories>
+      <AdditionalDependencies>Shell32.lib;Shell32.lib;Z:/dev/QT/6.5.2/msvc2019_64/lib/Qt6EntryPoint.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <MinimumRequiredVersion>10.00</MinimumRequiredVersion>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='release|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>Z:/dev/eden_industries/extinction_wars/SketchEngine/tools/Tiled3.0/tiled/src/tiled;Z:/dev/eden_industries/extinction_wars/SketchEngine/tools/Tiled3.0/tiled/src/qtsingleapplication/src;Z:/dev/eden_industries/extinction_wars/SketchEngine/tools/Tiled3.0/tiled/src/qtpropertybrowser/src;Z:/dev/eden_industries/extinction_wars/SketchEngine/tools/Tiled3.0/tiled/src/libtiled;Z:/dev/eden_industries/extinction_wars/SketchEngine/tools/Tiled3.0/tiled/release/libtilededitor.877b2b3a/qt.headers;Z:/dev/QT/6.5.2/msvc2019_64/include;Z:/dev/QT/6.5.2/msvc2019_64/include/QtSvg;Z:/dev/QT/6.5.2/msvc2019_64/include/QtQml/6.5.2;Z:/dev/QT/6.5.2/msvc2019_64/include/QtQml/6.5.2/QtQml;Z:/dev/QT/6.5.2/msvc2019_64/include;Z:/dev/QT/6.5.2/msvc2019_64/include/QtOpenGLWidgets;Z:/dev/QT/6.5.2/msvc2019_64/include/QtGui/6.5.2;Z:/dev/QT/6.5.2/msvc2019_64/include/QtGui/6.5.2/QtGui;Z:/dev/QT/6.5.2/msvc2019_64/include;Z:/dev/QT/6.5.2/msvc2019_64/include/QtConcurrent;Z:/dev/QT/6.5.2/msvc2019_64/include;Z:/dev/QT/6.5.2/msvc2019_64/include/QtWidgets;Z:/dev/QT/6.5.2/msvc2019_64/include;Z:/dev/QT/6.5.2/msvc2019_64/include/QtQmlIntegration;Z:/dev/QT/6.5.2/msvc2019_64/include;Z:/dev/QT/6.5.2/msvc2019_64/include/QtQml;Z:/dev/QT/6.5.2/msvc2019_64/include;Z:/dev/QT/6.5.2/msvc2019_64/include/QtOpenGL;Z:/dev/QT/6.5.2/msvc2019_64/include;Z:/dev/QT/6.5.2/msvc2019_64/include/QtNetwork;Z:/dev/QT/6.5.2/msvc2019_64/include/QtCore/6.5.2;Z:/dev/QT/6.5.2/msvc2019_64/include/QtCore/6.5.2/QtCore;Z:/dev/QT/6.5.2/msvc2019_64/include;Z:/dev/QT/6.5.2/msvc2019_64/include/QtGui;Z:/dev/QT/6.5.2/msvc2019_64/include;Z:/dev/QT/6.5.2/msvc2019_64/include/QtCore;Z:/dev/QT/6.5.2/msvc2019_64/mkspecs/win32-msvc;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <PreprocessorDefinitions>TILED_EDITOR_LIBRARY;TILED_VERSION=1.10.1;QT_DISABLE_DEPRECATED_BEFORE=QT_VERSION_CHECK(5,15,0);QT_NO_DEPRECATED_WARNINGS;QT_NO_CAST_FROM_ASCII;QT_NO_CAST_TO_ASCII;QT_NO_FOREACH;QT_NO_URL_CAST_FROM_STRING;_USE_MATH_DEFINES;TILED_WINDOWS_LAYOUT;QT_SVG_LIB;QT_OPENGLWIDGETS_LIB;QT_CONCURRENT_LIB;QT_WIDGETS_LIB;QT_QMLINTEGRATION_LIB;QT_QML_LIB;QT_OPENGL_LIB;QT_NETWORK_LIB;QT_GUI_LIB;QT_CORE_LIB;QT_NO_DEBUG;_ENABLE_EXTENDED_ALIGNED_STORAGE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+    </ClCompile>
+    <Link>
+      <AdditionalLibraryDirectories>Z:/dev/QT/6.5.2/msvc2019_64/lib</AdditionalLibraryDirectories>
+      <AdditionalDependencies>Shell32.lib;Shell32.lib;Z:/dev/QT/6.5.2/msvc2019_64/lib/Qt6EntryPoint.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <MinimumRequiredVersion>10.00</MinimumRequiredVersion>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <None Include="$(ProjectDir)src/tiled/libtilededitor.qbs" />
+    <None Include="$(ProjectDir)src/tiled/pch.h" />
+    <None Include="$(ProjectDir)src/tiled/resources/automap-tiles.svg" />
+    <None Include="$(ProjectDir)src/tiled/resources/automap-tiles.tsx" />
+    <None Include="$(ProjectDir)src/tiled/resources/images/14/hidden.png" />
+    <None Include="$(ProjectDir)src/tiled/resources/images/14/locked.png" />
+    <None Include="$(ProjectDir)src/tiled/resources/images/14/unlocked.png" />
+    <None Include="$(ProjectDir)src/tiled/resources/images/14/visible.png" />
+    <None Include="$(ProjectDir)src/tiled/resources/images/16/add.png" />
+    <None Include="$(ProjectDir)src/tiled/resources/images/16/application-exit.png" />
+    <None Include="$(ProjectDir)src/tiled/resources/images/16/dialog-error.png" />
+    <None Include="$(ProjectDir)src/tiled/resources/images/16/dialog-warning.png" />
+    <None Include="$(ProjectDir)src/tiled/resources/images/16/document-export.png" />
+    <None Include="$(ProjectDir)src/tiled/resources/images/16/document-import.png" />
+    <None Include="$(ProjectDir)src/tiled/resources/images/16/document-new.png" />
+    <None Include="$(ProjectDir)src/tiled/resources/images/16/document-open-recent.png" />
+    <None Include="$(ProjectDir)src/tiled/resources/images/16/document-open.png" />
+    <None Include="$(ProjectDir)src/tiled/resources/images/16/document-page-setup.png" />
+    <None Include="$(ProjectDir)src/tiled/resources/images/16/document-properties.png" />
+    <None Include="$(ProjectDir)src/tiled/resources/images/16/document-save-as.png" />
+    <None Include="$(ProjectDir)src/tiled/resources/images/16/document-save.png" />
+    <None Include="$(ProjectDir)src/tiled/resources/images/16/drive-harddisk.png" />
+    <None Include="$(ProjectDir)src/tiled/resources/images/16/edit-clear.png" />
+    <None Include="$(ProjectDir)src/tiled/resources/images/16/edit-copy.png" />
+    <None Include="$(ProjectDir)src/tiled/resources/images/16/edit-cut.png" />
+    <None Include="$(ProjectDir)src/tiled/resources/images/16/edit-delete.png" />
+    <None Include="$(ProjectDir)src/tiled/resources/images/16/edit-find.png" />
+    <None Include="$(ProjectDir)src/tiled/resources/images/16/edit-paste.png" />
+    <None Include="$(ProjectDir)src/tiled/resources/images/16/edit-redo.png" />
+    <None Include="$(ProjectDir)src/tiled/resources/images/16/edit-undo.png" />
+    <None Include="$(ProjectDir)src/tiled/resources/images/16/error.png" />
+    <None Include="$(ProjectDir)src/tiled/resources/images/16/go-down.png" />
+    <None Include="$(ProjectDir)src/tiled/resources/images/16/go-up.png" />
+    <None Include="$(ProjectDir)src/tiled/resources/images/16/help-about.png" />
+    <None Include="$(ProjectDir)src/tiled/resources/images/16/hidden.png" />
+    <None Include="$(ProjectDir)src/tiled/resources/images/16/image-missing.png" />
+    <None Include="$(ProjectDir)src/tiled/resources/images/16/layer-image.png" />
+    <None Include="$(ProjectDir)src/tiled/resources/images/16/layer-object.png" />
+    <None Include="$(ProjectDir)src/tiled/resources/images/16/layer-tile.png" />
+    <None Include="$(ProjectDir)src/tiled/resources/images/16/locked.png" />
+    <None Include="$(ProjectDir)src/tiled/resources/images/16/mail-read-symbolic.png" />
+    <None Include="$(ProjectDir)src/tiled/resources/images/16/mail-unread-symbolic.png" />
+    <None Include="$(ProjectDir)src/tiled/resources/images/16/plugin.png" />
+    <None Include="$(ProjectDir)src/tiled/resources/images/16/remove.png" />
+    <None Include="$(ProjectDir)src/tiled/resources/images/16/rename.png" />
+    <None Include="$(ProjectDir)src/tiled/resources/images/16/selection-add.png" />
+    <None Include="$(ProjectDir)src/tiled/resources/images/16/selection-intersect.png" />
+    <None Include="$(ProjectDir)src/tiled/resources/images/16/selection-replace.png" />
+    <None Include="$(ProjectDir)src/tiled/resources/images/16/selection-subtract.png" />
+    <None Include="$(ProjectDir)src/tiled/resources/images/16/show_hide_others.png" />
+    <None Include="$(ProjectDir)src/tiled/resources/images/16/stock-duplicate-16.png" />
+    <None Include="$(ProjectDir)src/tiled/resources/images/16/stock-tool-color-picker-16.png" />
+    <None Include="$(ProjectDir)src/tiled/resources/images/16/terminal.png" />
+    <None Include="$(ProjectDir)src/tiled/resources/images/16/terrain.png" />
+    <None Include="$(ProjectDir)src/tiled/resources/images/16/tiled.png" />
+    <None Include="$(ProjectDir)src/tiled/resources/images/16/unlocked.png" />
+    <None Include="$(ProjectDir)src/tiled/resources/images/16/visible.png" />
+    <None Include="$(ProjectDir)src/tiled/resources/images/16/window-close.png" />
+    <None Include="$(ProjectDir)src/tiled/resources/images/16/zoom-fit-best.png" />
+    <None Include="$(ProjectDir)src/tiled/resources/images/16/zoom-in.png" />
+    <None Include="$(ProjectDir)src/tiled/resources/images/16/zoom-original.png" />
+    <None Include="$(ProjectDir)src/tiled/resources/images/16/zoom-out.png" />
+    <None Include="$(ProjectDir)src/tiled/resources/images/22/add-corner.png" />
+    <None Include="$(ProjectDir)src/tiled/resources/images/22/add-edge.png" />
+    <None Include="$(ProjectDir)src/tiled/resources/images/22/add.png" />
+    <None Include="$(ProjectDir)src/tiled/resources/images/22/edit-find.png" />
+    <None Include="$(ProjectDir)src/tiled/resources/images/22/ellipse-fill.png" />
+    <None Include="$(ProjectDir)src/tiled/resources/images/22/error.png" />
+    <None Include="$(ProjectDir)src/tiled/resources/images/22/plugin.png" />
+    <None Include="$(ProjectDir)src/tiled/resources/images/22/rectangle-fill.png" />
+    <None Include="$(ProjectDir)src/tiled/resources/images/22/remove.png" />
+    <None Include="$(ProjectDir)src/tiled/resources/images/22/stock-tool-bucket-fill.png" />
+    <None Include="$(ProjectDir)src/tiled/resources/images/22/stock-tool-by-color-select.png" />
+    <None Include="$(ProjectDir)src/tiled/resources/images/22/stock-tool-clone.png" />
+    <None Include="$(ProjectDir)src/tiled/resources/images/22/stock-tool-color-picker-22.png" />
+    <None Include="$(ProjectDir)src/tiled/resources/images/22/stock-tool-eraser.png" />
+    <None Include="$(ProjectDir)src/tiled/resources/images/22/stock-tool-fuzzy-select-22.png" />
+    <None Include="$(ProjectDir)src/tiled/resources/images/22/stock-tool-move-22.png" />
+    <None Include="$(ProjectDir)src/tiled/resources/images/22/stock-tool-rect-select.png" />
+    <None Include="$(ProjectDir)src/tiled/resources/images/22/tool-select-objects.png" />
+    <None Include="$(ProjectDir)src/tiled/resources/images/22/world-move-tool.png" />
+    <None Include="$(ProjectDir)src/tiled/resources/images/24/animation-edit.png" />
+    <None Include="$(ProjectDir)src/tiled/resources/images/24/detect-bounding-box.png" />
+    <None Include="$(ProjectDir)src/tiled/resources/images/24/dialog-error.png" />
+    <None Include="$(ProjectDir)src/tiled/resources/images/24/dialog-warning.png" />
+    <None Include="$(ProjectDir)src/tiled/resources/images/24/dice.png" />
+    <None Include="$(ProjectDir)src/tiled/resources/images/24/document-new.png" />
+    <None Include="$(ProjectDir)src/tiled/resources/images/24/document-open-recent.png" />
+    <None Include="$(ProjectDir)src/tiled/resources/images/24/document-open.png" />
+    <None Include="$(ProjectDir)src/tiled/resources/images/24/document-page-setup.png" />
+    <None Include="$(ProjectDir)src/tiled/resources/images/24/document-properties.png" />
+    <None Include="$(ProjectDir)src/tiled/resources/images/24/document-save-as.png" />
+    <None Include="$(ProjectDir)src/tiled/resources/images/24/document-save.png" />
+    <None Include="$(ProjectDir)src/tiled/resources/images/24/drive-harddisk.png" />
+    <None Include="$(ProjectDir)src/tiled/resources/images/24/edit-clear.png" />
+    <None Include="$(ProjectDir)src/tiled/resources/images/24/edit-copy.png" />
+    <None Include="$(ProjectDir)src/tiled/resources/images/24/edit-cut.png" />
+    <None Include="$(ProjectDir)src/tiled/resources/images/24/edit-find.png" />
+    <None Include="$(ProjectDir)src/tiled/resources/images/24/edit-paste.png" />
+    <None Include="$(ProjectDir)src/tiled/resources/images/24/edit-redo.png" />
+    <None Include="$(ProjectDir)src/tiled/resources/images/24/edit-undo.png" />
+    <None Include="$(ProjectDir)src/tiled/resources/images/24/flip-horizontal.png" />
+    <None Include="$(ProjectDir)src/tiled/resources/images/24/flip-vertical.png" />
+    <None Include="$(ProjectDir)src/tiled/resources/images/24/go-down.png" />
+    <None Include="$(ProjectDir)src/tiled/resources/images/24/go-up.png" />
+    <None Include="$(ProjectDir)src/tiled/resources/images/24/help-about.png" />
+    <None Include="$(ProjectDir)src/tiled/resources/images/24/hidden.png" />
+    <None Include="$(ProjectDir)src/tiled/resources/images/24/insert-ellipse.png" />
+    <None Include="$(ProjectDir)src/tiled/resources/images/24/insert-image.png" />
+    <None Include="$(ProjectDir)src/tiled/resources/images/24/insert-object.png" />
+    <None Include="$(ProjectDir)src/tiled/resources/images/24/insert-point.png" />
+    <None Include="$(ProjectDir)src/tiled/resources/images/24/insert-polygon.png" />
+    <None Include="$(ProjectDir)src/tiled/resources/images/24/insert-polyline.png" />
+    <None Include="$(ProjectDir)src/tiled/resources/images/24/insert-rectangle.png" />
+    <None Include="$(ProjectDir)src/tiled/resources/images/24/insert-template.png" />
+    <None Include="$(ProjectDir)src/tiled/resources/images/24/insert-text.png" />
+    <None Include="$(ProjectDir)src/tiled/resources/images/24/locked.png" />
+    <None Include="$(ProjectDir)src/tiled/resources/images/24/move-image-layer.png" />
+    <None Include="$(ProjectDir)src/tiled/resources/images/24/object-ellipse.png" />
+    <None Include="$(ProjectDir)src/tiled/resources/images/24/object-image.png" />
+    <None Include="$(ProjectDir)src/tiled/resources/images/24/object-point.png" />
+    <None Include="$(ProjectDir)src/tiled/resources/images/24/object-polygon.png" />
+    <None Include="$(ProjectDir)src/tiled/resources/images/24/object-polyline.png" />
+    <None Include="$(ProjectDir)src/tiled/resources/images/24/object-rectangle.png" />
+    <None Include="$(ProjectDir)src/tiled/resources/images/24/object-text.png" />
+    <None Include="$(ProjectDir)src/tiled/resources/images/24/rotate-left.png" />
+    <None Include="$(ProjectDir)src/tiled/resources/images/24/rotate-right.png" />
+    <None Include="$(ProjectDir)src/tiled/resources/images/24/system-run.png" />
+    <None Include="$(ProjectDir)src/tiled/resources/images/24/terminal.png" />
+    <None Include="$(ProjectDir)src/tiled/resources/images/24/terrain-edit.png" />
+    <None Include="$(ProjectDir)src/tiled/resources/images/24/terrain.png" />
+    <None Include="$(ProjectDir)src/tiled/resources/images/24/tool-edit-polygons.png" />
+    <None Include="$(ProjectDir)src/tiled/resources/images/24/unlocked.png" />
+    <None Include="$(ProjectDir)src/tiled/resources/images/24/visible.png" />
+    <None Include="$(ProjectDir)src/tiled/resources/images/24/wangtile-edit.png" />
+    <None Include="$(ProjectDir)src/tiled/resources/images/24/wangtile.png" />
+    <None Include="$(ProjectDir)src/tiled/resources/images/24/world-map-add-other.png" />
+    <None Include="$(ProjectDir)src/tiled/resources/images/24/world-map-add-this.png" />
+    <None Include="$(ProjectDir)src/tiled/resources/images/24/world-map-remove-this.png" />
+    <None Include="$(ProjectDir)src/tiled/resources/images/24/zoom-fit-best.png" />
+    <None Include="$(ProjectDir)src/tiled/resources/images/24/zoom-in.png" />
+    <None Include="$(ProjectDir)src/tiled/resources/images/24/zoom-original.png" />
+    <None Include="$(ProjectDir)src/tiled/resources/images/24/zoom-out.png" />
+    <None Include="$(ProjectDir)src/tiled/resources/images/32/dialog-error.png" />
+    <None Include="$(ProjectDir)src/tiled/resources/images/32/dialog-warning.png" />
+    <None Include="$(ProjectDir)src/tiled/resources/images/32/dice.png" />
+    <None Include="$(ProjectDir)src/tiled/resources/images/32/edit-find.png" />
+    <None Include="$(ProjectDir)src/tiled/resources/images/32/error.png" />
+    <None Include="$(ProjectDir)src/tiled/resources/images/32/flip-horizontal.png" />
+    <None Include="$(ProjectDir)src/tiled/resources/images/32/flip-vertical.png" />
+    <None Include="$(ProjectDir)src/tiled/resources/images/32/image-missing.png" />
+    <None Include="$(ProjectDir)src/tiled/resources/images/32/layer-object.png" />
+    <None Include="$(ProjectDir)src/tiled/resources/images/32/layer-tile.png" />
+    <None Include="$(ProjectDir)src/tiled/resources/images/32/plugin.png" />
+    <None Include="$(ProjectDir)src/tiled/resources/images/32/rotate-left.png" />
+    <None Include="$(ProjectDir)src/tiled/resources/images/32/rotate-right.png" />
+    <None Include="$(ProjectDir)src/tiled/resources/images/32/terminal.png" />
+    <None Include="$(ProjectDir)src/tiled/resources/images/32/tiled.png" />
+    <None Include="$(ProjectDir)src/tiled/resources/images/32/wangtile.png" />
+    <None Include="$(ProjectDir)src/tiled/resources/images/48/detect-bounding-box.png" />
+    <None Include="$(ProjectDir)src/tiled/resources/images/48/edit-find.png" />
+    <None Include="$(ProjectDir)src/tiled/resources/images/48/insert-ellipse.png" />
+    <None Include="$(ProjectDir)src/tiled/resources/images/48/insert-image.png" />
+    <None Include="$(ProjectDir)src/tiled/resources/images/48/insert-point.png" />
+    <None Include="$(ProjectDir)src/tiled/resources/images/48/insert-polygon.png" />
+    <None Include="$(ProjectDir)src/tiled/resources/images/48/insert-polyline.png" />
+    <None Include="$(ProjectDir)src/tiled/resources/images/48/insert-rectangle.png" />
+    <None Include="$(ProjectDir)src/tiled/resources/images/48/insert-template.png" />
+    <None Include="$(ProjectDir)src/tiled/resources/images/48/insert-text.png" />
+    <None Include="$(ProjectDir)src/tiled/resources/images/48/tile-collision-editor.png" />
+    <None Include="$(ProjectDir)src/tiled/resources/images/about-tiled-logo-white.png" />
+    <None Include="$(ProjectDir)src/tiled/resources/images/about-tiled-logo.png" />
+    <None Include="$(ProjectDir)src/tiled/resources/images/dock-close.png" />
+    <None Include="$(ProjectDir)src/tiled/resources/images/dock-close@2x.png" />
+    <None Include="$(ProjectDir)src/tiled/resources/images/dock-restore.png" />
+    <None Include="$(ProjectDir)src/tiled/resources/images/dock-restore@2x.png" />
+    <None Include="$(ProjectDir)src/tiled/resources/images/parts/icons.tmx" />
+    <None Include="$(ProjectDir)src/tiled/resources/images/parts/insert-icon-arrow.png" />
+    <None Include="$(ProjectDir)src/tiled/resources/images/scalable/dice.svg" />
+    <None Include="$(ProjectDir)src/tiled/resources/images/scalable/dock-close.svg" />
+    <None Include="$(ProjectDir)src/tiled/resources/images/scalable/dock-restore.svg" />
+    <None Include="$(ProjectDir)src/tiled/resources/images/scalable/edit-delete-symbolic.svg" />
+    <None Include="$(ProjectDir)src/tiled/resources/images/scalable/edit-select.svg" />
+    <None Include="$(ProjectDir)src/tiled/resources/images/scalable/edit-undo-symbolic.svg" />
+    <None Include="$(ProjectDir)src/tiled/resources/images/scalable/highlight-current-layer-16.svg" />
+    <None Include="$(ProjectDir)src/tiled/resources/images/scalable/highlight-current-layer-24.svg" />
+    <None Include="$(ProjectDir)src/tiled/resources/images/scalable/layer-object.svg" />
+    <None Include="$(ProjectDir)src/tiled/resources/images/scalable/layer-tile.svg" />
+    <None Include="$(ProjectDir)src/tiled/resources/images/scalable/mail-read-symbolic.svg" />
+    <None Include="$(ProjectDir)src/tiled/resources/images/scalable/mail-unread-symbolic.svg" />
+    <None Include="$(ProjectDir)src/tiled/resources/images/scalable/property-type-class.svg" />
+    <None Include="$(ProjectDir)src/tiled/resources/images/scalable/property-type-enum.svg" />
+    <None Include="$(ProjectDir)src/tiled/resources/images/scalable/property-type-plain.svg" />
+    <None Include="$(ProjectDir)src/tiled/resources/images/scalable/replace.svg" />
+    <None Include="$(ProjectDir)src/tiled/resources/images/scalable/search-object-dialog.svg" />
+    <None Include="$(ProjectDir)src/tiled/resources/images/scalable/select-object.svg" />
+    <None Include="$(ProjectDir)src/tiled/resources/images/scalable/select_enclose.svg" />
+    <None Include="$(ProjectDir)src/tiled/resources/images/scalable/select_touch.svg" />
+    <None Include="$(ProjectDir)src/tiled/resources/images/scalable/software-update-available-symbolic.svg" />
+    <None Include="$(ProjectDir)src/tiled/resources/images/scalable/wrap.svg" />
+    <None Include="$(ProjectDir)src/tiled/resources/images/tiled-icon.ico" />
+    <None Include="$(ProjectDir)src/tiled/sentryhelper.cpp">
+      <ExcludedFromBuild>true</ExcludedFromBuild>
+    </None>
+    <None Include="$(ProjectDir)src/tiled/sentryhelper.h">
+      <ExcludedFromBuild>true</ExcludedFromBuild>
+    </None>
+    <ClCompile Include="$(ProjectDir)src/tiled/aboutdialog.cpp" />
+    <ClInclude Include="$(ProjectDir)src/tiled/aboutdialog.h" />
+    <None Include="$(ProjectDir)src/tiled/aboutdialog.ui" />
+    <ClCompile Include="$(ProjectDir)src/tiled/abstractobjecttool.cpp" />
+    <ClInclude Include="$(ProjectDir)src/tiled/abstractobjecttool.h" />
+    <ClCompile Include="$(ProjectDir)src/tiled/abstracttilefilltool.cpp" />
+    <ClInclude Include="$(ProjectDir)src/tiled/abstracttilefilltool.h" />
+    <ClCompile Include="$(ProjectDir)src/tiled/abstracttileselectiontool.cpp" />
+    <ClInclude Include="$(ProjectDir)src/tiled/abstracttileselectiontool.h" />
+    <ClCompile Include="$(ProjectDir)src/tiled/abstracttiletool.cpp" />
+    <ClInclude Include="$(ProjectDir)src/tiled/abstracttiletool.h" />
+    <ClCompile Include="$(ProjectDir)src/tiled/abstracttool.cpp" />
+    <ClInclude Include="$(ProjectDir)src/tiled/abstracttool.h" />
+    <ClCompile Include="$(ProjectDir)src/tiled/abstractworldtool.cpp" />
+    <ClInclude Include="$(ProjectDir)src/tiled/abstractworldtool.h" />
+    <ClCompile Include="$(ProjectDir)src/tiled/actionmanager.cpp" />
+    <ClInclude Include="$(ProjectDir)src/tiled/actionmanager.h" />
+    <ClCompile Include="$(ProjectDir)src/tiled/actionsearch.cpp" />
+    <ClInclude Include="$(ProjectDir)src/tiled/actionsearch.h" />
+    <ClCompile Include="$(ProjectDir)src/tiled/addpropertydialog.cpp" />
+    <ClInclude Include="$(ProjectDir)src/tiled/addpropertydialog.h" />
+    <None Include="$(ProjectDir)src/tiled/addpropertydialog.ui" />
+    <ClCompile Include="$(ProjectDir)src/tiled/addremovelayer.cpp" />
+    <ClInclude Include="$(ProjectDir)src/tiled/addremovelayer.h" />
+    <ClCompile Include="$(ProjectDir)src/tiled/addremovemapobject.cpp" />
+    <ClInclude Include="$(ProjectDir)src/tiled/addremovemapobject.h" />
+    <ClCompile Include="$(ProjectDir)src/tiled/addremovetiles.cpp" />
+    <ClInclude Include="$(ProjectDir)src/tiled/addremovetiles.h" />
+    <ClCompile Include="$(ProjectDir)src/tiled/addremovetileset.cpp" />
+    <ClInclude Include="$(ProjectDir)src/tiled/addremovetileset.h" />
+    <ClCompile Include="$(ProjectDir)src/tiled/addremovewangset.cpp" />
+    <ClInclude Include="$(ProjectDir)src/tiled/addremovewangset.h" />
+    <ClCompile Include="$(ProjectDir)src/tiled/adjusttileindexes.cpp" />
+    <ClInclude Include="$(ProjectDir)src/tiled/adjusttileindexes.h" />
+    <ClCompile Include="$(ProjectDir)src/tiled/automapper.cpp" />
+    <ClInclude Include="$(ProjectDir)src/tiled/automapper.h" />
+    <ClCompile Include="$(ProjectDir)src/tiled/automapperwrapper.cpp" />
+    <ClInclude Include="$(ProjectDir)src/tiled/automapperwrapper.h" />
+    <ClCompile Include="$(ProjectDir)src/tiled/automappingmanager.cpp" />
+    <ClInclude Include="$(ProjectDir)src/tiled/automappingmanager.h" />
+    <ClCompile Include="$(ProjectDir)src/tiled/automappingutils.cpp" />
+    <ClInclude Include="$(ProjectDir)src/tiled/automappingutils.h" />
+    <ClCompile Include="$(ProjectDir)src/tiled/brokenlinks.cpp" />
+    <ClInclude Include="$(ProjectDir)src/tiled/brokenlinks.h" />
+    <ClCompile Include="$(ProjectDir)src/tiled/brushitem.cpp" />
+    <ClInclude Include="$(ProjectDir)src/tiled/brushitem.h" />
+    <ClCompile Include="$(ProjectDir)src/tiled/bucketfilltool.cpp" />
+    <ClInclude Include="$(ProjectDir)src/tiled/bucketfilltool.h" />
+    <ClCompile Include="$(ProjectDir)src/tiled/capturestamphelper.cpp" />
+    <ClInclude Include="$(ProjectDir)src/tiled/capturestamphelper.h" />
+    <ClInclude Include="$(ProjectDir)src/tiled/changeevents.h" />
+    <ClCompile Include="$(ProjectDir)src/tiled/changeimagelayerproperty.cpp" />
+    <ClInclude Include="$(ProjectDir)src/tiled/changeimagelayerproperty.h" />
+    <ClCompile Include="$(ProjectDir)src/tiled/changelayer.cpp" />
+    <ClInclude Include="$(ProjectDir)src/tiled/changelayer.h" />
+    <ClCompile Include="$(ProjectDir)src/tiled/changemapobject.cpp" />
+    <ClInclude Include="$(ProjectDir)src/tiled/changemapobject.h" />
+    <ClCompile Include="$(ProjectDir)src/tiled/changemapobjectsorder.cpp" />
+    <ClInclude Include="$(ProjectDir)src/tiled/changemapobjectsorder.h" />
+    <ClCompile Include="$(ProjectDir)src/tiled/changemapproperty.cpp" />
+    <ClInclude Include="$(ProjectDir)src/tiled/changemapproperty.h" />
+    <ClCompile Include="$(ProjectDir)src/tiled/changeobjectgroupproperties.cpp" />
+    <ClInclude Include="$(ProjectDir)src/tiled/changeobjectgroupproperties.h" />
+    <ClCompile Include="$(ProjectDir)src/tiled/changepolygon.cpp" />
+    <ClInclude Include="$(ProjectDir)src/tiled/changepolygon.h" />
+    <ClCompile Include="$(ProjectDir)src/tiled/changeproperties.cpp" />
+    <ClInclude Include="$(ProjectDir)src/tiled/changeproperties.h" />
+    <ClCompile Include="$(ProjectDir)src/tiled/changeselectedarea.cpp" />
+    <ClInclude Include="$(ProjectDir)src/tiled/changeselectedarea.h" />
+    <ClCompile Include="$(ProjectDir)src/tiled/changetile.cpp" />
+    <ClInclude Include="$(ProjectDir)src/tiled/changetile.h" />
+    <ClCompile Include="$(ProjectDir)src/tiled/changetileanimation.cpp" />
+    <ClInclude Include="$(ProjectDir)src/tiled/changetileanimation.h" />
+    <ClCompile Include="$(ProjectDir)src/tiled/changetileimagesource.cpp" />
+    <ClInclude Include="$(ProjectDir)src/tiled/changetileimagesource.h" />
+    <ClCompile Include="$(ProjectDir)src/tiled/changetileobjectgroup.cpp" />
+    <ClInclude Include="$(ProjectDir)src/tiled/changetileobjectgroup.h" />
+    <ClCompile Include="$(ProjectDir)src/tiled/changetilewangid.cpp" />
+    <ClInclude Include="$(ProjectDir)src/tiled/changetilewangid.h" />
+    <ClInclude Include="$(ProjectDir)src/tiled/changevalue.h" />
+    <ClCompile Include="$(ProjectDir)src/tiled/changewangcolordata.cpp" />
+    <ClInclude Include="$(ProjectDir)src/tiled/changewangcolordata.h" />
+    <ClCompile Include="$(ProjectDir)src/tiled/changewangsetdata.cpp" />
+    <ClInclude Include="$(ProjectDir)src/tiled/changewangsetdata.h" />
+    <ClCompile Include="$(ProjectDir)src/tiled/clickablelabel.cpp" />
+    <ClInclude Include="$(ProjectDir)src/tiled/clickablelabel.h" />
+    <ClCompile Include="$(ProjectDir)src/tiled/clipboardmanager.cpp" />
+    <ClInclude Include="$(ProjectDir)src/tiled/clipboardmanager.h" />
+    <ClCompile Include="$(ProjectDir)src/tiled/colorbutton.cpp" />
+    <ClInclude Include="$(ProjectDir)src/tiled/colorbutton.h" />
+    <ClCompile Include="$(ProjectDir)src/tiled/command.cpp" />
+    <ClInclude Include="$(ProjectDir)src/tiled/command.h" />
+    <ClCompile Include="$(ProjectDir)src/tiled/commandbutton.cpp" />
+    <ClInclude Include="$(ProjectDir)src/tiled/commandbutton.h" />
+    <ClCompile Include="$(ProjectDir)src/tiled/commanddatamodel.cpp" />
+    <ClInclude Include="$(ProjectDir)src/tiled/commanddatamodel.h" />
+    <ClCompile Include="$(ProjectDir)src/tiled/commanddialog.cpp" />
+    <ClInclude Include="$(ProjectDir)src/tiled/commanddialog.h" />
+    <None Include="$(ProjectDir)src/tiled/commanddialog.ui" />
+    <ClCompile Include="$(ProjectDir)src/tiled/commandmanager.cpp" />
+    <ClInclude Include="$(ProjectDir)src/tiled/commandmanager.h" />
+    <ClCompile Include="$(ProjectDir)src/tiled/commandsedit.cpp" />
+    <ClInclude Include="$(ProjectDir)src/tiled/commandsedit.h" />
+    <None Include="$(ProjectDir)src/tiled/commandsedit.ui" />
+    <ClCompile Include="$(ProjectDir)src/tiled/consoledock.cpp" />
+    <ClInclude Include="$(ProjectDir)src/tiled/consoledock.h" />
+    <ClCompile Include="$(ProjectDir)src/tiled/createellipseobjecttool.cpp" />
+    <ClInclude Include="$(ProjectDir)src/tiled/createellipseobjecttool.h" />
+    <ClCompile Include="$(ProjectDir)src/tiled/createobjecttool.cpp" />
+    <ClInclude Include="$(ProjectDir)src/tiled/createobjecttool.h" />
+    <ClCompile Include="$(ProjectDir)src/tiled/createpointobjecttool.cpp" />
+    <ClInclude Include="$(ProjectDir)src/tiled/createpointobjecttool.h" />
+    <ClCompile Include="$(ProjectDir)src/tiled/createpolygonobjecttool.cpp" />
+    <ClInclude Include="$(ProjectDir)src/tiled/createpolygonobjecttool.h" />
+    <ClCompile Include="$(ProjectDir)src/tiled/createrectangleobjecttool.cpp" />
+    <ClInclude Include="$(ProjectDir)src/tiled/createrectangleobjecttool.h" />
+    <ClCompile Include="$(ProjectDir)src/tiled/createscalableobjecttool.cpp" />
+    <ClInclude Include="$(ProjectDir)src/tiled/createscalableobjecttool.h" />
+    <ClCompile Include="$(ProjectDir)src/tiled/createtemplatetool.cpp" />
+    <ClInclude Include="$(ProjectDir)src/tiled/createtemplatetool.h" />
+    <ClCompile Include="$(ProjectDir)src/tiled/createtextobjecttool.cpp" />
+    <ClInclude Include="$(ProjectDir)src/tiled/createtextobjecttool.h" />
+    <ClCompile Include="$(ProjectDir)src/tiled/createtileobjecttool.cpp" />
+    <ClInclude Include="$(ProjectDir)src/tiled/createtileobjecttool.h" />
+    <ClCompile Include="$(ProjectDir)src/tiled/custompropertieshelper.cpp" />
+    <ClInclude Include="$(ProjectDir)src/tiled/custompropertieshelper.h" />
+    <ClCompile Include="$(ProjectDir)src/tiled/debugdrawitem.cpp" />
+    <ClInclude Include="$(ProjectDir)src/tiled/debugdrawitem.h" />
+    <ClCompile Include="$(ProjectDir)src/tiled/document.cpp" />
+    <ClInclude Include="$(ProjectDir)src/tiled/document.h" />
+    <ClCompile Include="$(ProjectDir)src/tiled/documentmanager.cpp" />
+    <ClInclude Include="$(ProjectDir)src/tiled/documentmanager.h" />
+    <ClCompile Include="$(ProjectDir)src/tiled/donationpopup.cpp" />
+    <ClInclude Include="$(ProjectDir)src/tiled/donationpopup.h" />
+    <ClCompile Include="$(ProjectDir)src/tiled/editableasset.cpp" />
+    <ClInclude Include="$(ProjectDir)src/tiled/editableasset.h" />
+    <ClCompile Include="$(ProjectDir)src/tiled/editablegrouplayer.cpp" />
+    <ClInclude Include="$(ProjectDir)src/tiled/editablegrouplayer.h" />
+    <ClCompile Include="$(ProjectDir)src/tiled/editableimagelayer.cpp" />
+    <ClInclude Include="$(ProjectDir)src/tiled/editableimagelayer.h" />
+    <ClCompile Include="$(ProjectDir)src/tiled/editablelayer.cpp" />
+    <ClInclude Include="$(ProjectDir)src/tiled/editablelayer.h" />
+    <ClCompile Include="$(ProjectDir)src/tiled/editablemanager.cpp" />
+    <ClInclude Include="$(ProjectDir)src/tiled/editablemanager.h" />
+    <ClCompile Include="$(ProjectDir)src/tiled/editablemap.cpp" />
+    <ClInclude Include="$(ProjectDir)src/tiled/editablemap.h" />
+    <ClCompile Include="$(ProjectDir)src/tiled/editablemapobject.cpp" />
+    <ClInclude Include="$(ProjectDir)src/tiled/editablemapobject.h" />
+    <ClCompile Include="$(ProjectDir)src/tiled/editableobject.cpp" />
+    <ClInclude Include="$(ProjectDir)src/tiled/editableobject.h" />
+    <ClCompile Include="$(ProjectDir)src/tiled/editableobjectgroup.cpp" />
+    <ClInclude Include="$(ProjectDir)src/tiled/editableobjectgroup.h" />
+    <ClCompile Include="$(ProjectDir)src/tiled/editableproject.cpp" />
+    <ClInclude Include="$(ProjectDir)src/tiled/editableproject.h" />
+    <ClCompile Include="$(ProjectDir)src/tiled/editableselectedarea.cpp" />
+    <ClInclude Include="$(ProjectDir)src/tiled/editableselectedarea.h" />
+    <ClCompile Include="$(ProjectDir)src/tiled/editabletile.cpp" />
+    <ClInclude Include="$(ProjectDir)src/tiled/editabletile.h" />
+    <ClCompile Include="$(ProjectDir)src/tiled/editabletilelayer.cpp" />
+    <ClInclude Include="$(ProjectDir)src/tiled/editabletilelayer.h" />
+    <ClCompile Include="$(ProjectDir)src/tiled/editabletileset.cpp" />
+    <ClInclude Include="$(ProjectDir)src/tiled/editabletileset.h" />
+    <ClCompile Include="$(ProjectDir)src/tiled/editablewangset.cpp" />
+    <ClInclude Include="$(ProjectDir)src/tiled/editablewangset.h" />
+    <ClCompile Include="$(ProjectDir)src/tiled/editor.cpp" />
+    <ClInclude Include="$(ProjectDir)src/tiled/editor.h" />
+    <ClCompile Include="$(ProjectDir)src/tiled/editpolygontool.cpp" />
+    <ClInclude Include="$(ProjectDir)src/tiled/editpolygontool.h" />
+    <ClCompile Include="$(ProjectDir)src/tiled/eraser.cpp" />
+    <ClInclude Include="$(ProjectDir)src/tiled/eraser.h" />
+    <ClCompile Include="$(ProjectDir)src/tiled/erasetiles.cpp" />
+    <ClInclude Include="$(ProjectDir)src/tiled/erasetiles.h" />
+    <ClCompile Include="$(ProjectDir)src/tiled/exportasimagedialog.cpp" />
+    <ClInclude Include="$(ProjectDir)src/tiled/exportasimagedialog.h" />
+    <None Include="$(ProjectDir)src/tiled/exportasimagedialog.ui" />
+    <ClCompile Include="$(ProjectDir)src/tiled/exporthelper.cpp" />
+    <ClInclude Include="$(ProjectDir)src/tiled/exporthelper.h" />
+    <ClCompile Include="$(ProjectDir)src/tiled/filechangedwarning.cpp" />
+    <ClInclude Include="$(ProjectDir)src/tiled/filechangedwarning.h" />
+    <ClCompile Include="$(ProjectDir)src/tiled/fileedit.cpp" />
+    <ClInclude Include="$(ProjectDir)src/tiled/fileedit.h" />
+    <ClCompile Include="$(ProjectDir)src/tiled/filteredit.cpp" />
+    <ClInclude Include="$(ProjectDir)src/tiled/filteredit.h" />
+    <ClCompile Include="$(ProjectDir)src/tiled/flexiblescrollbar.cpp" />
+    <ClInclude Include="$(ProjectDir)src/tiled/flexiblescrollbar.h" />
+    <ClCompile Include="$(ProjectDir)src/tiled/flipmapobjects.cpp" />
+    <ClInclude Include="$(ProjectDir)src/tiled/flipmapobjects.h" />
+    <ClCompile Include="$(ProjectDir)src/tiled/geometry.cpp" />
+    <ClInclude Include="$(ProjectDir)src/tiled/geometry.h" />
+    <ClCompile Include="$(ProjectDir)src/tiled/grouplayeritem.cpp" />
+    <ClInclude Include="$(ProjectDir)src/tiled/grouplayeritem.h" />
+    <ClCompile Include="$(ProjectDir)src/tiled/iconcheckdelegate.cpp" />
+    <ClInclude Include="$(ProjectDir)src/tiled/iconcheckdelegate.h" />
+    <ClCompile Include="$(ProjectDir)src/tiled/id.cpp" />
+    <ClInclude Include="$(ProjectDir)src/tiled/id.h" />
+    <ClCompile Include="$(ProjectDir)src/tiled/imagecolorpickerwidget.cpp" />
+    <ClInclude Include="$(ProjectDir)src/tiled/imagecolorpickerwidget.h" />
+    <None Include="$(ProjectDir)src/tiled/imagecolorpickerwidget.ui" />
+    <ClCompile Include="$(ProjectDir)src/tiled/imagelayeritem.cpp" />
+    <ClInclude Include="$(ProjectDir)src/tiled/imagelayeritem.h" />
+    <ClCompile Include="$(ProjectDir)src/tiled/issuescounter.cpp" />
+    <ClInclude Include="$(ProjectDir)src/tiled/issuescounter.h" />
+    <ClCompile Include="$(ProjectDir)src/tiled/issuesdock.cpp" />
+    <ClInclude Include="$(ProjectDir)src/tiled/issuesdock.h" />
+    <ClCompile Include="$(ProjectDir)src/tiled/issuesmodel.cpp" />
+    <ClInclude Include="$(ProjectDir)src/tiled/issuesmodel.h" />
+    <ClCompile Include="$(ProjectDir)src/tiled/languagemanager.cpp" />
+    <ClInclude Include="$(ProjectDir)src/tiled/languagemanager.h" />
+    <ClCompile Include="$(ProjectDir)src/tiled/layerdock.cpp" />
+    <ClInclude Include="$(ProjectDir)src/tiled/layerdock.h" />
+    <ClCompile Include="$(ProjectDir)src/tiled/layeritem.cpp" />
+    <ClInclude Include="$(ProjectDir)src/tiled/layeritem.h" />
+    <ClCompile Include="$(ProjectDir)src/tiled/layermodel.cpp" />
+    <ClInclude Include="$(ProjectDir)src/tiled/layermodel.h" />
+    <ClCompile Include="$(ProjectDir)src/tiled/layeroffsettool.cpp" />
+    <ClInclude Include="$(ProjectDir)src/tiled/layeroffsettool.h" />
+    <ClCompile Include="$(ProjectDir)src/tiled/locatorwidget.cpp" />
+    <ClInclude Include="$(ProjectDir)src/tiled/locatorwidget.h" />
+    <ClCompile Include="$(ProjectDir)src/tiled/magicwandtool.cpp" />
+    <ClInclude Include="$(ProjectDir)src/tiled/magicwandtool.h" />
+    <ClCompile Include="$(ProjectDir)src/tiled/maintoolbar.cpp" />
+    <ClInclude Include="$(ProjectDir)src/tiled/maintoolbar.h" />
+    <ClCompile Include="$(ProjectDir)src/tiled/mainwindow.cpp" />
+    <ClInclude Include="$(ProjectDir)src/tiled/mainwindow.h" />
+    <None Include="$(ProjectDir)src/tiled/mainwindow.ui" />
+    <ClCompile Include="$(ProjectDir)src/tiled/mapdocument.cpp" />
+    <ClInclude Include="$(ProjectDir)src/tiled/mapdocument.h" />
+    <ClCompile Include="$(ProjectDir)src/tiled/mapdocumentactionhandler.cpp" />
+    <ClInclude Include="$(ProjectDir)src/tiled/mapdocumentactionhandler.h" />
+    <ClCompile Include="$(ProjectDir)src/tiled/mapeditor.cpp" />
+    <ClInclude Include="$(ProjectDir)src/tiled/mapeditor.h" />
+    <ClCompile Include="$(ProjectDir)src/tiled/mapitem.cpp" />
+    <ClInclude Include="$(ProjectDir)src/tiled/mapitem.h" />
+    <ClCompile Include="$(ProjectDir)src/tiled/mapobjectitem.cpp" />
+    <ClInclude Include="$(ProjectDir)src/tiled/mapobjectitem.h" />
+    <ClCompile Include="$(ProjectDir)src/tiled/mapobjectmodel.cpp" />
+    <ClInclude Include="$(ProjectDir)src/tiled/mapobjectmodel.h" />
+    <ClCompile Include="$(ProjectDir)src/tiled/mapscene.cpp" />
+    <ClInclude Include="$(ProjectDir)src/tiled/mapscene.h" />
+    <ClCompile Include="$(ProjectDir)src/tiled/mapview.cpp" />
+    <ClInclude Include="$(ProjectDir)src/tiled/mapview.h" />
+    <ClCompile Include="$(ProjectDir)src/tiled/minimap.cpp" />
+    <ClInclude Include="$(ProjectDir)src/tiled/minimap.h" />
+    <ClCompile Include="$(ProjectDir)src/tiled/minimapdock.cpp" />
+    <ClInclude Include="$(ProjectDir)src/tiled/minimapdock.h" />
+    <ClCompile Include="$(ProjectDir)src/tiled/movelayer.cpp" />
+    <ClInclude Include="$(ProjectDir)src/tiled/movelayer.h" />
+    <ClCompile Include="$(ProjectDir)src/tiled/movemapobjecttogroup.cpp" />
+    <ClInclude Include="$(ProjectDir)src/tiled/movemapobjecttogroup.h" />
+    <ClCompile Include="$(ProjectDir)src/tiled/newmapdialog.cpp" />
+    <ClInclude Include="$(ProjectDir)src/tiled/newmapdialog.h" />
+    <None Include="$(ProjectDir)src/tiled/newmapdialog.ui" />
+    <ClCompile Include="$(ProjectDir)src/tiled/newsbutton.cpp" />
+    <ClInclude Include="$(ProjectDir)src/tiled/newsbutton.h" />
+    <ClCompile Include="$(ProjectDir)src/tiled/newsfeed.cpp" />
+    <ClInclude Include="$(ProjectDir)src/tiled/newsfeed.h" />
+    <ClCompile Include="$(ProjectDir)src/tiled/newtilesetdialog.cpp" />
+    <ClInclude Include="$(ProjectDir)src/tiled/newtilesetdialog.h" />
+    <None Include="$(ProjectDir)src/tiled/newtilesetdialog.ui" />
+    <ClCompile Include="$(ProjectDir)src/tiled/newversionbutton.cpp" />
+    <ClInclude Include="$(ProjectDir)src/tiled/newversionbutton.h" />
+    <ClCompile Include="$(ProjectDir)src/tiled/newversionchecker.cpp" />
+    <ClInclude Include="$(ProjectDir)src/tiled/newversionchecker.h" />
+    <ClCompile Include="$(ProjectDir)src/tiled/newversiondialog.cpp" />
+    <ClInclude Include="$(ProjectDir)src/tiled/newversiondialog.h" />
+    <None Include="$(ProjectDir)src/tiled/newversiondialog.ui" />
+    <ClCompile Include="$(ProjectDir)src/tiled/noeditorwidget.cpp" />
+    <ClInclude Include="$(ProjectDir)src/tiled/noeditorwidget.h" />
+    <None Include="$(ProjectDir)src/tiled/noeditorwidget.ui" />
+    <ClCompile Include="$(ProjectDir)src/tiled/objectgroupitem.cpp" />
+    <ClInclude Include="$(ProjectDir)src/tiled/objectgroupitem.h" />
+    <ClCompile Include="$(ProjectDir)src/tiled/objectrefdialog.cpp" />
+    <ClInclude Include="$(ProjectDir)src/tiled/objectrefdialog.h" />
+    <None Include="$(ProjectDir)src/tiled/objectrefdialog.ui" />
+    <ClCompile Include="$(ProjectDir)src/tiled/objectrefedit.cpp" />
+    <ClInclude Include="$(ProjectDir)src/tiled/objectrefedit.h" />
+    <ClCompile Include="$(ProjectDir)src/tiled/objectreferenceitem.cpp" />
+    <ClInclude Include="$(ProjectDir)src/tiled/objectreferenceitem.h" />
+    <ClCompile Include="$(ProjectDir)src/tiled/objectreferenceshelper.cpp" />
+    <ClInclude Include="$(ProjectDir)src/tiled/objectreferenceshelper.h" />
+    <ClCompile Include="$(ProjectDir)src/tiled/objectreferencetool.cpp" />
+    <ClInclude Include="$(ProjectDir)src/tiled/objectreferencetool.h" />
+    <ClCompile Include="$(ProjectDir)src/tiled/objectsdock.cpp" />
+    <ClInclude Include="$(ProjectDir)src/tiled/objectsdock.h" />
+    <ClCompile Include="$(ProjectDir)src/tiled/objectselectionitem.cpp" />
+    <ClInclude Include="$(ProjectDir)src/tiled/objectselectionitem.h" />
+    <ClCompile Include="$(ProjectDir)src/tiled/objectselectiontool.cpp" />
+    <ClInclude Include="$(ProjectDir)src/tiled/objectselectiontool.h" />
+    <ClCompile Include="$(ProjectDir)src/tiled/objectsview.cpp" />
+    <ClInclude Include="$(ProjectDir)src/tiled/objectsview.h" />
+    <ClCompile Include="$(ProjectDir)src/tiled/offsetlayer.cpp" />
+    <ClInclude Include="$(ProjectDir)src/tiled/offsetlayer.h" />
+    <ClCompile Include="$(ProjectDir)src/tiled/offsetmapdialog.cpp" />
+    <ClInclude Include="$(ProjectDir)src/tiled/offsetmapdialog.h" />
+    <None Include="$(ProjectDir)src/tiled/offsetmapdialog.ui" />
+    <ClCompile Include="$(ProjectDir)src/tiled/painttilelayer.cpp" />
+    <ClInclude Include="$(ProjectDir)src/tiled/painttilelayer.h" />
+    <ClCompile Include="$(ProjectDir)src/tiled/pannableviewhelper.cpp" />
+    <ClInclude Include="$(ProjectDir)src/tiled/pannableviewhelper.h" />
+    <ClCompile Include="$(ProjectDir)src/tiled/pluginlistmodel.cpp" />
+    <ClInclude Include="$(ProjectDir)src/tiled/pluginlistmodel.h" />
+    <ClCompile Include="$(ProjectDir)src/tiled/pointhandle.cpp" />
+    <ClInclude Include="$(ProjectDir)src/tiled/pointhandle.h" />
+    <ClCompile Include="$(ProjectDir)src/tiled/popupwidget.cpp" />
+    <ClInclude Include="$(ProjectDir)src/tiled/popupwidget.h" />
+    <ClCompile Include="$(ProjectDir)src/tiled/preferences.cpp" />
+    <ClInclude Include="$(ProjectDir)src/tiled/preferences.h" />
+    <ClCompile Include="$(ProjectDir)src/tiled/preferencesdialog.cpp" />
+    <ClInclude Include="$(ProjectDir)src/tiled/preferencesdialog.h" />
+    <None Include="$(ProjectDir)src/tiled/preferencesdialog.ui" />
+    <ClCompile Include="$(ProjectDir)src/tiled/project.cpp" />
+    <ClInclude Include="$(ProjectDir)src/tiled/project.h" />
+    <ClCompile Include="$(ProjectDir)src/tiled/projectdock.cpp" />
+    <ClInclude Include="$(ProjectDir)src/tiled/projectdock.h" />
+    <ClCompile Include="$(ProjectDir)src/tiled/projectdocument.cpp" />
+    <ClInclude Include="$(ProjectDir)src/tiled/projectdocument.h" />
+    <ClCompile Include="$(ProjectDir)src/tiled/projectmanager.cpp" />
+    <ClInclude Include="$(ProjectDir)src/tiled/projectmanager.h" />
+    <ClCompile Include="$(ProjectDir)src/tiled/projectmodel.cpp" />
+    <ClInclude Include="$(ProjectDir)src/tiled/projectmodel.h" />
+    <ClCompile Include="$(ProjectDir)src/tiled/projectpropertiesdialog.cpp" />
+    <ClInclude Include="$(ProjectDir)src/tiled/projectpropertiesdialog.h" />
+    <None Include="$(ProjectDir)src/tiled/projectpropertiesdialog.ui" />
+    <ClCompile Include="$(ProjectDir)src/tiled/propertiesdock.cpp" />
+    <ClInclude Include="$(ProjectDir)src/tiled/propertiesdock.h" />
+    <ClCompile Include="$(ProjectDir)src/tiled/propertieswidget.cpp" />
+    <ClInclude Include="$(ProjectDir)src/tiled/propertieswidget.h" />
+    <ClCompile Include="$(ProjectDir)src/tiled/propertybrowser.cpp" />
+    <ClInclude Include="$(ProjectDir)src/tiled/propertybrowser.h" />
+    <ClCompile Include="$(ProjectDir)src/tiled/propertytypeseditor.cpp" />
+    <ClInclude Include="$(ProjectDir)src/tiled/propertytypeseditor.h" />
+    <None Include="$(ProjectDir)src/tiled/propertytypeseditor.ui" />
+    <ClCompile Include="$(ProjectDir)src/tiled/propertytypesmodel.cpp" />
+    <ClInclude Include="$(ProjectDir)src/tiled/propertytypesmodel.h" />
+    <ClCompile Include="$(ProjectDir)src/tiled/raiselowerhelper.cpp" />
+    <ClInclude Include="$(ProjectDir)src/tiled/raiselowerhelper.h" />
+    <ClInclude Include="$(ProjectDir)src/tiled/randompicker.h" />
+    <ClInclude Include="$(ProjectDir)src/tiled/rangeset.h" />
+    <ClCompile Include="$(ProjectDir)src/tiled/regionvaluetype.cpp" />
+    <ClInclude Include="$(ProjectDir)src/tiled/regionvaluetype.h" />
+    <ClCompile Include="$(ProjectDir)src/tiled/relocatetiles.cpp" />
+    <ClInclude Include="$(ProjectDir)src/tiled/relocatetiles.h" />
+    <ClCompile Include="$(ProjectDir)src/tiled/reparentlayers.cpp" />
+    <ClInclude Include="$(ProjectDir)src/tiled/reparentlayers.h" />
+    <ClCompile Include="$(ProjectDir)src/tiled/replacetemplate.cpp" />
+    <ClInclude Include="$(ProjectDir)src/tiled/replacetemplate.h" />
+    <ClCompile Include="$(ProjectDir)src/tiled/replacetileset.cpp" />
+    <ClInclude Include="$(ProjectDir)src/tiled/replacetileset.h" />
+    <ClCompile Include="$(ProjectDir)src/tiled/resizedialog.cpp" />
+    <ClInclude Include="$(ProjectDir)src/tiled/resizedialog.h" />
+    <None Include="$(ProjectDir)src/tiled/resizedialog.ui" />
+    <ClCompile Include="$(ProjectDir)src/tiled/resizehelper.cpp" />
+    <ClInclude Include="$(ProjectDir)src/tiled/resizehelper.h" />
+    <ClCompile Include="$(ProjectDir)src/tiled/resizemap.cpp" />
+    <ClInclude Include="$(ProjectDir)src/tiled/resizemap.h" />
+    <ClCompile Include="$(ProjectDir)src/tiled/resizetilelayer.cpp" />
+    <ClInclude Include="$(ProjectDir)src/tiled/resizetilelayer.h" />
+    <ClCompile Include="$(ProjectDir)src/tiled/reversingproxymodel.cpp" />
+    <ClInclude Include="$(ProjectDir)src/tiled/reversingproxymodel.h" />
+    <ClCompile Include="$(ProjectDir)src/tiled/scriptbase64.cpp" />
+    <ClInclude Include="$(ProjectDir)src/tiled/scriptbase64.h" />
+    <ClCompile Include="$(ProjectDir)src/tiled/scriptdialog.cpp" />
+    <ClInclude Include="$(ProjectDir)src/tiled/scriptdialog.h" />
+    <ClCompile Include="$(ProjectDir)src/tiled/scriptedaction.cpp" />
+    <ClInclude Include="$(ProjectDir)src/tiled/scriptedaction.h" />
+    <ClCompile Include="$(ProjectDir)src/tiled/scriptedfileformat.cpp" />
+    <ClInclude Include="$(ProjectDir)src/tiled/scriptedfileformat.h" />
+    <ClCompile Include="$(ProjectDir)src/tiled/scriptedtool.cpp" />
+    <ClInclude Include="$(ProjectDir)src/tiled/scriptedtool.h" />
+    <ClCompile Include="$(ProjectDir)src/tiled/scriptfile.cpp" />
+    <ClInclude Include="$(ProjectDir)src/tiled/scriptfile.h" />
+    <ClCompile Include="$(ProjectDir)src/tiled/scriptfileformatwrappers.cpp" />
+    <ClInclude Include="$(ProjectDir)src/tiled/scriptfileformatwrappers.h" />
+    <ClCompile Include="$(ProjectDir)src/tiled/scriptfileinfo.cpp" />
+    <ClInclude Include="$(ProjectDir)src/tiled/scriptfileinfo.h" />
+    <ClCompile Include="$(ProjectDir)src/tiled/scriptimage.cpp" />
+    <ClInclude Include="$(ProjectDir)src/tiled/scriptimage.h" />
+    <ClCompile Include="$(ProjectDir)src/tiled/scriptmanager.cpp" />
+    <ClInclude Include="$(ProjectDir)src/tiled/scriptmanager.h" />
+    <ClCompile Include="$(ProjectDir)src/tiled/scriptmodule.cpp" />
+    <ClInclude Include="$(ProjectDir)src/tiled/scriptmodule.h" />
+    <ClCompile Include="$(ProjectDir)src/tiled/scriptprocess.cpp" />
+    <ClInclude Include="$(ProjectDir)src/tiled/scriptprocess.h" />
+    <ClCompile Include="$(ProjectDir)src/tiled/selectionrectangle.cpp" />
+    <ClInclude Include="$(ProjectDir)src/tiled/selectionrectangle.h" />
+    <ClCompile Include="$(ProjectDir)src/tiled/selectsametiletool.cpp" />
+    <ClInclude Include="$(ProjectDir)src/tiled/selectsametiletool.h" />
+    <ClCompile Include="$(ProjectDir)src/tiled/session.cpp" />
+    <ClInclude Include="$(ProjectDir)src/tiled/session.h" />
+    <ClCompile Include="$(ProjectDir)src/tiled/shapefilltool.cpp" />
+    <ClInclude Include="$(ProjectDir)src/tiled/shapefilltool.h" />
+    <ClCompile Include="$(ProjectDir)src/tiled/shortcutsettingspage.cpp" />
+    <ClInclude Include="$(ProjectDir)src/tiled/shortcutsettingspage.h" />
+    <None Include="$(ProjectDir)src/tiled/shortcutsettingspage.ui" />
+    <ClCompile Include="$(ProjectDir)src/tiled/snaphelper.cpp" />
+    <ClInclude Include="$(ProjectDir)src/tiled/snaphelper.h" />
+    <ClCompile Include="$(ProjectDir)src/tiled/stampactions.cpp" />
+    <ClInclude Include="$(ProjectDir)src/tiled/stampactions.h" />
+    <ClCompile Include="$(ProjectDir)src/tiled/stampbrush.cpp" />
+    <ClInclude Include="$(ProjectDir)src/tiled/stampbrush.h" />
+    <ClCompile Include="$(ProjectDir)src/tiled/stylehelper.cpp" />
+    <ClInclude Include="$(ProjectDir)src/tiled/stylehelper.h" />
+    <ClCompile Include="$(ProjectDir)src/tiled/swaptiles.cpp" />
+    <ClInclude Include="$(ProjectDir)src/tiled/swaptiles.h" />
+    <ClCompile Include="$(ProjectDir)src/tiled/tabbar.cpp" />
+    <ClInclude Include="$(ProjectDir)src/tiled/tabbar.h" />
+    <ClCompile Include="$(ProjectDir)src/tiled/templatesdock.cpp" />
+    <ClInclude Include="$(ProjectDir)src/tiled/templatesdock.h" />
+    <ClCompile Include="$(ProjectDir)src/tiled/texteditordialog.cpp" />
+    <ClInclude Include="$(ProjectDir)src/tiled/texteditordialog.h" />
+    <None Include="$(ProjectDir)src/tiled/texteditordialog.ui" />
+    <ClCompile Include="$(ProjectDir)src/tiled/textpropertyedit.cpp" />
+    <ClInclude Include="$(ProjectDir)src/tiled/textpropertyedit.h" />
+    <ClCompile Include="$(ProjectDir)src/tiled/tileanimationeditor.cpp" />
+    <ClInclude Include="$(ProjectDir)src/tiled/tileanimationeditor.h" />
+    <None Include="$(ProjectDir)src/tiled/tileanimationeditor.ui" />
+    <ClCompile Include="$(ProjectDir)src/tiled/tilecollisiondock.cpp" />
+    <ClInclude Include="$(ProjectDir)src/tiled/tilecollisiondock.h" />
+    <ClCompile Include="$(ProjectDir)src/tiled/tiledapplication.cpp" />
+    <ClInclude Include="$(ProjectDir)src/tiled/tiledapplication.h" />
+    <ClInclude Include="$(ProjectDir)src/tiled/tilededitor_global.h" />
+    <ClCompile Include="$(ProjectDir)src/tiled/tiledproxystyle.cpp" />
+    <ClInclude Include="$(ProjectDir)src/tiled/tiledproxystyle.h" />
+    <ClCompile Include="$(ProjectDir)src/tiled/tilelayeredit.cpp" />
+    <ClInclude Include="$(ProjectDir)src/tiled/tilelayeredit.h" />
+    <ClCompile Include="$(ProjectDir)src/tiled/tilelayeritem.cpp" />
+    <ClInclude Include="$(ProjectDir)src/tiled/tilelayeritem.h" />
+    <ClCompile Include="$(ProjectDir)src/tiled/tilelayerwangedit.cpp" />
+    <ClInclude Include="$(ProjectDir)src/tiled/tilelayerwangedit.h" />
+    <ClCompile Include="$(ProjectDir)src/tiled/tilepainter.cpp" />
+    <ClInclude Include="$(ProjectDir)src/tiled/tilepainter.h" />
+    <ClCompile Include="$(ProjectDir)src/tiled/tileselectionitem.cpp" />
+    <ClInclude Include="$(ProjectDir)src/tiled/tileselectionitem.h" />
+    <ClCompile Include="$(ProjectDir)src/tiled/tileselectiontool.cpp" />
+    <ClInclude Include="$(ProjectDir)src/tiled/tileselectiontool.h" />
+    <ClCompile Include="$(ProjectDir)src/tiled/tilesetchanges.cpp" />
+    <ClInclude Include="$(ProjectDir)src/tiled/tilesetchanges.h" />
+    <ClCompile Include="$(ProjectDir)src/tiled/tilesetdock.cpp" />
+    <ClInclude Include="$(ProjectDir)src/tiled/tilesetdock.h" />
+    <ClCompile Include="$(ProjectDir)src/tiled/tilesetdocument.cpp" />
+    <ClInclude Include="$(ProjectDir)src/tiled/tilesetdocument.h" />
+    <ClCompile Include="$(ProjectDir)src/tiled/tilesetdocumentsmodel.cpp" />
+    <ClInclude Include="$(ProjectDir)src/tiled/tilesetdocumentsmodel.h" />
+    <ClCompile Include="$(ProjectDir)src/tiled/tileseteditor.cpp" />
+    <ClInclude Include="$(ProjectDir)src/tiled/tileseteditor.h" />
+    <ClCompile Include="$(ProjectDir)src/tiled/tilesetmodel.cpp" />
+    <ClInclude Include="$(ProjectDir)src/tiled/tilesetmodel.h" />
+    <ClCompile Include="$(ProjectDir)src/tiled/tilesetparametersedit.cpp" />
+    <ClInclude Include="$(ProjectDir)src/tiled/tilesetparametersedit.h" />
+    <ClCompile Include="$(ProjectDir)src/tiled/tilesetview.cpp" />
+    <ClInclude Include="$(ProjectDir)src/tiled/tilesetview.h" />
+    <ClCompile Include="$(ProjectDir)src/tiled/tilesetwangsetmodel.cpp" />
+    <ClInclude Include="$(ProjectDir)src/tiled/tilesetwangsetmodel.h" />
+    <ClCompile Include="$(ProjectDir)src/tiled/tilestamp.cpp" />
+    <ClInclude Include="$(ProjectDir)src/tiled/tilestamp.h" />
+    <ClCompile Include="$(ProjectDir)src/tiled/tilestampmanager.cpp" />
+    <ClInclude Include="$(ProjectDir)src/tiled/tilestampmanager.h" />
+    <ClCompile Include="$(ProjectDir)src/tiled/tilestampmodel.cpp" />
+    <ClInclude Include="$(ProjectDir)src/tiled/tilestampmodel.h" />
+    <ClCompile Include="$(ProjectDir)src/tiled/tilestampsdock.cpp" />
+    <ClInclude Include="$(ProjectDir)src/tiled/tilestampsdock.h" />
+    <ClCompile Include="$(ProjectDir)src/tiled/tmxmapformat.cpp" />
+    <ClInclude Include="$(ProjectDir)src/tiled/tmxmapformat.h" />
+    <ClCompile Include="$(ProjectDir)src/tiled/toolmanager.cpp" />
+    <ClInclude Include="$(ProjectDir)src/tiled/toolmanager.h" />
+    <ClCompile Include="$(ProjectDir)src/tiled/transformmapobjects.cpp" />
+    <ClInclude Include="$(ProjectDir)src/tiled/transformmapobjects.h" />
+    <ClCompile Include="$(ProjectDir)src/tiled/treeviewcombobox.cpp" />
+    <ClInclude Include="$(ProjectDir)src/tiled/treeviewcombobox.h" />
+    <ClCompile Include="$(ProjectDir)src/tiled/undocommands.cpp" />
+    <ClInclude Include="$(ProjectDir)src/tiled/undocommands.h" />
+    <ClCompile Include="$(ProjectDir)src/tiled/undodock.cpp" />
+    <ClInclude Include="$(ProjectDir)src/tiled/undodock.h" />
+    <ClCompile Include="$(ProjectDir)src/tiled/utils.cpp" />
+    <ClInclude Include="$(ProjectDir)src/tiled/utils.h" />
+    <ClCompile Include="$(ProjectDir)src/tiled/varianteditorfactory.cpp" />
+    <ClInclude Include="$(ProjectDir)src/tiled/varianteditorfactory.h" />
+    <ClCompile Include="$(ProjectDir)src/tiled/variantpropertymanager.cpp" />
+    <ClInclude Include="$(ProjectDir)src/tiled/variantpropertymanager.h" />
+    <ClCompile Include="$(ProjectDir)src/tiled/wangbrush.cpp" />
+    <ClInclude Include="$(ProjectDir)src/tiled/wangbrush.h" />
+    <ClCompile Include="$(ProjectDir)src/tiled/wangcolormodel.cpp" />
+    <ClInclude Include="$(ProjectDir)src/tiled/wangcolormodel.h" />
+    <ClCompile Include="$(ProjectDir)src/tiled/wangcolorview.cpp" />
+    <ClInclude Include="$(ProjectDir)src/tiled/wangcolorview.h" />
+    <ClCompile Include="$(ProjectDir)src/tiled/wangdock.cpp" />
+    <ClInclude Include="$(ProjectDir)src/tiled/wangdock.h" />
+    <ClCompile Include="$(ProjectDir)src/tiled/wangfiller.cpp" />
+    <ClInclude Include="$(ProjectDir)src/tiled/wangfiller.h" />
+    <ClCompile Include="$(ProjectDir)src/tiled/wangoverlay.cpp" />
+    <ClInclude Include="$(ProjectDir)src/tiled/wangoverlay.h" />
+    <ClCompile Include="$(ProjectDir)src/tiled/wangsetmodel.cpp" />
+    <ClInclude Include="$(ProjectDir)src/tiled/wangsetmodel.h" />
+    <ClCompile Include="$(ProjectDir)src/tiled/wangsetview.cpp" />
+    <ClInclude Include="$(ProjectDir)src/tiled/wangsetview.h" />
+    <ClCompile Include="$(ProjectDir)src/tiled/wangtemplatemodel.cpp" />
+    <ClInclude Include="$(ProjectDir)src/tiled/wangtemplatemodel.h" />
+    <ClCompile Include="$(ProjectDir)src/tiled/wangtemplateview.cpp" />
+    <ClInclude Include="$(ProjectDir)src/tiled/wangtemplateview.h" />
+    <ClCompile Include="$(ProjectDir)src/tiled/worlddocument.cpp" />
+    <ClInclude Include="$(ProjectDir)src/tiled/worlddocument.h" />
+    <ClCompile Include="$(ProjectDir)src/tiled/worldmovemaptool.cpp" />
+    <ClInclude Include="$(ProjectDir)src/tiled/worldmovemaptool.h" />
+    <ClCompile Include="$(ProjectDir)src/tiled/zoomable.cpp" />
+    <ClInclude Include="$(ProjectDir)src/tiled/zoomable.h" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+</Project>

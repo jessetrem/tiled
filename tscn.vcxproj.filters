@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{460a9e58-2f90-4900-ac93-0d17385080fe}</UniqueIdentifier>
+      <Extensions>c;C;cpp;cxx;c++;cc;cs;def;java;m;mm</Extensions>
+      <ParseFiles>True</ParseFiles>
+      <SourceControlFiles>True</SourceControlFiles>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{1393a34d-bccb-4ad7-88c1-2f3388a2278f}</UniqueIdentifier>
+      <Extensions>h;H;hpp;hxx;h++</Extensions>
+      <ParseFiles>True</ParseFiles>
+      <SourceControlFiles>True</SourceControlFiles>
+    </Filter>
+    <Filter Include="Form Files">
+      <UniqueIdentifier>{053a1292-257f-49fc-b2b0-008af696c537}</UniqueIdentifier>
+      <Extensions>ui</Extensions>
+      <ParseFiles>True</ParseFiles>
+      <SourceControlFiles>True</SourceControlFiles>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{cfac7c68-e25b-48aa-ad35-2cba9e3dd55b}</UniqueIdentifier>
+      <Extensions>qrc;rc;*</Extensions>
+      <ParseFiles>False</ParseFiles>
+      <SourceControlFiles>True</SourceControlFiles>
+    </Filter>
+    <Filter Include="Generated Files">
+      <UniqueIdentifier>{36c6e69a-8e24-463b-9c3b-a14bc52baf2e}</UniqueIdentifier>
+      <Extensions>moc</Extensions>
+      <ParseFiles>True</ParseFiles>
+      <SourceControlFiles>False</SourceControlFiles>
+    </Filter>
+    <Filter Include="Translation Files">
+      <UniqueIdentifier>{a6ff4e69-f53d-4d07-82a6-9badeb69137c}</UniqueIdentifier>
+      <Extensions>ts</Extensions>
+      <ParseFiles>False</ParseFiles>
+      <SourceControlFiles>True</SourceControlFiles>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="$(ProjectDir)src/plugins/tscn/tscn.qbs" />
+    <None Include="$(ProjectDir)src/plugins/tscn/plugin.json" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="$(ProjectDir)src/plugins/tscn/tscn_global.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="$(ProjectDir)src/plugins/tscn/tscnplugin.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="$(ProjectDir)src/plugins/tscn/tscnplugin.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>

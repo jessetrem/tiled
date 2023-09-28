@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{026b8543-c4a5-4f88-9927-a2c25dfd9dfb}</UniqueIdentifier>
+      <Extensions>c;C;cpp;cxx;c++;cc;cs;def;java;m;mm</Extensions>
+      <ParseFiles>True</ParseFiles>
+      <SourceControlFiles>True</SourceControlFiles>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{eb3b04d5-c99c-430e-91b8-3f7d2d9aec02}</UniqueIdentifier>
+      <Extensions>h;H;hpp;hxx;h++</Extensions>
+      <ParseFiles>True</ParseFiles>
+      <SourceControlFiles>True</SourceControlFiles>
+    </Filter>
+    <Filter Include="Form Files">
+      <UniqueIdentifier>{4f0146e5-df83-4dfd-a815-542085ceab05}</UniqueIdentifier>
+      <Extensions>ui</Extensions>
+      <ParseFiles>True</ParseFiles>
+      <SourceControlFiles>True</SourceControlFiles>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{b2f9bb4f-732b-42c1-ab13-7a09973c042d}</UniqueIdentifier>
+      <Extensions>qrc;rc;*</Extensions>
+      <ParseFiles>False</ParseFiles>
+      <SourceControlFiles>True</SourceControlFiles>
+    </Filter>
+    <Filter Include="Generated Files">
+      <UniqueIdentifier>{65e74f09-0930-40e9-8a0c-5cbdf9e4a245}</UniqueIdentifier>
+      <Extensions>moc</Extensions>
+      <ParseFiles>True</ParseFiles>
+      <SourceControlFiles>False</SourceControlFiles>
+    </Filter>
+    <Filter Include="Translation Files">
+      <UniqueIdentifier>{d10777b1-7707-406a-927a-015ccb608f5d}</UniqueIdentifier>
+      <Extensions>ts</Extensions>
+      <ParseFiles>False</ParseFiles>
+      <SourceControlFiles>True</SourceControlFiles>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="$(ProjectDir)src/qtsingleapplication/src/qtlocalpeer.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="$(ProjectDir)src/qtsingleapplication/src/qtsingleapplication.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="$(ProjectDir)src/qtsingleapplication/src/qtlocalpeer.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="$(ProjectDir)src/qtsingleapplication/src/qtsingleapplication.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="$(ProjectDir)src/qtsingleapplication/qtsingleapplication.qbs" />
+  </ItemGroup>
+</Project>

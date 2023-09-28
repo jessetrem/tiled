@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{29dfb14d-cca4-4125-99cf-743b3058f417}</UniqueIdentifier>
+      <Extensions>c;C;cpp;cxx;c++;cc;cs;def;java;m;mm</Extensions>
+      <ParseFiles>True</ParseFiles>
+      <SourceControlFiles>True</SourceControlFiles>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{598810d3-b44b-446a-bff2-06bd578acca2}</UniqueIdentifier>
+      <Extensions>h;H;hpp;hxx;h++</Extensions>
+      <ParseFiles>True</ParseFiles>
+      <SourceControlFiles>True</SourceControlFiles>
+    </Filter>
+    <Filter Include="Form Files">
+      <UniqueIdentifier>{07506eb6-1dea-4b45-bdcd-1a8306eb566f}</UniqueIdentifier>
+      <Extensions>ui</Extensions>
+      <ParseFiles>True</ParseFiles>
+      <SourceControlFiles>True</SourceControlFiles>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{3c4b6d7b-76cd-4d60-9c5d-316e29bfdd1d}</UniqueIdentifier>
+      <Extensions>qrc;rc;*</Extensions>
+      <ParseFiles>False</ParseFiles>
+      <SourceControlFiles>True</SourceControlFiles>
+    </Filter>
+    <Filter Include="Generated Files">
+      <UniqueIdentifier>{9582f71a-58b7-4f2c-b55b-f7ebac2303bb}</UniqueIdentifier>
+      <Extensions>moc</Extensions>
+      <ParseFiles>True</ParseFiles>
+      <SourceControlFiles>False</SourceControlFiles>
+    </Filter>
+    <Filter Include="Translation Files">
+      <UniqueIdentifier>{d839f562-c881-4104-af6f-6bd4bfaf5ecf}</UniqueIdentifier>
+      <Extensions>ts</Extensions>
+      <ParseFiles>False</ParseFiles>
+      <SourceControlFiles>True</SourceControlFiles>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="$(ProjectDir)src/plugins/lua/lua_global.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="$(ProjectDir)src/plugins/lua/luaplugin.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="$(ProjectDir)src/plugins/lua/luatablewriter.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="$(ProjectDir)src/plugins/lua/luaplugin.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="$(ProjectDir)src/plugins/lua/luatablewriter.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="$(ProjectDir)src/plugins/lua/lua.qbs" />
+    <None Include="$(ProjectDir)src/plugins/lua/plugin.json" />
+  </ItemGroup>
+</Project>

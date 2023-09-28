@@ -32,6 +32,9 @@
 #include "snaphelper.h"
 #include "tile.h"
 #include "tilelayer.h"
+// EDEN CHANGE
+#include "mainwindow.h"
+// EDEN CHANGE END
 #include "tmxmapformat.h"
 
 #include <QApplication>
@@ -241,6 +244,22 @@ void ClipboardManager::pasteObjectGroup(const ObjectGroup *objectGroup,
             continue;
 
         MapObject *objectClone = mapObject->clone();
+
+        // EDEN CHANGE
+        if (objectClone->cell().tile())
+        {
+          if (objectClone->hasProperty(QStringLiteral("RandomizedProp")))
+          {
+            objectClone->setProperties(Properties());
+            MainWindow::getMainWindow()->getCreateTileObjectTool()->copySpecificPropertiesFromObject(objectClone, mapObject);
+          }
+
+          MainWindow::getMainWindow()->getCreateTileObjectTool()->copySpecificProperties(objectClone, objectClone->cell().tile());
+          MainWindow::getMainWindow()->getCreateTileObjectTool()->randomizeProperties(objectClone, objectClone->cell().tile());
+          //objectClone->parseRandomizedProperties(mapDocument->fileName(), mapDocument->map()->nextObjectId());
+        }
+        // EDEN CHANGE END
+
         objectClone->setPosition(objectClone->position() + insertPos);
 
         objectRefs.reassignId(objectClone);

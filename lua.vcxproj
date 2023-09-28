@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="release|Win32">
+      <Configuration>release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="release|x64">
+      <Configuration>release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{e9613e24-fd93-4e59-9c04-7410b79f6aab}</ProjectGuid>
+    <QbsProductName>lua</QbsProductName>
+  </PropertyGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(SolutionDir)\qbs.props" Condition="Exists('$(SolutionDir)\qbs.props')" />
+    <Import Project="$(SolutionDir)\qbs-shared.props" />
+  </ImportGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='release|Win32'" Label="Configuration">
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <OutDir>$(SolutionDir)$(Configuration)\lua.b8bd907a\</OutDir>
+    <TargetName>lua</TargetName>
+    <PlatformToolset>v142</PlatformToolset>
+    <ConfigurationType>Makefile</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <DebuggerFlavor>WindowsLocalDebugger</DebuggerFlavor>
+    <LocalDebuggerCommand>$(OutDir)$(TargetName)$(TargetExt)</LocalDebuggerCommand>
+    <LocalDebuggerWorkingDirectory>$(OutDir)</LocalDebuggerWorkingDirectory>
+    <LocalDebuggerEnvironment>PATH=$(SolutionDir)$(Configuration)\install-root;Z:\dev\QT\6.5.2\msvc2019_64\bin;Z:\dev\QT\6.5.2\msvc2019_64\lib</LocalDebuggerEnvironment>
+    <NMakeBuildCommandLine>$(QbsBuildCommandLine) </NMakeBuildCommandLine>
+    <NMakeReBuildCommandLine>$(QbsReBuildCommandLine) </NMakeReBuildCommandLine>
+    <NMakeCleanCommandLine>$(QbsCleanCommandLine) </NMakeCleanCommandLine>
+    <NMakeOutput>$(OutDir)$(TargetName)$(TargetExt)</NMakeOutput>
+    <NMakePreprocessorDefinitions>QT_DISABLE_DEPRECATED_BEFORE=QT_VERSION_CHECK(5,15,0);QT_NO_DEPRECATED_WARNINGS;QT_NO_FOREACH;QT_NO_URL_CAST_FROM_STRING;LUA_LIBRARY;QT_GUI_LIB;QT_CORE_LIB;QT_NO_DEBUG;_ENABLE_EXTENDED_ALIGNED_STORAGE</NMakePreprocessorDefinitions>
+    <NMakeIncludeSearchPath>Z:/dev/eden_industries/extinction_wars/SketchEngine/tools/Tiled3.0/tiled/src/libtiled;Z:/dev/eden_industries/extinction_wars/SketchEngine/tools/Tiled3.0/tiled/release/lua.b8bd907a/qt.headers;Z:/dev/QT/6.5.2/msvc2019_64/include;Z:/dev/QT/6.5.2/msvc2019_64/include/QtGui;Z:/dev/QT/6.5.2/msvc2019_64/include;Z:/dev/QT/6.5.2/msvc2019_64/include/QtCore;Z:/dev/QT/6.5.2/msvc2019_64/mkspecs/win32-msvc</NMakeIncludeSearchPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='release|x64'" Label="Configuration">
+    <TargetName>lua</TargetName>
+    <PlatformToolset>v142</PlatformToolset>
+    <ConfigurationType>Makefile</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <DebuggerFlavor>WindowsLocalDebugger</DebuggerFlavor>
+    <LocalDebuggerCommand>$(OutDir)$(TargetName)$(TargetExt)</LocalDebuggerCommand>
+    <LocalDebuggerWorkingDirectory>$(OutDir)</LocalDebuggerWorkingDirectory>
+    <LocalDebuggerEnvironment>PATH=$(SolutionDir)$(Configuration)\install-root;Z:\dev\QT\6.5.2\msvc2019_64\bin;Z:\dev\QT\6.5.2\msvc2019_64\lib</LocalDebuggerEnvironment>
+    <NMakeBuildCommandLine>$(QbsBuildCommandLine) </NMakeBuildCommandLine>
+    <NMakeReBuildCommandLine>$(QbsReBuildCommandLine) </NMakeReBuildCommandLine>
+    <NMakeCleanCommandLine>$(QbsCleanCommandLine) </NMakeCleanCommandLine>
+    <NMakeOutput>$(OutDir)$(TargetName)$(TargetExt)</NMakeOutput>
+    <NMakePreprocessorDefinitions>QT_DISABLE_DEPRECATED_BEFORE=QT_VERSION_CHECK(5,15,0);QT_NO_DEPRECATED_WARNINGS;QT_NO_FOREACH;QT_NO_URL_CAST_FROM_STRING;LUA_LIBRARY;QT_GUI_LIB;QT_CORE_LIB;QT_NO_DEBUG;_ENABLE_EXTENDED_ALIGNED_STORAGE</NMakePreprocessorDefinitions>
+    <NMakeIncludeSearchPath>Z:/dev/eden_industries/extinction_wars/SketchEngine/tools/Tiled3.0/tiled/src/libtiled;Z:/dev/eden_industries/extinction_wars/SketchEngine/tools/Tiled3.0/tiled/release/lua.b8bd907a/qt.headers;Z:/dev/QT/6.5.2/msvc2019_64/include;Z:/dev/QT/6.5.2/msvc2019_64/include/QtGui;Z:/dev/QT/6.5.2/msvc2019_64/include;Z:/dev/QT/6.5.2/msvc2019_64/include/QtCore;Z:/dev/QT/6.5.2/msvc2019_64/mkspecs/win32-msvc</NMakeIncludeSearchPath>
+    <UseDebugLibraries>false</UseDebugLibraries>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='release|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>Z:/dev/eden_industries/extinction_wars/SketchEngine/tools/Tiled3.0/tiled/src/libtiled;Z:/dev/eden_industries/extinction_wars/SketchEngine/tools/Tiled3.0/tiled/release/lua.b8bd907a/qt.headers;Z:/dev/QT/6.5.2/msvc2019_64/include;Z:/dev/QT/6.5.2/msvc2019_64/include/QtGui;Z:/dev/QT/6.5.2/msvc2019_64/include;Z:/dev/QT/6.5.2/msvc2019_64/include/QtCore;Z:/dev/QT/6.5.2/msvc2019_64/mkspecs/win32-msvc;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <PreprocessorDefinitions>QT_DISABLE_DEPRECATED_BEFORE=QT_VERSION_CHECK(5,15,0);QT_NO_DEPRECATED_WARNINGS;QT_NO_FOREACH;QT_NO_URL_CAST_FROM_STRING;LUA_LIBRARY;QT_GUI_LIB;QT_CORE_LIB;QT_NO_DEBUG;_ENABLE_EXTENDED_ALIGNED_STORAGE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+    </ClCompile>
+    <Link>
+      <AdditionalLibraryDirectories>Z:/dev/QT/6.5.2/msvc2019_64/lib</AdditionalLibraryDirectories>
+      <AdditionalDependencies>Shell32.lib;Shell32.lib;Z:/dev/QT/6.5.2/msvc2019_64/lib/Qt6EntryPoint.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <MinimumRequiredVersion>10.00</MinimumRequiredVersion>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='release|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>Z:/dev/eden_industries/extinction_wars/SketchEngine/tools/Tiled3.0/tiled/src/libtiled;Z:/dev/eden_industries/extinction_wars/SketchEngine/tools/Tiled3.0/tiled/release/lua.b8bd907a/qt.headers;Z:/dev/QT/6.5.2/msvc2019_64/include;Z:/dev/QT/6.5.2/msvc2019_64/include/QtGui;Z:/dev/QT/6.5.2/msvc2019_64/include;Z:/dev/QT/6.5.2/msvc2019_64/include/QtCore;Z:/dev/QT/6.5.2/msvc2019_64/mkspecs/win32-msvc;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <PreprocessorDefinitions>QT_DISABLE_DEPRECATED_BEFORE=QT_VERSION_CHECK(5,15,0);QT_NO_DEPRECATED_WARNINGS;QT_NO_FOREACH;QT_NO_URL_CAST_FROM_STRING;LUA_LIBRARY;QT_GUI_LIB;QT_CORE_LIB;QT_NO_DEBUG;_ENABLE_EXTENDED_ALIGNED_STORAGE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+    </ClCompile>
+    <Link>
+      <AdditionalLibraryDirectories>Z:/dev/QT/6.5.2/msvc2019_64/lib</AdditionalLibraryDirectories>
+      <AdditionalDependencies>Shell32.lib;Shell32.lib;Z:/dev/QT/6.5.2/msvc2019_64/lib/Qt6EntryPoint.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <MinimumRequiredVersion>10.00</MinimumRequiredVersion>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <None Include="$(ProjectDir)src/plugins/lua/lua.qbs" />
+    <ClInclude Include="$(ProjectDir)src/plugins/lua/lua_global.h" />
+    <ClCompile Include="$(ProjectDir)src/plugins/lua/luaplugin.cpp" />
+    <ClInclude Include="$(ProjectDir)src/plugins/lua/luaplugin.h" />
+    <ClCompile Include="$(ProjectDir)src/plugins/lua/luatablewriter.cpp" />
+    <ClInclude Include="$(ProjectDir)src/plugins/lua/luatablewriter.h" />
+    <None Include="$(ProjectDir)src/plugins/lua/plugin.json" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+</Project>

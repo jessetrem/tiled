@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{8f7c3120-8ee7-49b2-bec7-30c429171ea3}</UniqueIdentifier>
+      <Extensions>c;C;cpp;cxx;c++;cc;cs;def;java;m;mm</Extensions>
+      <ParseFiles>True</ParseFiles>
+      <SourceControlFiles>True</SourceControlFiles>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{62932b02-b675-4a38-885d-eebafe576f1b}</UniqueIdentifier>
+      <Extensions>h;H;hpp;hxx;h++</Extensions>
+      <ParseFiles>True</ParseFiles>
+      <SourceControlFiles>True</SourceControlFiles>
+    </Filter>
+    <Filter Include="Form Files">
+      <UniqueIdentifier>{f5f2bf5f-74e6-418b-9d68-2a22b940ef9b}</UniqueIdentifier>
+      <Extensions>ui</Extensions>
+      <ParseFiles>True</ParseFiles>
+      <SourceControlFiles>True</SourceControlFiles>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{c1895f03-f7ff-446f-944a-ae3e5139601f}</UniqueIdentifier>
+      <Extensions>qrc;rc;*</Extensions>
+      <ParseFiles>False</ParseFiles>
+      <SourceControlFiles>True</SourceControlFiles>
+    </Filter>
+    <Filter Include="Generated Files">
+      <UniqueIdentifier>{58b714e9-ab39-4f0c-9168-3b1dca92a271}</UniqueIdentifier>
+      <Extensions>moc</Extensions>
+      <ParseFiles>True</ParseFiles>
+      <SourceControlFiles>False</SourceControlFiles>
+    </Filter>
+    <Filter Include="Translation Files">
+      <UniqueIdentifier>{8a6dfb25-2a47-4d56-8bed-f614919cf09a}</UniqueIdentifier>
+      <Extensions>ts</Extensions>
+      <ParseFiles>False</ParseFiles>
+      <SourceControlFiles>True</SourceControlFiles>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="$(ProjectDir)docs/docs.qbs" />
+    <None Include="$(ProjectDir)docs/conf.py" />
+    <None Include="$(ProjectDir)docs/scripting-doc/index.d.ts">
+      <Filter>Translation Files</Filter>
+    </None>
+    <None Include="$(ProjectDir)docs/README.md" />
+    <None Include="$(ProjectDir)docs/index.rst" />
+    <None Include="$(ProjectDir)docs/manual/automapping.md" />
+    <None Include="$(ProjectDir)docs/manual/custom-properties.rst" />
+    <None Include="$(ProjectDir)docs/manual/editing-tile-layers.rst" />
+    <None Include="$(ProjectDir)docs/manual/editing-tilesets.rst" />
+    <None Include="$(ProjectDir)docs/manual/export-custom.rst" />
+    <None Include="$(ProjectDir)docs/manual/export-defold.rst" />
+    <None Include="$(ProjectDir)docs/manual/export-generic.rst" />
+    <None Include="$(ProjectDir)docs/manual/export-gmx.rst" />
+    <None Include="$(ProjectDir)docs/manual/export-image.rst" />
+    <None Include="$(ProjectDir)docs/manual/export-other.rst" />
+    <None Include="$(ProjectDir)docs/manual/export-tbin.rst" />
+    <None Include="$(ProjectDir)docs/manual/export-tscn.rst" />
+    <None Include="$(ProjectDir)docs/manual/export-yy.rst" />
+    <None Include="$(ProjectDir)docs/manual/export.rst" />
+    <None Include="$(ProjectDir)docs/manual/introduction.rst" />
+    <None Include="$(ProjectDir)docs/manual/keyboard-shortcuts.rst" />
+    <None Include="$(ProjectDir)docs/manual/layers.rst" />
+    <None Include="$(ProjectDir)docs/manual/objects.rst" />
+    <None Include="$(ProjectDir)docs/manual/preferences.rst" />
+    <None Include="$(ProjectDir)docs/manual/projects.rst" />
+    <None Include="$(ProjectDir)docs/manual/python.rst" />
+    <None Include="$(ProjectDir)docs/manual/terrain.rst" />
+    <None Include="$(ProjectDir)docs/manual/using-commands.rst" />
+    <None Include="$(ProjectDir)docs/manual/using-infinite-maps.rst" />
+    <None Include="$(ProjectDir)docs/manual/using-templates.rst" />
+    <None Include="$(ProjectDir)docs/manual/worlds.rst" />
+    <None Include="$(ProjectDir)docs/reference/global-tile-ids.rst" />
+    <None Include="$(ProjectDir)docs/reference/json-map-format.rst" />
+    <None Include="$(ProjectDir)docs/reference/scripting.rst" />
+    <None Include="$(ProjectDir)docs/reference/support-for-tmx-maps.rst" />
+    <None Include="$(ProjectDir)docs/reference/tmx-changelog.rst" />
+    <None Include="$(ProjectDir)docs/reference/tmx-map-format.rst" />
+    <None Include="$(ProjectDir)docs/scripting-doc/CHANGELOG.md" />
+    <None Include="$(ProjectDir)docs/scripting-doc/README.md" />
+  </ItemGroup>
+</Project>

@@ -144,6 +144,48 @@ public:
 
     bool isPartOfTileset() const;
 
+    /// EDEN CHANGES (Add randomness properties)
+    void setRandomized(bool bRandom)
+    {
+      mRandomized = bRandom;
+    }
+
+    bool wasRandomized()
+    {
+      return mRandomized;
+    }
+
+    virtual bool IsPropertyRandomized(QString propertyName)
+    {
+      return (propertyName.contains(QStringLiteral("RandomAnimation"), Qt::CaseInsensitive))
+        || (propertyName.contains(QStringLiteral("RandomXOffset"), Qt::CaseInsensitive))
+        || (propertyName.contains(QStringLiteral("RandomYOffset"), Qt::CaseInsensitive))
+        || (propertyName.contains(QStringLiteral("(rand)"), Qt::CaseInsensitive))
+        || (propertyName.contains(QStringLiteral("(rsa_"), Qt::CaseInsensitive))
+        || (propertyName.contains(QStringLiteral("SubObjectChoice"), Qt::CaseInsensitive))
+        || (propertyName.contains(QStringLiteral("ComponentChoice"), Qt::CaseInsensitive))
+        || (propertyName.contains(QStringLiteral("RandomRotation"), Qt::CaseInsensitive))
+        || (propertyName.contains(QStringLiteral("RotationSet"), Qt::CaseInsensitive))
+        || (propertyName.contains(QStringLiteral("RandomScale"), Qt::CaseInsensitive))
+        || (propertyName.contains(QStringLiteral("ScaleSet"), Qt::CaseInsensitive))
+        || (propertyName.contains(QStringLiteral("RandomHue"), Qt::CaseInsensitive))
+        || (propertyName.contains(QStringLiteral("HueSet"), Qt::CaseInsensitive))
+        || (propertyName.contains(QStringLiteral("RandomOpacity"), Qt::CaseInsensitive))
+        || (propertyName.contains(QStringLiteral("OpacitySet"), Qt::CaseInsensitive))
+        || (propertyName.contains(QStringLiteral("RandomDarken"), Qt::CaseInsensitive))
+        || (propertyName.contains(QStringLiteral("DarkenSet"), Qt::CaseInsensitive))
+        || (propertyName.contains(QStringLiteral("RandomSaturation"), Qt::CaseInsensitive))
+        || (propertyName.contains(QStringLiteral("SaturationSet"), Qt::CaseInsensitive))
+        || (propertyName.contains(QStringLiteral("RandomHueToSaturation"), Qt::CaseInsensitive))
+        || (propertyName.contains(QStringLiteral("HueToSaturationSet"), Qt::CaseInsensitive))
+        || (propertyName.contains(QStringLiteral("RandomScaleToHueLink"), Qt::CaseInsensitive))
+        || (propertyName.contains(QStringLiteral("ScaleToHueLinkSet"), Qt::CaseInsensitive))
+        || (propertyName.contains(QStringLiteral("RandomFlip"), Qt::CaseInsensitive))
+        || (propertyName.contains(QStringLiteral("RandomInclusion"), Qt::CaseInsensitive))
+        || (propertyName.contains(QStringLiteral("RandomizedProp"), Qt::CaseInsensitive));
+    }
+    /// EDEN CHANGES END
+
     static void setPropertyTypes(const SharedPropertyTypes &propertyTypes);
     static const PropertyTypes &propertyTypes();
 
@@ -151,6 +193,10 @@ private:
     const TypeId mTypeId;
     QString mClassName;
     Properties mProperties;
+
+    // EDEN CHANGES (Random)
+    bool mRandomized;
+    // EDEN CHANGES END
 
     static SharedPropertyTypes mPropertyTypes;
 };

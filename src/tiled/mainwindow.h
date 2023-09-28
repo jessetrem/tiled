@@ -30,6 +30,14 @@
 #include "session.h"
 #include "tilededitor_global.h"
 
+// EDEN CHANGES
+#include "mapdocument.h"
+#include "consoledock.h"
+#include "tilesetdock.h"
+#include "stampbrush.h"
+#include "createtileobjecttool.h"
+// EDEN CHANGES END
+
 #include <QMainWindow>
 #include <QPointer>
 #include <QSessionManager>
@@ -95,6 +103,14 @@ public:
      */
     bool openFile(const QString &fileName, FileFormat *fileFormat = nullptr);
 
+    // EDEN CHANGES
+    TilesetDock* getTilesetDock() { return mTilesetDock; }
+    StampBrush* getStampBrush() { return mStampBrush; }
+    CreateTileObjectTool* getCreateTileObjectTool() { return mTileObjectsTool; }
+
+    static MainWindow* getMainWindow() { return m_pMainWindow; }
+    // EDEN CHANGES END
+
     bool addRecentProjectsActions(QMenu *menu) const;
 
     static MainWindow *instance();
@@ -139,6 +155,11 @@ private:
     void copy();
     void paste();
     void pasteInPlace();
+    // EDEN CHANGES
+    void randomize();
+    void randomizeLayer();
+    void randomizeLevel();
+    // EDEN CHANGES END
     void delete_();
     void openPreferences();
     void openCrashReporterPopup();
@@ -270,6 +291,14 @@ private:
     SessionOption<QStringList> mLoadedWorlds { "loadedWorlds" };
 
     static MainWindow *mInstance;
+
+    // EDEN CHANGES
+    CreateTileObjectTool* mTileObjectsTool;
+    StampBrush* mStampBrush;
+    TilesetDock* mTilesetDock;
+    static MainWindow* m_pMainWindow;
+
+    // EDEN CHANGES END
 };
 
 inline MainWindow *MainWindow::instance()

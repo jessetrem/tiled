@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Project DefaultTargets="Build" ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+    <ItemGroup Label="ProjectConfigurations">
+        <ProjectConfiguration Include="release|Win32">
+            <Configuration>release</Configuration>
+            <Platform>Win32</Platform>
+        </ProjectConfiguration>
+    </ItemGroup>
+    <PropertyGroup Label="Globals">
+        <ProjectGuid>{68d4aac9-821c-478a-bd55-66f16b5b8cb7}</ProjectGuid>
+        <QbsProductName>tests</QbsProductName>
+    </PropertyGroup>
+    <ImportGroup Label="PropertySheets">
+        <Import Project="$(SolutionDir)\qbs.props" Condition="Exists('$(SolutionDir)\qbs.props')"/>
+        <Import Project="$(SolutionDir)\qbs-shared.props"/>
+    </ImportGroup>
+    <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props"/>
+    <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='release|Win32'" Label="Configuration">
+        <UseDebugLibraries>false</UseDebugLibraries>
+        <OutDir>$(SolutionDir)$(Configuration)\tests.04d13fd0\</OutDir>
+        <TargetName>tests</TargetName>
+        <PlatformToolset>v142</PlatformToolset>
+        <ConfigurationType>Makefile</ConfigurationType>
+        <CharacterSet>NotSet</CharacterSet>
+        <DebuggerFlavor>WindowsLocalDebugger</DebuggerFlavor>
+        <LocalDebuggerCommand>$(OutDir)$(TargetName)$(TargetExt)</LocalDebuggerCommand>
+        <LocalDebuggerWorkingDirectory>$(OutDir)</LocalDebuggerWorkingDirectory>
+        <NMakeBuildCommandLine>$(QbsBuildCommandLine) </NMakeBuildCommandLine>
+        <NMakeReBuildCommandLine>$(QbsReBuildCommandLine) </NMakeReBuildCommandLine>
+        <NMakeCleanCommandLine>$(QbsCleanCommandLine) </NMakeCleanCommandLine>
+        <NMakeOutput>$(OutDir)$(TargetName)$(TargetExt)</NMakeOutput>
+        <NMakePreprocessorDefinitions></NMakePreprocessorDefinitions>
+        <NMakeIncludeSearchPath></NMakeIncludeSearchPath>
+    </PropertyGroup>
+    <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props"/>
+    <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='release|Win32'">
+        <ClCompile>
+            <AdditionalIncludeDirectories>;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+            <WarningLevel>Level3</WarningLevel>
+            <Optimization>MaxSpeed</Optimization>
+            <PreprocessorDefinitions>;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+            <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+        </ClCompile>
+        <Link>
+            <AdditionalLibraryDirectories></AdditionalLibraryDirectories>
+            <AdditionalDependencies>;%(AdditionalDependencies)</AdditionalDependencies>
+            <GenerateDebugInformation>false</GenerateDebugInformation>
+            <SubSystem>Windows</SubSystem>
+            <OptimizeReferences>true</OptimizeReferences>
+        </Link>
+    </ItemDefinitionGroup>
+    <ItemGroup>
+        <None Include="$(ProjectDir)tiled.qbs"/>
+    </ItemGroup>
+    <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets"/>
+</Project>

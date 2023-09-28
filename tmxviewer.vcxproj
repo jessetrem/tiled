@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="release|Win32">
+      <Configuration>release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="release|x64">
+      <Configuration>release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{339ac299-3b12-4398-9aef-a6e4f9c719c9}</ProjectGuid>
+    <QbsProductName>tmxviewer</QbsProductName>
+  </PropertyGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(SolutionDir)\qbs.props" Condition="Exists('$(SolutionDir)\qbs.props')" />
+    <Import Project="$(SolutionDir)\qbs-shared.props" />
+  </ImportGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='release|Win32'" Label="Configuration">
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <OutDir>$(SolutionDir)$(Configuration)\install-root\</OutDir>
+    <TargetName>tmxviewer</TargetName>
+    <PlatformToolset>v142</PlatformToolset>
+    <ConfigurationType>Makefile</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <DebuggerFlavor>WindowsLocalDebugger</DebuggerFlavor>
+    <LocalDebuggerCommand>$(OutDir)$(TargetName)$(TargetExt)</LocalDebuggerCommand>
+    <LocalDebuggerWorkingDirectory>$(OutDir)</LocalDebuggerWorkingDirectory>
+    <LocalDebuggerEnvironment>PATH=$(SolutionDir)$(Configuration)\install-root;Z:\dev\QT\6.5.2\msvc2019_64\bin;Z:\dev\QT\6.5.2\msvc2019_64\lib</LocalDebuggerEnvironment>
+    <NMakeBuildCommandLine>$(QbsBuildCommandLine) </NMakeBuildCommandLine>
+    <NMakeReBuildCommandLine>$(QbsReBuildCommandLine) </NMakeReBuildCommandLine>
+    <NMakeCleanCommandLine>$(QbsCleanCommandLine) </NMakeCleanCommandLine>
+    <NMakeOutput>$(OutDir)$(TargetName)$(TargetExt)</NMakeOutput>
+    <NMakePreprocessorDefinitions>QT_DISABLE_DEPRECATED_BEFORE=QT_VERSION_CHECK(5,15,0);QT_NO_DEPRECATED_WARNINGS;QT_NO_CAST_FROM_ASCII;QT_NO_CAST_TO_ASCII;QT_NO_FOREACH;QT_NO_URL_CAST_FROM_STRING;QT_WIDGETS_LIB;QT_GUI_LIB;QT_CORE_LIB;QT_NO_DEBUG;_ENABLE_EXTENDED_ALIGNED_STORAGE</NMakePreprocessorDefinitions>
+    <NMakeIncludeSearchPath>Z:/dev/eden_industries/extinction_wars/SketchEngine/tools/Tiled3.0/tiled/src/tmxviewer;Z:/dev/eden_industries/extinction_wars/SketchEngine/tools/Tiled3.0/tiled/src/libtiled;Z:/dev/eden_industries/extinction_wars/SketchEngine/tools/Tiled3.0/tiled/release/tmxviewer.7fda16ad/qt.headers;Z:/dev/QT/6.5.2/msvc2019_64/include;Z:/dev/QT/6.5.2/msvc2019_64/include/QtWidgets;Z:/dev/QT/6.5.2/msvc2019_64/include;Z:/dev/QT/6.5.2/msvc2019_64/include/QtGui;Z:/dev/QT/6.5.2/msvc2019_64/include;Z:/dev/QT/6.5.2/msvc2019_64/include/QtCore;Z:/dev/QT/6.5.2/msvc2019_64/mkspecs/win32-msvc</NMakeIncludeSearchPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='release|x64'" Label="Configuration">
+    <TargetName>tmxviewer</TargetName>
+    <PlatformToolset>v142</PlatformToolset>
+    <ConfigurationType>Makefile</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <DebuggerFlavor>WindowsLocalDebugger</DebuggerFlavor>
+    <LocalDebuggerCommand>$(OutDir)$(TargetName)$(TargetExt)</LocalDebuggerCommand>
+    <LocalDebuggerWorkingDirectory>$(OutDir)</LocalDebuggerWorkingDirectory>
+    <LocalDebuggerEnvironment>PATH=$(SolutionDir)$(Configuration)\install-root;Z:\dev\QT\6.5.2\msvc2019_64\bin;Z:\dev\QT\6.5.2\msvc2019_64\lib</LocalDebuggerEnvironment>
+    <NMakeBuildCommandLine>$(QbsBuildCommandLine) </NMakeBuildCommandLine>
+    <NMakeReBuildCommandLine>$(QbsReBuildCommandLine) </NMakeReBuildCommandLine>
+    <NMakeCleanCommandLine>$(QbsCleanCommandLine) </NMakeCleanCommandLine>
+    <NMakeOutput>$(OutDir)$(TargetName)$(TargetExt)</NMakeOutput>
+    <NMakePreprocessorDefinitions>QT_DISABLE_DEPRECATED_BEFORE=QT_VERSION_CHECK(5,15,0);QT_NO_DEPRECATED_WARNINGS;QT_NO_CAST_FROM_ASCII;QT_NO_CAST_TO_ASCII;QT_NO_FOREACH;QT_NO_URL_CAST_FROM_STRING;QT_WIDGETS_LIB;QT_GUI_LIB;QT_CORE_LIB;QT_NO_DEBUG;_ENABLE_EXTENDED_ALIGNED_STORAGE</NMakePreprocessorDefinitions>
+    <NMakeIncludeSearchPath>Z:/dev/eden_industries/extinction_wars/SketchEngine/tools/Tiled3.0/tiled/src/tmxviewer;Z:/dev/eden_industries/extinction_wars/SketchEngine/tools/Tiled3.0/tiled/src/libtiled;Z:/dev/eden_industries/extinction_wars/SketchEngine/tools/Tiled3.0/tiled/release/tmxviewer.7fda16ad/qt.headers;Z:/dev/QT/6.5.2/msvc2019_64/include;Z:/dev/QT/6.5.2/msvc2019_64/include/QtWidgets;Z:/dev/QT/6.5.2/msvc2019_64/include;Z:/dev/QT/6.5.2/msvc2019_64/include/QtGui;Z:/dev/QT/6.5.2/msvc2019_64/include;Z:/dev/QT/6.5.2/msvc2019_64/include/QtCore;Z:/dev/QT/6.5.2/msvc2019_64/mkspecs/win32-msvc</NMakeIncludeSearchPath>
+    <UseDebugLibraries>false</UseDebugLibraries>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='release|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>Z:/dev/eden_industries/extinction_wars/SketchEngine/tools/Tiled3.0/tiled/src/tmxviewer;Z:/dev/eden_industries/extinction_wars/SketchEngine/tools/Tiled3.0/tiled/src/libtiled;Z:/dev/eden_industries/extinction_wars/SketchEngine/tools/Tiled3.0/tiled/release/tmxviewer.7fda16ad/qt.headers;Z:/dev/QT/6.5.2/msvc2019_64/include;Z:/dev/QT/6.5.2/msvc2019_64/include/QtWidgets;Z:/dev/QT/6.5.2/msvc2019_64/include;Z:/dev/QT/6.5.2/msvc2019_64/include/QtGui;Z:/dev/QT/6.5.2/msvc2019_64/include;Z:/dev/QT/6.5.2/msvc2019_64/include/QtCore;Z:/dev/QT/6.5.2/msvc2019_64/mkspecs/win32-msvc;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <PreprocessorDefinitions>QT_DISABLE_DEPRECATED_BEFORE=QT_VERSION_CHECK(5,15,0);QT_NO_DEPRECATED_WARNINGS;QT_NO_CAST_FROM_ASCII;QT_NO_CAST_TO_ASCII;QT_NO_FOREACH;QT_NO_URL_CAST_FROM_STRING;QT_WIDGETS_LIB;QT_GUI_LIB;QT_CORE_LIB;QT_NO_DEBUG;_ENABLE_EXTENDED_ALIGNED_STORAGE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+    </ClCompile>
+    <Link>
+      <AdditionalLibraryDirectories>Z:/dev/QT/6.5.2/msvc2019_64/lib</AdditionalLibraryDirectories>
+      <AdditionalDependencies>Shell32.lib;Shell32.lib;Z:/dev/QT/6.5.2/msvc2019_64/lib/Qt6EntryPoint.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <MinimumRequiredVersion>10.00</MinimumRequiredVersion>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='release|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>Z:/dev/eden_industries/extinction_wars/SketchEngine/tools/Tiled3.0/tiled/src/tmxviewer;Z:/dev/eden_industries/extinction_wars/SketchEngine/tools/Tiled3.0/tiled/src/libtiled;Z:/dev/eden_industries/extinction_wars/SketchEngine/tools/Tiled3.0/tiled/release/tmxviewer.7fda16ad/qt.headers;Z:/dev/QT/6.5.2/msvc2019_64/include;Z:/dev/QT/6.5.2/msvc2019_64/include/QtWidgets;Z:/dev/QT/6.5.2/msvc2019_64/include;Z:/dev/QT/6.5.2/msvc2019_64/include/QtGui;Z:/dev/QT/6.5.2/msvc2019_64/include;Z:/dev/QT/6.5.2/msvc2019_64/include/QtCore;Z:/dev/QT/6.5.2/msvc2019_64/mkspecs/win32-msvc;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <PreprocessorDefinitions>QT_DISABLE_DEPRECATED_BEFORE=QT_VERSION_CHECK(5,15,0);QT_NO_DEPRECATED_WARNINGS;QT_NO_CAST_FROM_ASCII;QT_NO_CAST_TO_ASCII;QT_NO_FOREACH;QT_NO_URL_CAST_FROM_STRING;QT_WIDGETS_LIB;QT_GUI_LIB;QT_CORE_LIB;QT_NO_DEBUG;_ENABLE_EXTENDED_ALIGNED_STORAGE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+    </ClCompile>
+    <Link>
+      <AdditionalLibraryDirectories>Z:/dev/QT/6.5.2/msvc2019_64/lib</AdditionalLibraryDirectories>
+      <AdditionalDependencies>Shell32.lib;Shell32.lib;Z:/dev/QT/6.5.2/msvc2019_64/lib/Qt6EntryPoint.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <MinimumRequiredVersion>10.00</MinimumRequiredVersion>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <None Include="$(ProjectDir)src/tmxviewer/tmxviewer.qbs" />
+    <None Include="$(ProjectDir)man/tmxviewer.1">
+      <ExcludedFromBuild>true</ExcludedFromBuild>
+    </None>
+    <ClCompile Include="$(ProjectDir)src/tmxviewer/main.cpp" />
+    <ClCompile Include="$(ProjectDir)src/tmxviewer/tmxviewer.cpp" />
+    <ClInclude Include="$(ProjectDir)src/tmxviewer/tmxviewer.h" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+</Project>
