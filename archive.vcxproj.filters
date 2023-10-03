@@ -1,65 +1,41 @@
-<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
-  <ItemGroup>
-    <Filter Include="Source Files">
-      <UniqueIdentifier>{48e669bb-9923-4c2e-860d-2dd25f3e7daa}</UniqueIdentifier>
-      <Extensions>c;C;cpp;cxx;c++;cc;cs;def;java;m;mm</Extensions>
-      <ParseFiles>True</ParseFiles>
-      <SourceControlFiles>True</SourceControlFiles>
-    </Filter>
-    <Filter Include="Header Files">
-      <UniqueIdentifier>{42e11f93-a1d9-483c-b640-b7728f35df37}</UniqueIdentifier>
-      <Extensions>h;H;hpp;hxx;h++</Extensions>
-      <ParseFiles>True</ParseFiles>
-      <SourceControlFiles>True</SourceControlFiles>
-    </Filter>
-    <Filter Include="Form Files">
-      <UniqueIdentifier>{4b66bcd7-7320-43e3-bfd1-bc62e1447331}</UniqueIdentifier>
-      <Extensions>ui</Extensions>
-      <ParseFiles>True</ParseFiles>
-      <SourceControlFiles>True</SourceControlFiles>
-    </Filter>
-    <Filter Include="Resource Files">
-      <UniqueIdentifier>{f8e068c7-d196-4fde-8b0a-84de78a9ac4c}</UniqueIdentifier>
-      <Extensions>qrc;rc;*</Extensions>
-      <ParseFiles>False</ParseFiles>
-      <SourceControlFiles>True</SourceControlFiles>
-    </Filter>
-    <Filter Include="Generated Files">
-      <UniqueIdentifier>{9b722c3a-8c07-4dd1-92e4-d8b53a33375f}</UniqueIdentifier>
-      <Extensions>moc</Extensions>
-      <ParseFiles>True</ParseFiles>
-      <SourceControlFiles>False</SourceControlFiles>
-    </Filter>
-    <Filter Include="Translation Files">
-      <UniqueIdentifier>{c6e1f580-af66-4bba-bda0-8381eeef2084}</UniqueIdentifier>
-      <Extensions>ts</Extensions>
-      <ParseFiles>False</ParseFiles>
-      <SourceControlFiles>True</SourceControlFiles>
-    </Filter>
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="$(ProjectDir)dist/archive.qbs" />
-    <None Include="$(ProjectDir)../../../../../../QT/Tools/Qt Creator 11.0.0-rc1/share/qtcreator/qbs/share/qbs/modules/java/io/qt/qbs/Artifact.java">
-      <Filter>Source Files</Filter>
-    </None>
-    <None Include="$(ProjectDir)../../../../../../QT/Tools/Qt Creator 11.0.0-rc1/share/qtcreator/qbs/share/qbs/modules/java/io/qt/qbs/ArtifactListJsonWriter.java">
-      <Filter>Source Files</Filter>
-    </None>
-    <None Include="$(ProjectDir)../../../../../../QT/Tools/Qt Creator 11.0.0-rc1/share/qtcreator/qbs/share/qbs/modules/java/io/qt/qbs/ArtifactListWriter.java">
-      <Filter>Source Files</Filter>
-    </None>
-    <None Include="$(ProjectDir)../../../../../../QT/Tools/Qt Creator 11.0.0-rc1/share/qtcreator/qbs/share/qbs/modules/java/io/qt/qbs/tools/JavaCompilerScannerTool.java">
-      <Filter>Source Files</Filter>
-    </None>
-    <None Include="$(ProjectDir)../../../../../../QT/Tools/Qt Creator 11.0.0-rc1/share/qtcreator/qbs/share/qbs/modules/java/io/qt/qbs/tools/utils/JavaCompilerOptions.java">
-      <Filter>Source Files</Filter>
-    </None>
-    <None Include="$(ProjectDir)../../../../../../QT/Tools/Qt Creator 11.0.0-rc1/share/qtcreator/qbs/share/qbs/modules/java/io/qt/qbs/tools/utils/JavaCompilerScanner.java">
-      <Filter>Source Files</Filter>
-    </None>
-    <None Include="$(ProjectDir)../../../../../../QT/Tools/Qt Creator 11.0.0-rc1/share/qtcreator/qbs/share/qbs/modules/java/io/qt/qbs/tools/utils/NullFileObject.java">
-      <Filter>Source Files</Filter>
-    </None>
-  </ItemGroup>
+    <ItemGroup>
+        <Filter Include="Source Files">
+            <UniqueIdentifier>{6c0fe1ef-14da-4e8d-a6b9-b2dad8996c66}</UniqueIdentifier>
+            <Extensions>c;C;cpp;cxx;c++;cc;cs;def;java;m;mm</Extensions>
+            <ParseFiles>True</ParseFiles>
+            <SourceControlFiles>True</SourceControlFiles>
+        </Filter>
+        <Filter Include="Header Files">
+            <UniqueIdentifier>{be76f3a8-8f64-4d91-92eb-0eb2305bd96b}</UniqueIdentifier>
+            <Extensions>h;H;hpp;hxx;h++</Extensions>
+            <ParseFiles>True</ParseFiles>
+            <SourceControlFiles>True</SourceControlFiles>
+        </Filter>
+        <Filter Include="Form Files">
+            <UniqueIdentifier>{6059eca4-10d4-444c-8bba-10a97c4e4472}</UniqueIdentifier>
+            <Extensions>ui</Extensions>
+            <ParseFiles>True</ParseFiles>
+            <SourceControlFiles>True</SourceControlFiles>
+        </Filter>
+        <Filter Include="Resource Files">
+            <UniqueIdentifier>{d8194ae4-43b4-461b-9824-cf44a3dcfb92}</UniqueIdentifier>
+            <Extensions>qrc;rc;*</Extensions>
+            <ParseFiles>False</ParseFiles>
+            <SourceControlFiles>True</SourceControlFiles>
+        </Filter>
+        <Filter Include="Generated Files">
+            <UniqueIdentifier>{e071cd3b-3be0-4695-9e18-1488f20773c4}</UniqueIdentifier>
+            <Extensions>moc</Extensions>
+            <ParseFiles>True</ParseFiles>
+            <SourceControlFiles>False</SourceControlFiles>
+        </Filter>
+        <Filter Include="Translation Files">
+            <UniqueIdentifier>{99d50ba1-d733-40ee-a386-6c99415fb3cc}</UniqueIdentifier>
+            <Extensions>ts</Extensions>
+            <ParseFiles>False</ParseFiles>
+            <SourceControlFiles>True</SourceControlFiles>
+        </Filter>
+    </ItemGroup>
 </Project>

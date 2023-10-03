@@ -1,56 +1,51 @@
-<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
-  <ItemGroup>
-    <Filter Include="Source Files">
-      <UniqueIdentifier>{8d06947d-06ac-4672-82a7-6df6369d1b22}</UniqueIdentifier>
-      <Extensions>c;C;cpp;cxx;c++;cc;cs;def;java;m;mm</Extensions>
-      <ParseFiles>True</ParseFiles>
-      <SourceControlFiles>True</SourceControlFiles>
-    </Filter>
-    <Filter Include="Header Files">
-      <UniqueIdentifier>{f69603af-79c3-49b3-8de0-0c4be7163478}</UniqueIdentifier>
-      <Extensions>h;H;hpp;hxx;h++</Extensions>
-      <ParseFiles>True</ParseFiles>
-      <SourceControlFiles>True</SourceControlFiles>
-    </Filter>
-    <Filter Include="Form Files">
-      <UniqueIdentifier>{4770a63c-4c99-4dce-8bf5-0971e4d3fd2b}</UniqueIdentifier>
-      <Extensions>ui</Extensions>
-      <ParseFiles>True</ParseFiles>
-      <SourceControlFiles>True</SourceControlFiles>
-    </Filter>
-    <Filter Include="Resource Files">
-      <UniqueIdentifier>{fe7dd6ea-f4c1-4f3a-9038-57da9e1eb766}</UniqueIdentifier>
-      <Extensions>qrc;rc;*</Extensions>
-      <ParseFiles>False</ParseFiles>
-      <SourceControlFiles>True</SourceControlFiles>
-    </Filter>
-    <Filter Include="Generated Files">
-      <UniqueIdentifier>{bd6316e0-3c6c-42da-bb60-46978556f1f3}</UniqueIdentifier>
-      <Extensions>moc</Extensions>
-      <ParseFiles>True</ParseFiles>
-      <SourceControlFiles>False</SourceControlFiles>
-    </Filter>
-    <Filter Include="Translation Files">
-      <UniqueIdentifier>{8d5b897a-90a5-445a-9b19-5a353ba3e3fd}</UniqueIdentifier>
-      <Extensions>ts</Extensions>
-      <ParseFiles>False</ParseFiles>
-      <SourceControlFiles>True</SourceControlFiles>
-    </Filter>
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="$(ProjectDir)src/tiledquick/tiledquick.qbs" />
-    <None Include="$(ProjectDir)src/tiledquick/fonts/fonts.qrc">
-      <Filter>Resource Files</Filter>
-    </None>
-    <None Include="$(ProjectDir)src/tiledquick/qml/qml.qrc">
-      <Filter>Resource Files</Filter>
-    </None>
-    <None Include="$(ProjectDir)src/tiledquick/qml/qtquickcontrols2.conf" />
-  </ItemGroup>
-  <ItemGroup>
-    <ClCompile Include="$(ProjectDir)src/tiledquick/main.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-  </ItemGroup>
+    <ItemGroup>
+        <Filter Include="Source Files">
+            <UniqueIdentifier>{bfd1b808-bfc9-4d94-942e-4d7d580b8f9b}</UniqueIdentifier>
+            <Extensions>c;C;cpp;cxx;c++;cc;cs;def;java;m;mm</Extensions>
+            <ParseFiles>True</ParseFiles>
+            <SourceControlFiles>True</SourceControlFiles>
+        </Filter>
+        <Filter Include="Header Files">
+            <UniqueIdentifier>{b6a8525a-b189-4f7e-b58d-8ed8f9f47080}</UniqueIdentifier>
+            <Extensions>h;H;hpp;hxx;h++</Extensions>
+            <ParseFiles>True</ParseFiles>
+            <SourceControlFiles>True</SourceControlFiles>
+        </Filter>
+        <Filter Include="Form Files">
+            <UniqueIdentifier>{636a0513-a6ee-4c91-9221-9430b43156f4}</UniqueIdentifier>
+            <Extensions>ui</Extensions>
+            <ParseFiles>True</ParseFiles>
+            <SourceControlFiles>True</SourceControlFiles>
+        </Filter>
+        <Filter Include="Resource Files">
+            <UniqueIdentifier>{ad3fc0c5-693e-4232-9f86-a612ceeb31e8}</UniqueIdentifier>
+            <Extensions>qrc;rc;*</Extensions>
+            <ParseFiles>False</ParseFiles>
+            <SourceControlFiles>True</SourceControlFiles>
+        </Filter>
+        <Filter Include="Generated Files">
+            <UniqueIdentifier>{5c585247-ffc2-490c-bdf0-f99700f52d4d}</UniqueIdentifier>
+            <Extensions>moc</Extensions>
+            <ParseFiles>True</ParseFiles>
+            <SourceControlFiles>False</SourceControlFiles>
+        </Filter>
+        <Filter Include="Translation Files">
+            <UniqueIdentifier>{4cef691e-1ddc-4dd8-9430-6849e37046b1}</UniqueIdentifier>
+            <Extensions>ts</Extensions>
+            <ParseFiles>False</ParseFiles>
+            <SourceControlFiles>True</SourceControlFiles>
+        </Filter>
+    </ItemGroup>
+    <ItemGroup>
+        <None Include="C:/dev/eden_industries/eden_projects/SketchEngine/tools/Tiled3.0/tiled/src/tiledquick/fonts/fonts.qrc"/>
+        <None Include="C:/dev/eden_industries/eden_projects/SketchEngine/tools/Tiled3.0/tiled/src/tiledquick/qml/qml.qrc"/>
+        <None Include="C:/dev/eden_industries/eden_projects/SketchEngine/tools/Tiled3.0/tiled/src/tiledquick/qml/qtquickcontrols2.conf"/>
+    </ItemGroup>
+    <ItemGroup>
+        <ClCompile Include="C:/dev/eden_industries/eden_projects/SketchEngine/tools/Tiled3.0/tiled/src/tiledquick/main.cpp">
+            <Filter>Source Files</Filter>
+        </ClCompile>
+    </ItemGroup>
 </Project>

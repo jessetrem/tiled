@@ -1,49 +1,46 @@
-<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
-  <ItemGroup>
-    <Filter Include="Source Files">
-      <UniqueIdentifier>{da6796e7-9ee5-42b8-a06b-22f9f7ebec74}</UniqueIdentifier>
-      <Extensions>c;C;cpp;cxx;c++;cc;cs;def;java;m;mm</Extensions>
-      <ParseFiles>True</ParseFiles>
-      <SourceControlFiles>True</SourceControlFiles>
-    </Filter>
-    <Filter Include="Header Files">
-      <UniqueIdentifier>{0d28aad6-e353-4b88-b972-b24bcc8e5098}</UniqueIdentifier>
-      <Extensions>h;H;hpp;hxx;h++</Extensions>
-      <ParseFiles>True</ParseFiles>
-      <SourceControlFiles>True</SourceControlFiles>
-    </Filter>
-    <Filter Include="Form Files">
-      <UniqueIdentifier>{e36cbfa6-c0ba-4d38-a7e8-6cd1d2449a4c}</UniqueIdentifier>
-      <Extensions>ui</Extensions>
-      <ParseFiles>True</ParseFiles>
-      <SourceControlFiles>True</SourceControlFiles>
-    </Filter>
-    <Filter Include="Resource Files">
-      <UniqueIdentifier>{260e4215-390b-4552-8349-8251716169d8}</UniqueIdentifier>
-      <Extensions>qrc;rc;*</Extensions>
-      <ParseFiles>False</ParseFiles>
-      <SourceControlFiles>True</SourceControlFiles>
-    </Filter>
-    <Filter Include="Generated Files">
-      <UniqueIdentifier>{b07d2cea-7ece-472e-af0a-25207d9fcd5d}</UniqueIdentifier>
-      <Extensions>moc</Extensions>
-      <ParseFiles>True</ParseFiles>
-      <SourceControlFiles>False</SourceControlFiles>
-    </Filter>
-    <Filter Include="Translation Files">
-      <UniqueIdentifier>{73c3cc62-82cc-4fb0-9e49-d010d56d552f}</UniqueIdentifier>
-      <Extensions>ts</Extensions>
-      <ParseFiles>False</ParseFiles>
-      <SourceControlFiles>True</SourceControlFiles>
-    </Filter>
-  </ItemGroup>
-  <ItemGroup>
-    <ClCompile Include="$(ProjectDir)tests/mapreader/test_mapreader.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="$(ProjectDir)tests/mapreader/mapreader.qbs" />
-  </ItemGroup>
+    <ItemGroup>
+        <Filter Include="Source Files">
+            <UniqueIdentifier>{e39363d8-2072-4d17-b3ce-a1df8b90839e}</UniqueIdentifier>
+            <Extensions>c;C;cpp;cxx;c++;cc;cs;def;java;m;mm</Extensions>
+            <ParseFiles>True</ParseFiles>
+            <SourceControlFiles>True</SourceControlFiles>
+        </Filter>
+        <Filter Include="Header Files">
+            <UniqueIdentifier>{afa5425f-7dfe-4d98-860d-d85cad6ff0d4}</UniqueIdentifier>
+            <Extensions>h;H;hpp;hxx;h++</Extensions>
+            <ParseFiles>True</ParseFiles>
+            <SourceControlFiles>True</SourceControlFiles>
+        </Filter>
+        <Filter Include="Form Files">
+            <UniqueIdentifier>{7e55a906-0ccb-4ca4-ab1a-1903bcfb14a1}</UniqueIdentifier>
+            <Extensions>ui</Extensions>
+            <ParseFiles>True</ParseFiles>
+            <SourceControlFiles>True</SourceControlFiles>
+        </Filter>
+        <Filter Include="Resource Files">
+            <UniqueIdentifier>{b8a2ebcd-c38b-4fef-ba4b-7eda6196591d}</UniqueIdentifier>
+            <Extensions>qrc;rc;*</Extensions>
+            <ParseFiles>False</ParseFiles>
+            <SourceControlFiles>True</SourceControlFiles>
+        </Filter>
+        <Filter Include="Generated Files">
+            <UniqueIdentifier>{efcd3708-33dc-410f-bdf8-979fd7ea4ec2}</UniqueIdentifier>
+            <Extensions>moc</Extensions>
+            <ParseFiles>True</ParseFiles>
+            <SourceControlFiles>False</SourceControlFiles>
+        </Filter>
+        <Filter Include="Translation Files">
+            <UniqueIdentifier>{f7ac0aa7-59b0-4f39-8411-bd12e6567c9e}</UniqueIdentifier>
+            <Extensions>ts</Extensions>
+            <ParseFiles>False</ParseFiles>
+            <SourceControlFiles>True</SourceControlFiles>
+        </Filter>
+    </ItemGroup>
+    <ItemGroup>
+        <ClCompile Include="C:/dev/eden_industries/eden_projects/SketchEngine/tools/Tiled3.0/tiled/tests/mapreader/test_mapreader.cpp">
+            <Filter>Source Files</Filter>
+        </ClCompile>
+    </ItemGroup>
 </Project>

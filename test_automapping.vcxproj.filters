@@ -1,49 +1,46 @@
-<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
-  <ItemGroup>
-    <Filter Include="Source Files">
-      <UniqueIdentifier>{fd8b4b60-8d7f-4c39-81d3-9ffef5997215}</UniqueIdentifier>
-      <Extensions>c;C;cpp;cxx;c++;cc;cs;def;java;m;mm</Extensions>
-      <ParseFiles>True</ParseFiles>
-      <SourceControlFiles>True</SourceControlFiles>
-    </Filter>
-    <Filter Include="Header Files">
-      <UniqueIdentifier>{464f1e0c-8d26-4760-8ad0-26783d59a04e}</UniqueIdentifier>
-      <Extensions>h;H;hpp;hxx;h++</Extensions>
-      <ParseFiles>True</ParseFiles>
-      <SourceControlFiles>True</SourceControlFiles>
-    </Filter>
-    <Filter Include="Form Files">
-      <UniqueIdentifier>{88941208-c7a3-436c-b2c9-441f44d55dd8}</UniqueIdentifier>
-      <Extensions>ui</Extensions>
-      <ParseFiles>True</ParseFiles>
-      <SourceControlFiles>True</SourceControlFiles>
-    </Filter>
-    <Filter Include="Resource Files">
-      <UniqueIdentifier>{7ae9c62a-ea0a-43de-bd8b-f77c69d2bac0}</UniqueIdentifier>
-      <Extensions>qrc;rc;*</Extensions>
-      <ParseFiles>False</ParseFiles>
-      <SourceControlFiles>True</SourceControlFiles>
-    </Filter>
-    <Filter Include="Generated Files">
-      <UniqueIdentifier>{16563a63-5c22-46a1-b9fd-b9f78999fdc5}</UniqueIdentifier>
-      <Extensions>moc</Extensions>
-      <ParseFiles>True</ParseFiles>
-      <SourceControlFiles>False</SourceControlFiles>
-    </Filter>
-    <Filter Include="Translation Files">
-      <UniqueIdentifier>{30769ad0-848b-4e9e-8b08-db21264d462b}</UniqueIdentifier>
-      <Extensions>ts</Extensions>
-      <ParseFiles>False</ParseFiles>
-      <SourceControlFiles>True</SourceControlFiles>
-    </Filter>
-  </ItemGroup>
-  <ItemGroup>
-    <ClCompile Include="$(ProjectDir)tests/automapping/test_automapping.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="$(ProjectDir)tests/automapping/automapping.qbs" />
-  </ItemGroup>
+    <ItemGroup>
+        <Filter Include="Source Files">
+            <UniqueIdentifier>{d10284fc-6df7-4249-8609-7bb16f2a14ea}</UniqueIdentifier>
+            <Extensions>c;C;cpp;cxx;c++;cc;cs;def;java;m;mm</Extensions>
+            <ParseFiles>True</ParseFiles>
+            <SourceControlFiles>True</SourceControlFiles>
+        </Filter>
+        <Filter Include="Header Files">
+            <UniqueIdentifier>{1992de53-7992-48e5-9b84-e5e4092ad1d5}</UniqueIdentifier>
+            <Extensions>h;H;hpp;hxx;h++</Extensions>
+            <ParseFiles>True</ParseFiles>
+            <SourceControlFiles>True</SourceControlFiles>
+        </Filter>
+        <Filter Include="Form Files">
+            <UniqueIdentifier>{fde34d79-9245-47d5-a153-e70ee78bd094}</UniqueIdentifier>
+            <Extensions>ui</Extensions>
+            <ParseFiles>True</ParseFiles>
+            <SourceControlFiles>True</SourceControlFiles>
+        </Filter>
+        <Filter Include="Resource Files">
+            <UniqueIdentifier>{d0ddcebe-13e8-46a5-b79d-dc780472f25c}</UniqueIdentifier>
+            <Extensions>qrc;rc;*</Extensions>
+            <ParseFiles>False</ParseFiles>
+            <SourceControlFiles>True</SourceControlFiles>
+        </Filter>
+        <Filter Include="Generated Files">
+            <UniqueIdentifier>{172a867b-0a55-4997-9542-7dc86d89ed7c}</UniqueIdentifier>
+            <Extensions>moc</Extensions>
+            <ParseFiles>True</ParseFiles>
+            <SourceControlFiles>False</SourceControlFiles>
+        </Filter>
+        <Filter Include="Translation Files">
+            <UniqueIdentifier>{a562e7a2-afd9-4c3b-a6b9-55f3ddee1b06}</UniqueIdentifier>
+            <Extensions>ts</Extensions>
+            <ParseFiles>False</ParseFiles>
+            <SourceControlFiles>True</SourceControlFiles>
+        </Filter>
+    </ItemGroup>
+    <ItemGroup>
+        <ClCompile Include="C:/dev/eden_industries/eden_projects/SketchEngine/tools/Tiled3.0/tiled/tests/automapping/test_automapping.cpp">
+            <Filter>Source Files</Filter>
+        </ClCompile>
+    </ItemGroup>
 </Project>

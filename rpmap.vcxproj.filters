@@ -1,54 +1,41 @@
-<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
-  <ItemGroup>
-    <Filter Include="Source Files">
-      <UniqueIdentifier>{3a767dae-3ecf-43f3-a6d2-1f40d10e858b}</UniqueIdentifier>
-      <Extensions>c;C;cpp;cxx;c++;cc;cs;def;java;m;mm</Extensions>
-      <ParseFiles>True</ParseFiles>
-      <SourceControlFiles>True</SourceControlFiles>
-    </Filter>
-    <Filter Include="Header Files">
-      <UniqueIdentifier>{b9156958-6de6-4133-b001-791a39cd1c31}</UniqueIdentifier>
-      <Extensions>h;H;hpp;hxx;h++</Extensions>
-      <ParseFiles>True</ParseFiles>
-      <SourceControlFiles>True</SourceControlFiles>
-    </Filter>
-    <Filter Include="Form Files">
-      <UniqueIdentifier>{9d0f9721-453b-4b7b-a4dc-8d8e719efeca}</UniqueIdentifier>
-      <Extensions>ui</Extensions>
-      <ParseFiles>True</ParseFiles>
-      <SourceControlFiles>True</SourceControlFiles>
-    </Filter>
-    <Filter Include="Resource Files">
-      <UniqueIdentifier>{4b90e61c-98c4-4841-841b-f5462ce42a15}</UniqueIdentifier>
-      <Extensions>qrc;rc;*</Extensions>
-      <ParseFiles>False</ParseFiles>
-      <SourceControlFiles>True</SourceControlFiles>
-    </Filter>
-    <Filter Include="Generated Files">
-      <UniqueIdentifier>{0b2e5255-35dd-4452-af67-182b41a742cd}</UniqueIdentifier>
-      <Extensions>moc</Extensions>
-      <ParseFiles>True</ParseFiles>
-      <SourceControlFiles>False</SourceControlFiles>
-    </Filter>
-    <Filter Include="Translation Files">
-      <UniqueIdentifier>{900307b7-5fe2-4be3-a7e2-61a1070b90c7}</UniqueIdentifier>
-      <Extensions>ts</Extensions>
-      <ParseFiles>False</ParseFiles>
-      <SourceControlFiles>True</SourceControlFiles>
-    </Filter>
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="$(ProjectDir)src/plugins/rpmap/rpmap.qbs" />
-    <None Include="$(ProjectDir)src/plugins/rpmap/plugin.json" />
-    <None Include="$(ProjectDir)src/plugins/rpmap/rpmap_global.h">
-      <Filter>Header Files</Filter>
-    </None>
-    <None Include="$(ProjectDir)src/plugins/rpmap/rpmapplugin.cpp">
-      <Filter>Source Files</Filter>
-    </None>
-    <None Include="$(ProjectDir)src/plugins/rpmap/rpmapplugin.h">
-      <Filter>Header Files</Filter>
-    </None>
-  </ItemGroup>
+    <ItemGroup>
+        <Filter Include="Source Files">
+            <UniqueIdentifier>{d8b7b1dd-8937-439d-b3a3-bab474862010}</UniqueIdentifier>
+            <Extensions>c;C;cpp;cxx;c++;cc;cs;def;java;m;mm</Extensions>
+            <ParseFiles>True</ParseFiles>
+            <SourceControlFiles>True</SourceControlFiles>
+        </Filter>
+        <Filter Include="Header Files">
+            <UniqueIdentifier>{377eadf1-f6f3-4edc-8321-b8897044060d}</UniqueIdentifier>
+            <Extensions>h;H;hpp;hxx;h++</Extensions>
+            <ParseFiles>True</ParseFiles>
+            <SourceControlFiles>True</SourceControlFiles>
+        </Filter>
+        <Filter Include="Form Files">
+            <UniqueIdentifier>{e7ce4a82-35f5-4293-89dc-53efcae90446}</UniqueIdentifier>
+            <Extensions>ui</Extensions>
+            <ParseFiles>True</ParseFiles>
+            <SourceControlFiles>True</SourceControlFiles>
+        </Filter>
+        <Filter Include="Resource Files">
+            <UniqueIdentifier>{50aa5139-b65c-4b65-bcfa-ba4026f475ba}</UniqueIdentifier>
+            <Extensions>qrc;rc;*</Extensions>
+            <ParseFiles>False</ParseFiles>
+            <SourceControlFiles>True</SourceControlFiles>
+        </Filter>
+        <Filter Include="Generated Files">
+            <UniqueIdentifier>{08e2cb3f-43de-4788-9c6f-85464875f24f}</UniqueIdentifier>
+            <Extensions>moc</Extensions>
+            <ParseFiles>True</ParseFiles>
+            <SourceControlFiles>False</SourceControlFiles>
+        </Filter>
+        <Filter Include="Translation Files">
+            <UniqueIdentifier>{e9198738-ab09-4456-aaf2-a6b63d5429bd}</UniqueIdentifier>
+            <Extensions>ts</Extensions>
+            <ParseFiles>False</ParseFiles>
+            <SourceControlFiles>True</SourceControlFiles>
+        </Filter>
+    </ItemGroup>
 </Project>

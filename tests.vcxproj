@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Project DefaultTargets="Build" ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
     <ItemGroup Label="ProjectConfigurations">
-        <ProjectConfiguration Include="release|Win32">
-            <Configuration>release</Configuration>
-            <Platform>Win32</Platform>
+        <ProjectConfiguration Include="default|x64">
+            <Configuration>default</Configuration>
+            <Platform>x64</Platform>
         </ProjectConfiguration>
     </ItemGroup>
     <PropertyGroup Label="Globals">
-        <ProjectGuid>{68d4aac9-821c-478a-bd55-66f16b5b8cb7}</ProjectGuid>
+        <ProjectGuid>{f62fb269-4a1b-4116-bfea-aff205f217c5}</ProjectGuid>
         <QbsProductName>tests</QbsProductName>
     </PropertyGroup>
     <ImportGroup Label="PropertySheets">
@@ -15,8 +15,8 @@
         <Import Project="$(SolutionDir)\qbs-shared.props"/>
     </ImportGroup>
     <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props"/>
-    <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='release|Win32'" Label="Configuration">
-        <UseDebugLibraries>false</UseDebugLibraries>
+    <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='default|x64'" Label="Configuration">
+        <UseDebugLibraries>true</UseDebugLibraries>
         <OutDir>$(SolutionDir)$(Configuration)\tests.04d13fd0\</OutDir>
         <TargetName>tests</TargetName>
         <PlatformToolset>v142</PlatformToolset>
@@ -25,28 +25,28 @@
         <DebuggerFlavor>WindowsLocalDebugger</DebuggerFlavor>
         <LocalDebuggerCommand>$(OutDir)$(TargetName)$(TargetExt)</LocalDebuggerCommand>
         <LocalDebuggerWorkingDirectory>$(OutDir)</LocalDebuggerWorkingDirectory>
-        <NMakeBuildCommandLine>$(QbsBuildCommandLine) </NMakeBuildCommandLine>
-        <NMakeReBuildCommandLine>$(QbsReBuildCommandLine) </NMakeReBuildCommandLine>
-        <NMakeCleanCommandLine>$(QbsCleanCommandLine) </NMakeCleanCommandLine>
+        <NMakeBuildCommandLine>$(QbsBuildCommandLine) qbs.profile:MSVC2019-x64</NMakeBuildCommandLine>
+        <NMakeReBuildCommandLine>$(QbsReBuildCommandLine) qbs.profile:MSVC2019-x64</NMakeReBuildCommandLine>
+        <NMakeCleanCommandLine>$(QbsCleanCommandLine) qbs.profile:MSVC2019-x64</NMakeCleanCommandLine>
         <NMakeOutput>$(OutDir)$(TargetName)$(TargetExt)</NMakeOutput>
         <NMakePreprocessorDefinitions></NMakePreprocessorDefinitions>
         <NMakeIncludeSearchPath></NMakeIncludeSearchPath>
     </PropertyGroup>
     <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props"/>
-    <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='release|Win32'">
+    <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='default|x64'">
         <ClCompile>
             <AdditionalIncludeDirectories>;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
             <WarningLevel>Level3</WarningLevel>
-            <Optimization>MaxSpeed</Optimization>
+            <Optimization>Disabled</Optimization>
             <PreprocessorDefinitions>;%(PreprocessorDefinitions)</PreprocessorDefinitions>
-            <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+            <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
         </ClCompile>
         <Link>
             <AdditionalLibraryDirectories></AdditionalLibraryDirectories>
             <AdditionalDependencies>;%(AdditionalDependencies)</AdditionalDependencies>
-            <GenerateDebugInformation>false</GenerateDebugInformation>
+            <GenerateDebugInformation>true</GenerateDebugInformation>
             <SubSystem>Windows</SubSystem>
-            <OptimizeReferences>true</OptimizeReferences>
+            <OptimizeReferences>false</OptimizeReferences>
         </Link>
     </ItemDefinitionGroup>
     <ItemGroup>

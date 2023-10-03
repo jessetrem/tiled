@@ -1,84 +1,81 @@
-<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
-  <ItemGroup>
-    <Filter Include="Source Files">
-      <UniqueIdentifier>{8f7c3120-8ee7-49b2-bec7-30c429171ea3}</UniqueIdentifier>
-      <Extensions>c;C;cpp;cxx;c++;cc;cs;def;java;m;mm</Extensions>
-      <ParseFiles>True</ParseFiles>
-      <SourceControlFiles>True</SourceControlFiles>
-    </Filter>
-    <Filter Include="Header Files">
-      <UniqueIdentifier>{62932b02-b675-4a38-885d-eebafe576f1b}</UniqueIdentifier>
-      <Extensions>h;H;hpp;hxx;h++</Extensions>
-      <ParseFiles>True</ParseFiles>
-      <SourceControlFiles>True</SourceControlFiles>
-    </Filter>
-    <Filter Include="Form Files">
-      <UniqueIdentifier>{f5f2bf5f-74e6-418b-9d68-2a22b940ef9b}</UniqueIdentifier>
-      <Extensions>ui</Extensions>
-      <ParseFiles>True</ParseFiles>
-      <SourceControlFiles>True</SourceControlFiles>
-    </Filter>
-    <Filter Include="Resource Files">
-      <UniqueIdentifier>{c1895f03-f7ff-446f-944a-ae3e5139601f}</UniqueIdentifier>
-      <Extensions>qrc;rc;*</Extensions>
-      <ParseFiles>False</ParseFiles>
-      <SourceControlFiles>True</SourceControlFiles>
-    </Filter>
-    <Filter Include="Generated Files">
-      <UniqueIdentifier>{58b714e9-ab39-4f0c-9168-3b1dca92a271}</UniqueIdentifier>
-      <Extensions>moc</Extensions>
-      <ParseFiles>True</ParseFiles>
-      <SourceControlFiles>False</SourceControlFiles>
-    </Filter>
-    <Filter Include="Translation Files">
-      <UniqueIdentifier>{8a6dfb25-2a47-4d56-8bed-f614919cf09a}</UniqueIdentifier>
-      <Extensions>ts</Extensions>
-      <ParseFiles>False</ParseFiles>
-      <SourceControlFiles>True</SourceControlFiles>
-    </Filter>
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="$(ProjectDir)docs/docs.qbs" />
-    <None Include="$(ProjectDir)docs/conf.py" />
-    <None Include="$(ProjectDir)docs/scripting-doc/index.d.ts">
-      <Filter>Translation Files</Filter>
-    </None>
-    <None Include="$(ProjectDir)docs/README.md" />
-    <None Include="$(ProjectDir)docs/index.rst" />
-    <None Include="$(ProjectDir)docs/manual/automapping.md" />
-    <None Include="$(ProjectDir)docs/manual/custom-properties.rst" />
-    <None Include="$(ProjectDir)docs/manual/editing-tile-layers.rst" />
-    <None Include="$(ProjectDir)docs/manual/editing-tilesets.rst" />
-    <None Include="$(ProjectDir)docs/manual/export-custom.rst" />
-    <None Include="$(ProjectDir)docs/manual/export-defold.rst" />
-    <None Include="$(ProjectDir)docs/manual/export-generic.rst" />
-    <None Include="$(ProjectDir)docs/manual/export-gmx.rst" />
-    <None Include="$(ProjectDir)docs/manual/export-image.rst" />
-    <None Include="$(ProjectDir)docs/manual/export-other.rst" />
-    <None Include="$(ProjectDir)docs/manual/export-tbin.rst" />
-    <None Include="$(ProjectDir)docs/manual/export-tscn.rst" />
-    <None Include="$(ProjectDir)docs/manual/export-yy.rst" />
-    <None Include="$(ProjectDir)docs/manual/export.rst" />
-    <None Include="$(ProjectDir)docs/manual/introduction.rst" />
-    <None Include="$(ProjectDir)docs/manual/keyboard-shortcuts.rst" />
-    <None Include="$(ProjectDir)docs/manual/layers.rst" />
-    <None Include="$(ProjectDir)docs/manual/objects.rst" />
-    <None Include="$(ProjectDir)docs/manual/preferences.rst" />
-    <None Include="$(ProjectDir)docs/manual/projects.rst" />
-    <None Include="$(ProjectDir)docs/manual/python.rst" />
-    <None Include="$(ProjectDir)docs/manual/terrain.rst" />
-    <None Include="$(ProjectDir)docs/manual/using-commands.rst" />
-    <None Include="$(ProjectDir)docs/manual/using-infinite-maps.rst" />
-    <None Include="$(ProjectDir)docs/manual/using-templates.rst" />
-    <None Include="$(ProjectDir)docs/manual/worlds.rst" />
-    <None Include="$(ProjectDir)docs/reference/global-tile-ids.rst" />
-    <None Include="$(ProjectDir)docs/reference/json-map-format.rst" />
-    <None Include="$(ProjectDir)docs/reference/scripting.rst" />
-    <None Include="$(ProjectDir)docs/reference/support-for-tmx-maps.rst" />
-    <None Include="$(ProjectDir)docs/reference/tmx-changelog.rst" />
-    <None Include="$(ProjectDir)docs/reference/tmx-map-format.rst" />
-    <None Include="$(ProjectDir)docs/scripting-doc/CHANGELOG.md" />
-    <None Include="$(ProjectDir)docs/scripting-doc/README.md" />
-  </ItemGroup>
+    <ItemGroup>
+        <Filter Include="Source Files">
+            <UniqueIdentifier>{9bf1c67f-7c81-44fb-97dc-46a802c3d5d9}</UniqueIdentifier>
+            <Extensions>c;C;cpp;cxx;c++;cc;cs;def;java;m;mm</Extensions>
+            <ParseFiles>True</ParseFiles>
+            <SourceControlFiles>True</SourceControlFiles>
+        </Filter>
+        <Filter Include="Header Files">
+            <UniqueIdentifier>{88909578-9dd2-42de-90e0-861002b8086b}</UniqueIdentifier>
+            <Extensions>h;H;hpp;hxx;h++</Extensions>
+            <ParseFiles>True</ParseFiles>
+            <SourceControlFiles>True</SourceControlFiles>
+        </Filter>
+        <Filter Include="Form Files">
+            <UniqueIdentifier>{4d26b1aa-b3aa-48f0-9228-ee82387cd0fe}</UniqueIdentifier>
+            <Extensions>ui</Extensions>
+            <ParseFiles>True</ParseFiles>
+            <SourceControlFiles>True</SourceControlFiles>
+        </Filter>
+        <Filter Include="Resource Files">
+            <UniqueIdentifier>{b014a822-5a06-4d40-8bb0-07938954e556}</UniqueIdentifier>
+            <Extensions>qrc;rc;*</Extensions>
+            <ParseFiles>False</ParseFiles>
+            <SourceControlFiles>True</SourceControlFiles>
+        </Filter>
+        <Filter Include="Generated Files">
+            <UniqueIdentifier>{7cd14221-74bf-438c-b861-90a9c4f7164c}</UniqueIdentifier>
+            <Extensions>moc</Extensions>
+            <ParseFiles>True</ParseFiles>
+            <SourceControlFiles>False</SourceControlFiles>
+        </Filter>
+        <Filter Include="Translation Files">
+            <UniqueIdentifier>{7c881609-fd9f-4d77-b36f-dc12dcd47699}</UniqueIdentifier>
+            <Extensions>ts</Extensions>
+            <ParseFiles>False</ParseFiles>
+            <SourceControlFiles>True</SourceControlFiles>
+        </Filter>
+    </ItemGroup>
+    <ItemGroup>
+        <None Include="C:/dev/eden_industries/eden_projects/SketchEngine/tools/Tiled3.0/tiled/docs/README.md"/>
+        <None Include="C:/dev/eden_industries/eden_projects/SketchEngine/tools/Tiled3.0/tiled/docs/conf.py"/>
+        <None Include="C:/dev/eden_industries/eden_projects/SketchEngine/tools/Tiled3.0/tiled/docs/index.rst"/>
+        <None Include="C:/dev/eden_industries/eden_projects/SketchEngine/tools/Tiled3.0/tiled/docs/manual/automapping.md"/>
+        <None Include="C:/dev/eden_industries/eden_projects/SketchEngine/tools/Tiled3.0/tiled/docs/manual/custom-properties.rst"/>
+        <None Include="C:/dev/eden_industries/eden_projects/SketchEngine/tools/Tiled3.0/tiled/docs/manual/editing-tile-layers.rst"/>
+        <None Include="C:/dev/eden_industries/eden_projects/SketchEngine/tools/Tiled3.0/tiled/docs/manual/editing-tilesets.rst"/>
+        <None Include="C:/dev/eden_industries/eden_projects/SketchEngine/tools/Tiled3.0/tiled/docs/manual/export-custom.rst"/>
+        <None Include="C:/dev/eden_industries/eden_projects/SketchEngine/tools/Tiled3.0/tiled/docs/manual/export-defold.rst"/>
+        <None Include="C:/dev/eden_industries/eden_projects/SketchEngine/tools/Tiled3.0/tiled/docs/manual/export-generic.rst"/>
+        <None Include="C:/dev/eden_industries/eden_projects/SketchEngine/tools/Tiled3.0/tiled/docs/manual/export-gmx.rst"/>
+        <None Include="C:/dev/eden_industries/eden_projects/SketchEngine/tools/Tiled3.0/tiled/docs/manual/export-image.rst"/>
+        <None Include="C:/dev/eden_industries/eden_projects/SketchEngine/tools/Tiled3.0/tiled/docs/manual/export-other.rst"/>
+        <None Include="C:/dev/eden_industries/eden_projects/SketchEngine/tools/Tiled3.0/tiled/docs/manual/export-tbin.rst"/>
+        <None Include="C:/dev/eden_industries/eden_projects/SketchEngine/tools/Tiled3.0/tiled/docs/manual/export-tscn.rst"/>
+        <None Include="C:/dev/eden_industries/eden_projects/SketchEngine/tools/Tiled3.0/tiled/docs/manual/export-yy.rst"/>
+        <None Include="C:/dev/eden_industries/eden_projects/SketchEngine/tools/Tiled3.0/tiled/docs/manual/export.rst"/>
+        <None Include="C:/dev/eden_industries/eden_projects/SketchEngine/tools/Tiled3.0/tiled/docs/manual/introduction.rst"/>
+        <None Include="C:/dev/eden_industries/eden_projects/SketchEngine/tools/Tiled3.0/tiled/docs/manual/keyboard-shortcuts.rst"/>
+        <None Include="C:/dev/eden_industries/eden_projects/SketchEngine/tools/Tiled3.0/tiled/docs/manual/layers.rst"/>
+        <None Include="C:/dev/eden_industries/eden_projects/SketchEngine/tools/Tiled3.0/tiled/docs/manual/objects.rst"/>
+        <None Include="C:/dev/eden_industries/eden_projects/SketchEngine/tools/Tiled3.0/tiled/docs/manual/preferences.rst"/>
+        <None Include="C:/dev/eden_industries/eden_projects/SketchEngine/tools/Tiled3.0/tiled/docs/manual/projects.rst"/>
+        <None Include="C:/dev/eden_industries/eden_projects/SketchEngine/tools/Tiled3.0/tiled/docs/manual/python.rst"/>
+        <None Include="C:/dev/eden_industries/eden_projects/SketchEngine/tools/Tiled3.0/tiled/docs/manual/terrain.rst"/>
+        <None Include="C:/dev/eden_industries/eden_projects/SketchEngine/tools/Tiled3.0/tiled/docs/manual/using-commands.rst"/>
+        <None Include="C:/dev/eden_industries/eden_projects/SketchEngine/tools/Tiled3.0/tiled/docs/manual/using-infinite-maps.rst"/>
+        <None Include="C:/dev/eden_industries/eden_projects/SketchEngine/tools/Tiled3.0/tiled/docs/manual/using-templates.rst"/>
+        <None Include="C:/dev/eden_industries/eden_projects/SketchEngine/tools/Tiled3.0/tiled/docs/manual/worlds.rst"/>
+        <None Include="C:/dev/eden_industries/eden_projects/SketchEngine/tools/Tiled3.0/tiled/docs/reference/global-tile-ids.rst"/>
+        <None Include="C:/dev/eden_industries/eden_projects/SketchEngine/tools/Tiled3.0/tiled/docs/reference/json-map-format.rst"/>
+        <None Include="C:/dev/eden_industries/eden_projects/SketchEngine/tools/Tiled3.0/tiled/docs/reference/scripting.rst"/>
+        <None Include="C:/dev/eden_industries/eden_projects/SketchEngine/tools/Tiled3.0/tiled/docs/reference/support-for-tmx-maps.rst"/>
+        <None Include="C:/dev/eden_industries/eden_projects/SketchEngine/tools/Tiled3.0/tiled/docs/reference/tmx-changelog.rst"/>
+        <None Include="C:/dev/eden_industries/eden_projects/SketchEngine/tools/Tiled3.0/tiled/docs/reference/tmx-map-format.rst"/>
+        <None Include="C:/dev/eden_industries/eden_projects/SketchEngine/tools/Tiled3.0/tiled/docs/scripting-doc/CHANGELOG.md"/>
+        <None Include="C:/dev/eden_industries/eden_projects/SketchEngine/tools/Tiled3.0/tiled/docs/scripting-doc/README.md"/>
+        <None Include="C:/dev/eden_industries/eden_projects/SketchEngine/tools/Tiled3.0/tiled/docs/scripting-doc/index.d.ts"/>
+    </ItemGroup>
 </Project>

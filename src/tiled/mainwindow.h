@@ -108,7 +108,7 @@ public:
     StampBrush* getStampBrush() { return mStampBrush; }
     CreateTileObjectTool* getCreateTileObjectTool() { return mTileObjectsTool; }
 
-    static MainWindow* getMainWindow() { return m_pMainWindow; }
+    static MainWindow* getMainWindow() { return mInstance; }
     // EDEN CHANGES END
 
     bool addRecentProjectsActions(QMenu *menu) const;
@@ -296,8 +296,6 @@ private:
     CreateTileObjectTool* mTileObjectsTool;
     StampBrush* mStampBrush;
     TilesetDock* mTilesetDock;
-    static MainWindow* m_pMainWindow;
-
     // EDEN CHANGES END
 };
 

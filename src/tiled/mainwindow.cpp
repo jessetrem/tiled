@@ -1550,8 +1550,8 @@ void MainWindow::randomize()
 	if (!selectedObjects.isEmpty()) {
 		for(MapObject *mapObject : selectedObjects)
 		{
-			MainWindow::getMainWindow()->getCreateTileObjectTool()->copySpecificProperties(mapObject, mapObject->cell().tile);
-			MainWindow::getMainWindow()->getCreateTileObjectTool()->randomizeProperties(mapObject, mapObject->cell().tile, 0, true);
+			MainWindow::getMainWindow()->getCreateTileObjectTool()->copySpecificProperties(mapObject, mapObject->cell().tile());
+			MainWindow::getMainWindow()->getCreateTileObjectTool()->randomizeProperties(mapObject, mapObject->cell().tile(), 0, true);
 		}
 	}
 	else {

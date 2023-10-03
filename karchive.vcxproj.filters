@@ -1,152 +1,41 @@
-<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
-  <ItemGroup>
-    <Filter Include="Source Files">
-      <UniqueIdentifier>{4827e85f-4b89-4fc7-a4b3-d60402f02651}</UniqueIdentifier>
-      <Extensions>c;C;cpp;cxx;c++;cc;cs;def;java;m;mm</Extensions>
-      <ParseFiles>True</ParseFiles>
-      <SourceControlFiles>True</SourceControlFiles>
-    </Filter>
-    <Filter Include="Header Files">
-      <UniqueIdentifier>{b42c6bb6-3fcc-4aa0-abcc-efd85aea3e74}</UniqueIdentifier>
-      <Extensions>h;H;hpp;hxx;h++</Extensions>
-      <ParseFiles>True</ParseFiles>
-      <SourceControlFiles>True</SourceControlFiles>
-    </Filter>
-    <Filter Include="Form Files">
-      <UniqueIdentifier>{96d7b934-1a04-4012-b51b-a105abd1468b}</UniqueIdentifier>
-      <Extensions>ui</Extensions>
-      <ParseFiles>True</ParseFiles>
-      <SourceControlFiles>True</SourceControlFiles>
-    </Filter>
-    <Filter Include="Resource Files">
-      <UniqueIdentifier>{9627b5b9-ea9c-44dd-ba13-1382bdac10b1}</UniqueIdentifier>
-      <Extensions>qrc;rc;*</Extensions>
-      <ParseFiles>False</ParseFiles>
-      <SourceControlFiles>True</SourceControlFiles>
-    </Filter>
-    <Filter Include="Generated Files">
-      <UniqueIdentifier>{cc37ff46-2b4b-43b4-bd4f-dc4e33dc175d}</UniqueIdentifier>
-      <Extensions>moc</Extensions>
-      <ParseFiles>True</ParseFiles>
-      <SourceControlFiles>False</SourceControlFiles>
-    </Filter>
-    <Filter Include="Translation Files">
-      <UniqueIdentifier>{6cf72c4e-c57b-4fc0-84c4-61a56f5425a3}</UniqueIdentifier>
-      <Extensions>ts</Extensions>
-      <ParseFiles>False</ParseFiles>
-      <SourceControlFiles>True</SourceControlFiles>
-    </Filter>
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="$(ProjectDir)src/karchive/karchive.qbs" />
-    <None Include="$(ProjectDir)src/karchive/src/config-compression.h">
-      <Filter>Header Files</Filter>
-    </None>
-    <None Include="$(ProjectDir)src/karchive/src/k7zip.h">
-      <Filter>Header Files</Filter>
-    </None>
-    <None Include="$(ProjectDir)src/karchive/src/kar.cpp">
-      <Filter>Source Files</Filter>
-    </None>
-    <None Include="$(ProjectDir)src/karchive/src/kar.h">
-      <Filter>Header Files</Filter>
-    </None>
-    <None Include="$(ProjectDir)src/karchive/src/karchive.cpp">
-      <Filter>Source Files</Filter>
-    </None>
-    <None Include="$(ProjectDir)src/karchive/src/karchive.h">
-      <Filter>Header Files</Filter>
-    </None>
-    <None Include="$(ProjectDir)src/karchive/src/karchive_export.h">
-      <Filter>Header Files</Filter>
-    </None>
-    <None Include="$(ProjectDir)src/karchive/src/karchive_p.h">
-      <Filter>Header Files</Filter>
-    </None>
-    <None Include="$(ProjectDir)src/karchive/src/karchivedirectory.h">
-      <Filter>Header Files</Filter>
-    </None>
-    <None Include="$(ProjectDir)src/karchive/src/karchiveentry.h">
-      <Filter>Header Files</Filter>
-    </None>
-    <None Include="$(ProjectDir)src/karchive/src/karchivefile.h">
-      <Filter>Header Files</Filter>
-    </None>
-    <None Include="$(ProjectDir)src/karchive/src/kbzip2filter.cpp">
-      <Filter>Source Files</Filter>
-    </None>
-    <None Include="$(ProjectDir)src/karchive/src/kbzip2filter.h">
-      <Filter>Header Files</Filter>
-    </None>
-    <None Include="$(ProjectDir)src/karchive/src/kcompressiondevice.cpp">
-      <Filter>Source Files</Filter>
-    </None>
-    <None Include="$(ProjectDir)src/karchive/src/kcompressiondevice.h">
-      <Filter>Header Files</Filter>
-    </None>
-    <None Include="$(ProjectDir)src/karchive/src/kcompressiondevice_p.h">
-      <Filter>Header Files</Filter>
-    </None>
-    <None Include="$(ProjectDir)src/karchive/src/kfilterbase.cpp">
-      <Filter>Source Files</Filter>
-    </None>
-    <None Include="$(ProjectDir)src/karchive/src/kfilterbase.h">
-      <Filter>Header Files</Filter>
-    </None>
-    <None Include="$(ProjectDir)src/karchive/src/kfilterdev.cpp">
-      <Filter>Source Files</Filter>
-    </None>
-    <None Include="$(ProjectDir)src/karchive/src/kfilterdev.h">
-      <Filter>Header Files</Filter>
-    </None>
-    <None Include="$(ProjectDir)src/karchive/src/kgzipfilter.cpp">
-      <Filter>Source Files</Filter>
-    </None>
-    <None Include="$(ProjectDir)src/karchive/src/kgzipfilter.h">
-      <Filter>Header Files</Filter>
-    </None>
-    <None Include="$(ProjectDir)src/karchive/src/klimitediodevice.cpp">
-      <Filter>Source Files</Filter>
-    </None>
-    <None Include="$(ProjectDir)src/karchive/src/klimitediodevice_p.h">
-      <Filter>Header Files</Filter>
-    </None>
-    <None Include="$(ProjectDir)src/karchive/src/knonefilter.cpp">
-      <Filter>Source Files</Filter>
-    </None>
-    <None Include="$(ProjectDir)src/karchive/src/knonefilter.h">
-      <Filter>Header Files</Filter>
-    </None>
-    <None Include="$(ProjectDir)src/karchive/src/krcc.cpp">
-      <Filter>Source Files</Filter>
-    </None>
-    <None Include="$(ProjectDir)src/karchive/src/krcc.h">
-      <Filter>Header Files</Filter>
-    </None>
-    <None Include="$(ProjectDir)src/karchive/src/ktar.cpp">
-      <Filter>Source Files</Filter>
-    </None>
-    <None Include="$(ProjectDir)src/karchive/src/ktar.h">
-      <Filter>Header Files</Filter>
-    </None>
-    <None Include="$(ProjectDir)src/karchive/src/kxzfilter.h">
-      <Filter>Header Files</Filter>
-    </None>
-    <None Include="$(ProjectDir)src/karchive/src/kzip.cpp">
-      <Filter>Source Files</Filter>
-    </None>
-    <None Include="$(ProjectDir)src/karchive/src/kzip.h">
-      <Filter>Header Files</Filter>
-    </None>
-    <None Include="$(ProjectDir)src/karchive/src/kzipfileentry.h">
-      <Filter>Header Files</Filter>
-    </None>
-    <None Include="$(ProjectDir)src/karchive/src/loggingcategory.cpp">
-      <Filter>Source Files</Filter>
-    </None>
-    <None Include="$(ProjectDir)src/karchive/src/loggingcategory.h">
-      <Filter>Header Files</Filter>
-    </None>
-  </ItemGroup>
+    <ItemGroup>
+        <Filter Include="Source Files">
+            <UniqueIdentifier>{97d602c3-9597-4720-9c20-8176837b7a0e}</UniqueIdentifier>
+            <Extensions>c;C;cpp;cxx;c++;cc;cs;def;java;m;mm</Extensions>
+            <ParseFiles>True</ParseFiles>
+            <SourceControlFiles>True</SourceControlFiles>
+        </Filter>
+        <Filter Include="Header Files">
+            <UniqueIdentifier>{b47b4907-b44f-4991-a068-94dd7ed4938b}</UniqueIdentifier>
+            <Extensions>h;H;hpp;hxx;h++</Extensions>
+            <ParseFiles>True</ParseFiles>
+            <SourceControlFiles>True</SourceControlFiles>
+        </Filter>
+        <Filter Include="Form Files">
+            <UniqueIdentifier>{09fa570c-75ba-4b14-8e00-45e30a86ea8d}</UniqueIdentifier>
+            <Extensions>ui</Extensions>
+            <ParseFiles>True</ParseFiles>
+            <SourceControlFiles>True</SourceControlFiles>
+        </Filter>
+        <Filter Include="Resource Files">
+            <UniqueIdentifier>{5d0350c0-edce-461f-b7d8-ee0a11014743}</UniqueIdentifier>
+            <Extensions>qrc;rc;*</Extensions>
+            <ParseFiles>False</ParseFiles>
+            <SourceControlFiles>True</SourceControlFiles>
+        </Filter>
+        <Filter Include="Generated Files">
+            <UniqueIdentifier>{2c04aa22-e801-4ac6-ab8e-97d096e802e4}</UniqueIdentifier>
+            <Extensions>moc</Extensions>
+            <ParseFiles>True</ParseFiles>
+            <SourceControlFiles>False</SourceControlFiles>
+        </Filter>
+        <Filter Include="Translation Files">
+            <UniqueIdentifier>{37b953f8-2d4b-4ffa-a58d-1a3a9c467021}</UniqueIdentifier>
+            <Extensions>ts</Extensions>
+            <ParseFiles>False</ParseFiles>
+            <SourceControlFiles>True</SourceControlFiles>
+        </Filter>
+    </ItemGroup>
 </Project>
