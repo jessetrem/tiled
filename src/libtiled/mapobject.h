@@ -232,6 +232,8 @@ public:
     bool isTemplateBase() const;
     void markAsTemplateBase();
 
+    void parseRandomizedProperties(QString sFilename, int iNextObjectID);
+
 private:
     void flipInScreenCoordinates(FlipDirection direction, const QPointF &screenOrigin);
     void flipInPixelCoordinates(FlipDirection direction, const QPointF &pixelOrigin);
