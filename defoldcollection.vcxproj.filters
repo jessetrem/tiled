@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+    <ItemGroup>
+        <Filter Include="Source Files">
+            <UniqueIdentifier>{8fc5c12d-8ab0-4626-842e-264d9bd2f77f}</UniqueIdentifier>
+            <Extensions>c;C;cpp;cxx;c++;cc;cs;def;java;m;mm</Extensions>
+            <ParseFiles>True</ParseFiles>
+            <SourceControlFiles>True</SourceControlFiles>
+        </Filter>
+        <Filter Include="Header Files">
+            <UniqueIdentifier>{1bc7232b-e3e4-438b-8e21-09c9790c9384}</UniqueIdentifier>
+            <Extensions>h;H;hpp;hxx;h++</Extensions>
+            <ParseFiles>True</ParseFiles>
+            <SourceControlFiles>True</SourceControlFiles>
+        </Filter>
+        <Filter Include="Form Files">
+            <UniqueIdentifier>{7d4febb2-1c72-4326-af05-c76512303324}</UniqueIdentifier>
+            <Extensions>ui</Extensions>
+            <ParseFiles>True</ParseFiles>
+            <SourceControlFiles>True</SourceControlFiles>
+        </Filter>
+        <Filter Include="Resource Files">
+            <UniqueIdentifier>{87e8ea93-c0ee-42c0-b028-6a54f679ef0d}</UniqueIdentifier>
+            <Extensions>qrc;rc;*</Extensions>
+            <ParseFiles>False</ParseFiles>
+            <SourceControlFiles>True</SourceControlFiles>
+        </Filter>
+        <Filter Include="Generated Files">
+            <UniqueIdentifier>{b2a314e4-edf8-4d9f-99c8-24ae2e157995}</UniqueIdentifier>
+            <Extensions>moc</Extensions>
+            <ParseFiles>True</ParseFiles>
+            <SourceControlFiles>False</SourceControlFiles>
+        </Filter>
+        <Filter Include="Translation Files">
+            <UniqueIdentifier>{fb27aaa0-f78f-4378-8548-019a9caa4ba4}</UniqueIdentifier>
+            <Extensions>ts</Extensions>
+            <ParseFiles>False</ParseFiles>
+            <SourceControlFiles>True</SourceControlFiles>
+        </Filter>
+    </ItemGroup>
+    <ItemGroup>
+        <ClCompile Include="C:/dev/eden_industries/eden_projects/SketchEngine/tools/Tiled3.0/tiled/src/plugins/defoldcollection/defoldcollectionplugin.cpp">
+            <Filter>Source Files</Filter>
+        </ClCompile>
+    </ItemGroup>
+    <ItemGroup>
+        <ClInclude Include="C:/dev/eden_industries/eden_projects/SketchEngine/tools/Tiled3.0/tiled/src/plugins/defoldcollection/defoldcollectionplugin.h">
+            <Filter>Header Files</Filter>
+        </ClInclude>
+        <ClInclude Include="C:/dev/eden_industries/eden_projects/SketchEngine/tools/Tiled3.0/tiled/src/plugins/defoldcollection/defoldcollectionplugin_global.h">
+            <Filter>Header Files</Filter>
+        </ClInclude>
+    </ItemGroup>
+    <ItemGroup>
+        <None Include="C:/dev/eden_industries/eden_projects/SketchEngine/tools/Tiled3.0/tiled/src/plugins/defoldcollection/plugin.json"/>
+    </ItemGroup>
+</Project>

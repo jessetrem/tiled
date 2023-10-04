@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+    <ItemGroup>
+        <Filter Include="Source Files">
+            <UniqueIdentifier>{dea28471-caa5-41f4-be1e-dc0c08fa93fe}</UniqueIdentifier>
+            <Extensions>c;C;cpp;cxx;c++;cc;cs;def;java;m;mm</Extensions>
+            <ParseFiles>True</ParseFiles>
+            <SourceControlFiles>True</SourceControlFiles>
+        </Filter>
+        <Filter Include="Header Files">
+            <UniqueIdentifier>{2c701bda-6ebf-4a13-9c69-21b0243862ff}</UniqueIdentifier>
+            <Extensions>h;H;hpp;hxx;h++</Extensions>
+            <ParseFiles>True</ParseFiles>
+            <SourceControlFiles>True</SourceControlFiles>
+        </Filter>
+        <Filter Include="Form Files">
+            <UniqueIdentifier>{8a58ea69-5906-4e6e-86ab-cc1fe41446a3}</UniqueIdentifier>
+            <Extensions>ui</Extensions>
+            <ParseFiles>True</ParseFiles>
+            <SourceControlFiles>True</SourceControlFiles>
+        </Filter>
+        <Filter Include="Resource Files">
+            <UniqueIdentifier>{959ff426-ad72-4f5d-9a84-3384e34029b7}</UniqueIdentifier>
+            <Extensions>qrc;rc;*</Extensions>
+            <ParseFiles>False</ParseFiles>
+            <SourceControlFiles>True</SourceControlFiles>
+        </Filter>
+        <Filter Include="Generated Files">
+            <UniqueIdentifier>{9bc42c25-50b1-4654-87e5-11130f57f959}</UniqueIdentifier>
+            <Extensions>moc</Extensions>
+            <ParseFiles>True</ParseFiles>
+            <SourceControlFiles>False</SourceControlFiles>
+        </Filter>
+        <Filter Include="Translation Files">
+            <UniqueIdentifier>{aeb475e9-3531-471d-8b40-88ed3cbb74c2}</UniqueIdentifier>
+            <Extensions>ts</Extensions>
+            <ParseFiles>False</ParseFiles>
+            <SourceControlFiles>True</SourceControlFiles>
+        </Filter>
+    </ItemGroup>
+    <ItemGroup>
+        <ClCompile Include="C:/dev/eden_industries/eden_projects/SketchEngine/tools/Tiled3.0/tiled/src/terraingenerator/main.cpp">
+            <Filter>Source Files</Filter>
+        </ClCompile>
+    </ItemGroup>
+</Project>

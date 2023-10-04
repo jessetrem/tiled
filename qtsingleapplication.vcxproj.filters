@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+    <ItemGroup>
+        <Filter Include="Source Files">
+            <UniqueIdentifier>{69cc4568-b9c6-4a26-9a0e-cdda6dbf68c1}</UniqueIdentifier>
+            <Extensions>c;C;cpp;cxx;c++;cc;cs;def;java;m;mm</Extensions>
+            <ParseFiles>True</ParseFiles>
+            <SourceControlFiles>True</SourceControlFiles>
+        </Filter>
+        <Filter Include="Header Files">
+            <UniqueIdentifier>{8cfe637f-cb3d-4ac9-9d21-a39c501acf89}</UniqueIdentifier>
+            <Extensions>h;H;hpp;hxx;h++</Extensions>
+            <ParseFiles>True</ParseFiles>
+            <SourceControlFiles>True</SourceControlFiles>
+        </Filter>
+        <Filter Include="Form Files">
+            <UniqueIdentifier>{3474fd38-5e43-45d8-b2c8-9894bd726be1}</UniqueIdentifier>
+            <Extensions>ui</Extensions>
+            <ParseFiles>True</ParseFiles>
+            <SourceControlFiles>True</SourceControlFiles>
+        </Filter>
+        <Filter Include="Resource Files">
+            <UniqueIdentifier>{8c8f5f11-68c4-447b-bc39-5fd83b381d5a}</UniqueIdentifier>
+            <Extensions>qrc;rc;*</Extensions>
+            <ParseFiles>False</ParseFiles>
+            <SourceControlFiles>True</SourceControlFiles>
+        </Filter>
+        <Filter Include="Generated Files">
+            <UniqueIdentifier>{f288db11-4782-4afb-92b6-ec047f34edf0}</UniqueIdentifier>
+            <Extensions>moc</Extensions>
+            <ParseFiles>True</ParseFiles>
+            <SourceControlFiles>False</SourceControlFiles>
+        </Filter>
+        <Filter Include="Translation Files">
+            <UniqueIdentifier>{c38e2522-0e49-4d2a-b511-a2806df566db}</UniqueIdentifier>
+            <Extensions>ts</Extensions>
+            <ParseFiles>False</ParseFiles>
+            <SourceControlFiles>True</SourceControlFiles>
+        </Filter>
+    </ItemGroup>
+    <ItemGroup>
+        <ClCompile Include="C:/dev/eden_industries/eden_projects/SketchEngine/tools/Tiled3.0/tiled/src/qtsingleapplication/src/qtlocalpeer.cpp">
+            <Filter>Source Files</Filter>
+        </ClCompile>
+        <ClCompile Include="C:/dev/eden_industries/eden_projects/SketchEngine/tools/Tiled3.0/tiled/src/qtsingleapplication/src/qtsingleapplication.cpp">
+            <Filter>Source Files</Filter>
+        </ClCompile>
+    </ItemGroup>
+    <ItemGroup>
+        <ClInclude Include="C:/dev/eden_industries/eden_projects/SketchEngine/tools/Tiled3.0/tiled/src/qtsingleapplication/src/qtlocalpeer.h">
+            <Filter>Header Files</Filter>
+        </ClInclude>
+        <ClInclude Include="C:/dev/eden_industries/eden_projects/SketchEngine/tools/Tiled3.0/tiled/src/qtsingleapplication/src/qtsingleapplication.h">
+            <Filter>Header Files</Filter>
+        </ClInclude>
+    </ItemGroup>
+</Project>

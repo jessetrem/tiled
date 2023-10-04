@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Project DefaultTargets="Build" ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+    <ItemGroup Label="ProjectConfigurations">
+        <ProjectConfiguration Include="default|x64">
+            <Configuration>default</Configuration>
+            <Platform>x64</Platform>
+        </ProjectConfiguration>
+    </ItemGroup>
+    <PropertyGroup Label="Globals">
+        <ProjectGuid>{9028eb5b-43ab-4d43-b1aa-376266cbf3ec}</ProjectGuid>
+        <QbsProductName>tiledquick</QbsProductName>
+    </PropertyGroup>
+    <ImportGroup Label="PropertySheets">
+        <Import Project="$(SolutionDir)\qbs.props" Condition="Exists('$(SolutionDir)\qbs.props')"/>
+        <Import Project="$(SolutionDir)\qbs-shared.props"/>
+    </ImportGroup>
+    <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props"/>
+    <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='default|x64'" Label="Configuration">
+        <UseDebugLibraries>true</UseDebugLibraries>
+        <OutDir>$(SolutionDir)$(Configuration)\install-root\</OutDir>
+        <TargetName>tiledquick</TargetName>
+        <PlatformToolset>v142</PlatformToolset>
+        <ConfigurationType>Makefile</ConfigurationType>
+        <CharacterSet>MultiByte</CharacterSet>
+        <DebuggerFlavor>WindowsLocalDebugger</DebuggerFlavor>
+        <LocalDebuggerCommand>$(OutDir)$(TargetName)$(TargetExt)</LocalDebuggerCommand>
+        <LocalDebuggerWorkingDirectory>$(OutDir)</LocalDebuggerWorkingDirectory>
+        <LocalDebuggerEnvironment>PATH=$(SolutionDir)$(Configuration)\install-root;$(SolutionDir)$(Configuration)\install-root\qml\org\mapeditor\Tiled;C:\dev\tools\qt\6.6.0\msvc2019_64\bin;C:\dev\tools\qt\6.6.0\msvc2019_64\lib</LocalDebuggerEnvironment>
+        <NMakeBuildCommandLine>$(QbsBuildCommandLine) qbs.profile:MSVC2019-x64</NMakeBuildCommandLine>
+        <NMakeReBuildCommandLine>$(QbsReBuildCommandLine) qbs.profile:MSVC2019-x64</NMakeReBuildCommandLine>
+        <NMakeCleanCommandLine>$(QbsCleanCommandLine) qbs.profile:MSVC2019-x64</NMakeCleanCommandLine>
+        <NMakeOutput>$(OutDir)$(TargetName)$(TargetExt)</NMakeOutput>
+        <NMakePreprocessorDefinitions>QT_WIDGETS_LIB;QT_QUICK_LIB;QT_QMLMODELS_LIB;QT_OPENGL_LIB;QT_QMLINTEGRATION_LIB;QT_QML_LIB;QT_NETWORK_LIB;QT_GUI_LIB;QT_CORE_LIB;_ENABLE_EXTENDED_ALIGNED_STORAGE</NMakePreprocessorDefinitions>
+        <NMakeIncludeSearchPath>C:/dev/eden_industries/eden_projects/SketchEngine/tools/Tiled3.0/tiled/src/tiledquick;C:/dev/eden_industries/eden_projects/SketchEngine/tools/Tiled3.0/tiled/default/tiledquick.183c88d2/qt.headers;C:/dev/tools/qt/6.6.0/msvc2019_64/include;C:/dev/tools/qt/6.6.0/msvc2019_64/include/QtWidgets;C:/dev/tools/qt/6.6.0/msvc2019_64/include;C:/dev/tools/qt/6.6.0/msvc2019_64/include/QtQuick;C:/dev/tools/qt/6.6.0/msvc2019_64/include;C:/dev/tools/qt/6.6.0/msvc2019_64/include/QtQmlModels;C:/dev/tools/qt/6.6.0/msvc2019_64/include;C:/dev/tools/qt/6.6.0/msvc2019_64/include/QtOpenGL;C:/dev/tools/qt/6.6.0/msvc2019_64/include;C:/dev/tools/qt/6.6.0/msvc2019_64/include/QtQmlIntegration;C:/dev/tools/qt/6.6.0/msvc2019_64/include;C:/dev/tools/qt/6.6.0/msvc2019_64/include/QtQml;C:/dev/tools/qt/6.6.0/msvc2019_64/include;C:/dev/tools/qt/6.6.0/msvc2019_64/include/QtNetwork;C:/dev/tools/qt/6.6.0/msvc2019_64/include;C:/dev/tools/qt/6.6.0/msvc2019_64/include/QtGui;C:/dev/tools/qt/6.6.0/msvc2019_64/include;C:/dev/tools/qt/6.6.0/msvc2019_64/include/QtCore;C:/dev/tools/qt/6.6.0/msvc2019_64/mkspecs/win32-msvc</NMakeIncludeSearchPath>
+    </PropertyGroup>
+    <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props"/>
+    <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='default|x64'">
+        <ClCompile>
+            <AdditionalIncludeDirectories>C:/dev/eden_industries/eden_projects/SketchEngine/tools/Tiled3.0/tiled/src/tiledquick;C:/dev/eden_industries/eden_projects/SketchEngine/tools/Tiled3.0/tiled/default/tiledquick.183c88d2/qt.headers;C:/dev/tools/qt/6.6.0/msvc2019_64/include;C:/dev/tools/qt/6.6.0/msvc2019_64/include/QtWidgets;C:/dev/tools/qt/6.6.0/msvc2019_64/include;C:/dev/tools/qt/6.6.0/msvc2019_64/include/QtQuick;C:/dev/tools/qt/6.6.0/msvc2019_64/include;C:/dev/tools/qt/6.6.0/msvc2019_64/include/QtQmlModels;C:/dev/tools/qt/6.6.0/msvc2019_64/include;C:/dev/tools/qt/6.6.0/msvc2019_64/include/QtOpenGL;C:/dev/tools/qt/6.6.0/msvc2019_64/include;C:/dev/tools/qt/6.6.0/msvc2019_64/include/QtQmlIntegration;C:/dev/tools/qt/6.6.0/msvc2019_64/include;C:/dev/tools/qt/6.6.0/msvc2019_64/include/QtQml;C:/dev/tools/qt/6.6.0/msvc2019_64/include;C:/dev/tools/qt/6.6.0/msvc2019_64/include/QtNetwork;C:/dev/tools/qt/6.6.0/msvc2019_64/include;C:/dev/tools/qt/6.6.0/msvc2019_64/include/QtGui;C:/dev/tools/qt/6.6.0/msvc2019_64/include;C:/dev/tools/qt/6.6.0/msvc2019_64/include/QtCore;C:/dev/tools/qt/6.6.0/msvc2019_64/mkspecs/win32-msvc;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+            <WarningLevel>Level3</WarningLevel>
+            <Optimization>Disabled</Optimization>
+            <PreprocessorDefinitions>QT_WIDGETS_LIB;QT_QUICK_LIB;QT_QMLMODELS_LIB;QT_OPENGL_LIB;QT_QMLINTEGRATION_LIB;QT_QML_LIB;QT_NETWORK_LIB;QT_GUI_LIB;QT_CORE_LIB;_ENABLE_EXTENDED_ALIGNED_STORAGE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+            <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+        </ClCompile>
+        <Link>
+            <AdditionalLibraryDirectories>C:/dev/tools/qt/6.6.0/msvc2019_64/lib</AdditionalLibraryDirectories>
+            <AdditionalDependencies>Shell32.lib;Shell32.lib;C:/dev/tools/qt/6.6.0/msvc2019_64/lib/Qt6EntryPointd.lib;%(AdditionalDependencies)</AdditionalDependencies>
+            <GenerateDebugInformation>true</GenerateDebugInformation>
+            <SubSystem>Windows</SubSystem>
+            <MinimumRequiredVersion>10.00</MinimumRequiredVersion>
+            <OptimizeReferences>false</OptimizeReferences>
+        </Link>
+    </ItemDefinitionGroup>
+    <ItemGroup>
+        <None Include="$(ProjectDir)src/tiledquick/tiledquick.qbs"/>
+        <None Include="$(ProjectDir)src/tiledquick/fonts/fonts.qrc"/>
+        <ClCompile Include="$(ProjectDir)src/tiledquick/main.cpp"/>
+        <None Include="$(ProjectDir)src/tiledquick/qml/qml.qrc"/>
+        <None Include="$(ProjectDir)src/tiledquick/qml/qtquickcontrols2.conf"/>
+    </ItemGroup>
+    <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets"/>
+</Project>

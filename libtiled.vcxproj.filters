@@ -1,0 +1,318 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+    <ItemGroup>
+        <Filter Include="Source Files">
+            <UniqueIdentifier>{a3fab09a-a79f-4e66-b75e-73567591937d}</UniqueIdentifier>
+            <Extensions>c;C;cpp;cxx;c++;cc;cs;def;java;m;mm</Extensions>
+            <ParseFiles>True</ParseFiles>
+            <SourceControlFiles>True</SourceControlFiles>
+        </Filter>
+        <Filter Include="Header Files">
+            <UniqueIdentifier>{f0fa7f2a-2b06-4b54-90be-c9cdcc0afea6}</UniqueIdentifier>
+            <Extensions>h;H;hpp;hxx;h++</Extensions>
+            <ParseFiles>True</ParseFiles>
+            <SourceControlFiles>True</SourceControlFiles>
+        </Filter>
+        <Filter Include="Form Files">
+            <UniqueIdentifier>{ad57a475-0abb-4914-aa59-1c026c8f2c49}</UniqueIdentifier>
+            <Extensions>ui</Extensions>
+            <ParseFiles>True</ParseFiles>
+            <SourceControlFiles>True</SourceControlFiles>
+        </Filter>
+        <Filter Include="Resource Files">
+            <UniqueIdentifier>{9c4a9f55-c5c0-49a8-997e-507aecf6ca9a}</UniqueIdentifier>
+            <Extensions>qrc;rc;*</Extensions>
+            <ParseFiles>False</ParseFiles>
+            <SourceControlFiles>True</SourceControlFiles>
+        </Filter>
+        <Filter Include="Generated Files">
+            <UniqueIdentifier>{caf104a9-9115-42ed-95a9-e67f3b0c6cd6}</UniqueIdentifier>
+            <Extensions>moc</Extensions>
+            <ParseFiles>True</ParseFiles>
+            <SourceControlFiles>False</SourceControlFiles>
+        </Filter>
+        <Filter Include="Translation Files">
+            <UniqueIdentifier>{4c8337dc-e5c8-4204-a0d9-1951b437eb0a}</UniqueIdentifier>
+            <Extensions>ts</Extensions>
+            <ParseFiles>False</ParseFiles>
+            <SourceControlFiles>True</SourceControlFiles>
+        </Filter>
+    </ItemGroup>
+    <ItemGroup>
+        <ClCompile Include="C:/dev/eden_industries/eden_projects/SketchEngine/tools/Tiled3.0/tiled/src/libtiled/compression.cpp">
+            <Filter>Source Files</Filter>
+        </ClCompile>
+        <ClCompile Include="C:/dev/eden_industries/eden_projects/SketchEngine/tools/Tiled3.0/tiled/src/libtiled/fileformat.cpp">
+            <Filter>Source Files</Filter>
+        </ClCompile>
+        <ClCompile Include="C:/dev/eden_industries/eden_projects/SketchEngine/tools/Tiled3.0/tiled/src/libtiled/filesystemwatcher.cpp">
+            <Filter>Source Files</Filter>
+        </ClCompile>
+        <ClCompile Include="C:/dev/eden_industries/eden_projects/SketchEngine/tools/Tiled3.0/tiled/src/libtiled/gidmapper.cpp">
+            <Filter>Source Files</Filter>
+        </ClCompile>
+        <ClCompile Include="C:/dev/eden_industries/eden_projects/SketchEngine/tools/Tiled3.0/tiled/src/libtiled/grouplayer.cpp">
+            <Filter>Source Files</Filter>
+        </ClCompile>
+        <ClCompile Include="C:/dev/eden_industries/eden_projects/SketchEngine/tools/Tiled3.0/tiled/src/libtiled/hex.cpp">
+            <Filter>Source Files</Filter>
+        </ClCompile>
+        <ClCompile Include="C:/dev/eden_industries/eden_projects/SketchEngine/tools/Tiled3.0/tiled/src/libtiled/hexagonalrenderer.cpp">
+            <Filter>Source Files</Filter>
+        </ClCompile>
+        <ClCompile Include="C:/dev/eden_industries/eden_projects/SketchEngine/tools/Tiled3.0/tiled/src/libtiled/imagecache.cpp">
+            <Filter>Source Files</Filter>
+        </ClCompile>
+        <ClCompile Include="C:/dev/eden_industries/eden_projects/SketchEngine/tools/Tiled3.0/tiled/src/libtiled/imagelayer.cpp">
+            <Filter>Source Files</Filter>
+        </ClCompile>
+        <ClCompile Include="C:/dev/eden_industries/eden_projects/SketchEngine/tools/Tiled3.0/tiled/src/libtiled/imagereference.cpp">
+            <Filter>Source Files</Filter>
+        </ClCompile>
+        <ClCompile Include="C:/dev/eden_industries/eden_projects/SketchEngine/tools/Tiled3.0/tiled/src/libtiled/isometricrenderer.cpp">
+            <Filter>Source Files</Filter>
+        </ClCompile>
+        <ClCompile Include="C:/dev/eden_industries/eden_projects/SketchEngine/tools/Tiled3.0/tiled/src/libtiled/layer.cpp">
+            <Filter>Source Files</Filter>
+        </ClCompile>
+        <ClCompile Include="C:/dev/eden_industries/eden_projects/SketchEngine/tools/Tiled3.0/tiled/src/libtiled/logginginterface.cpp">
+            <Filter>Source Files</Filter>
+        </ClCompile>
+        <ClCompile Include="C:/dev/eden_industries/eden_projects/SketchEngine/tools/Tiled3.0/tiled/src/libtiled/map.cpp">
+            <Filter>Source Files</Filter>
+        </ClCompile>
+        <ClCompile Include="C:/dev/eden_industries/eden_projects/SketchEngine/tools/Tiled3.0/tiled/src/libtiled/mapformat.cpp">
+            <Filter>Source Files</Filter>
+        </ClCompile>
+        <ClCompile Include="C:/dev/eden_industries/eden_projects/SketchEngine/tools/Tiled3.0/tiled/src/libtiled/mapobject.cpp">
+            <Filter>Source Files</Filter>
+        </ClCompile>
+        <ClCompile Include="C:/dev/eden_industries/eden_projects/SketchEngine/tools/Tiled3.0/tiled/src/libtiled/mapreader.cpp">
+            <Filter>Source Files</Filter>
+        </ClCompile>
+        <ClCompile Include="C:/dev/eden_industries/eden_projects/SketchEngine/tools/Tiled3.0/tiled/src/libtiled/maprenderer.cpp">
+            <Filter>Source Files</Filter>
+        </ClCompile>
+        <ClCompile Include="C:/dev/eden_industries/eden_projects/SketchEngine/tools/Tiled3.0/tiled/src/libtiled/maptovariantconverter.cpp">
+            <Filter>Source Files</Filter>
+        </ClCompile>
+        <ClCompile Include="C:/dev/eden_industries/eden_projects/SketchEngine/tools/Tiled3.0/tiled/src/libtiled/mapwriter.cpp">
+            <Filter>Source Files</Filter>
+        </ClCompile>
+        <ClCompile Include="C:/dev/eden_industries/eden_projects/SketchEngine/tools/Tiled3.0/tiled/src/libtiled/minimaprenderer.cpp">
+            <Filter>Source Files</Filter>
+        </ClCompile>
+        <ClCompile Include="C:/dev/eden_industries/eden_projects/SketchEngine/tools/Tiled3.0/tiled/src/libtiled/object.cpp">
+            <Filter>Source Files</Filter>
+        </ClCompile>
+        <ClCompile Include="C:/dev/eden_industries/eden_projects/SketchEngine/tools/Tiled3.0/tiled/src/libtiled/objectgroup.cpp">
+            <Filter>Source Files</Filter>
+        </ClCompile>
+        <ClCompile Include="C:/dev/eden_industries/eden_projects/SketchEngine/tools/Tiled3.0/tiled/src/libtiled/objecttemplate.cpp">
+            <Filter>Source Files</Filter>
+        </ClCompile>
+        <ClCompile Include="C:/dev/eden_industries/eden_projects/SketchEngine/tools/Tiled3.0/tiled/src/libtiled/objecttemplateformat.cpp">
+            <Filter>Source Files</Filter>
+        </ClCompile>
+        <ClCompile Include="C:/dev/eden_industries/eden_projects/SketchEngine/tools/Tiled3.0/tiled/src/libtiled/objecttypes.cpp">
+            <Filter>Source Files</Filter>
+        </ClCompile>
+        <ClCompile Include="C:/dev/eden_industries/eden_projects/SketchEngine/tools/Tiled3.0/tiled/src/libtiled/orthogonalrenderer.cpp">
+            <Filter>Source Files</Filter>
+        </ClCompile>
+        <ClCompile Include="C:/dev/eden_industries/eden_projects/SketchEngine/tools/Tiled3.0/tiled/src/libtiled/plugin.cpp">
+            <Filter>Source Files</Filter>
+        </ClCompile>
+        <ClCompile Include="C:/dev/eden_industries/eden_projects/SketchEngine/tools/Tiled3.0/tiled/src/libtiled/pluginmanager.cpp">
+            <Filter>Source Files</Filter>
+        </ClCompile>
+        <ClCompile Include="C:/dev/eden_industries/eden_projects/SketchEngine/tools/Tiled3.0/tiled/src/libtiled/properties.cpp">
+            <Filter>Source Files</Filter>
+        </ClCompile>
+        <ClCompile Include="C:/dev/eden_industries/eden_projects/SketchEngine/tools/Tiled3.0/tiled/src/libtiled/propertytype.cpp">
+            <Filter>Source Files</Filter>
+        </ClCompile>
+        <ClCompile Include="C:/dev/eden_industries/eden_projects/SketchEngine/tools/Tiled3.0/tiled/src/libtiled/savefile.cpp">
+            <Filter>Source Files</Filter>
+        </ClCompile>
+        <ClCompile Include="C:/dev/eden_industries/eden_projects/SketchEngine/tools/Tiled3.0/tiled/src/libtiled/staggeredrenderer.cpp">
+            <Filter>Source Files</Filter>
+        </ClCompile>
+        <ClCompile Include="C:/dev/eden_industries/eden_projects/SketchEngine/tools/Tiled3.0/tiled/src/libtiled/templatemanager.cpp">
+            <Filter>Source Files</Filter>
+        </ClCompile>
+        <ClCompile Include="C:/dev/eden_industries/eden_projects/SketchEngine/tools/Tiled3.0/tiled/src/libtiled/tile.cpp">
+            <Filter>Source Files</Filter>
+        </ClCompile>
+        <ClCompile Include="C:/dev/eden_industries/eden_projects/SketchEngine/tools/Tiled3.0/tiled/src/libtiled/tileanimationdriver.cpp">
+            <Filter>Source Files</Filter>
+        </ClCompile>
+        <ClCompile Include="C:/dev/eden_industries/eden_projects/SketchEngine/tools/Tiled3.0/tiled/src/libtiled/tiled.cpp">
+            <Filter>Source Files</Filter>
+        </ClCompile>
+        <ClCompile Include="C:/dev/eden_industries/eden_projects/SketchEngine/tools/Tiled3.0/tiled/src/libtiled/tilelayer.cpp">
+            <Filter>Source Files</Filter>
+        </ClCompile>
+        <ClCompile Include="C:/dev/eden_industries/eden_projects/SketchEngine/tools/Tiled3.0/tiled/src/libtiled/tileset.cpp">
+            <Filter>Source Files</Filter>
+        </ClCompile>
+        <ClCompile Include="C:/dev/eden_industries/eden_projects/SketchEngine/tools/Tiled3.0/tiled/src/libtiled/tilesetformat.cpp">
+            <Filter>Source Files</Filter>
+        </ClCompile>
+        <ClCompile Include="C:/dev/eden_industries/eden_projects/SketchEngine/tools/Tiled3.0/tiled/src/libtiled/tilesetmanager.cpp">
+            <Filter>Source Files</Filter>
+        </ClCompile>
+        <ClCompile Include="C:/dev/eden_industries/eden_projects/SketchEngine/tools/Tiled3.0/tiled/src/libtiled/varianttomapconverter.cpp">
+            <Filter>Source Files</Filter>
+        </ClCompile>
+        <ClCompile Include="C:/dev/eden_industries/eden_projects/SketchEngine/tools/Tiled3.0/tiled/src/libtiled/wangset.cpp">
+            <Filter>Source Files</Filter>
+        </ClCompile>
+        <ClCompile Include="C:/dev/eden_industries/eden_projects/SketchEngine/tools/Tiled3.0/tiled/src/libtiled/worldmanager.cpp">
+            <Filter>Source Files</Filter>
+        </ClCompile>
+    </ItemGroup>
+    <ItemGroup>
+        <ClInclude Include="C:/dev/eden_industries/eden_projects/SketchEngine/tools/Tiled3.0/tiled/src/libtiled/compression.h">
+            <Filter>Header Files</Filter>
+        </ClInclude>
+        <ClInclude Include="C:/dev/eden_industries/eden_projects/SketchEngine/tools/Tiled3.0/tiled/src/libtiled/containerhelpers.h">
+            <Filter>Header Files</Filter>
+        </ClInclude>
+        <ClInclude Include="C:/dev/eden_industries/eden_projects/SketchEngine/tools/Tiled3.0/tiled/src/libtiled/fileformat.h">
+            <Filter>Header Files</Filter>
+        </ClInclude>
+        <ClInclude Include="C:/dev/eden_industries/eden_projects/SketchEngine/tools/Tiled3.0/tiled/src/libtiled/filesystemwatcher.h">
+            <Filter>Header Files</Filter>
+        </ClInclude>
+        <ClInclude Include="C:/dev/eden_industries/eden_projects/SketchEngine/tools/Tiled3.0/tiled/src/libtiled/gidmapper.h">
+            <Filter>Header Files</Filter>
+        </ClInclude>
+        <ClInclude Include="C:/dev/eden_industries/eden_projects/SketchEngine/tools/Tiled3.0/tiled/src/libtiled/grid.h">
+            <Filter>Header Files</Filter>
+        </ClInclude>
+        <ClInclude Include="C:/dev/eden_industries/eden_projects/SketchEngine/tools/Tiled3.0/tiled/src/libtiled/grouplayer.h">
+            <Filter>Header Files</Filter>
+        </ClInclude>
+        <ClInclude Include="C:/dev/eden_industries/eden_projects/SketchEngine/tools/Tiled3.0/tiled/src/libtiled/hex.h">
+            <Filter>Header Files</Filter>
+        </ClInclude>
+        <ClInclude Include="C:/dev/eden_industries/eden_projects/SketchEngine/tools/Tiled3.0/tiled/src/libtiled/hexagonalrenderer.h">
+            <Filter>Header Files</Filter>
+        </ClInclude>
+        <ClInclude Include="C:/dev/eden_industries/eden_projects/SketchEngine/tools/Tiled3.0/tiled/src/libtiled/imagecache.h">
+            <Filter>Header Files</Filter>
+        </ClInclude>
+        <ClInclude Include="C:/dev/eden_industries/eden_projects/SketchEngine/tools/Tiled3.0/tiled/src/libtiled/imagelayer.h">
+            <Filter>Header Files</Filter>
+        </ClInclude>
+        <ClInclude Include="C:/dev/eden_industries/eden_projects/SketchEngine/tools/Tiled3.0/tiled/src/libtiled/imagereference.h">
+            <Filter>Header Files</Filter>
+        </ClInclude>
+        <ClInclude Include="C:/dev/eden_industries/eden_projects/SketchEngine/tools/Tiled3.0/tiled/src/libtiled/isometricrenderer.h">
+            <Filter>Header Files</Filter>
+        </ClInclude>
+        <ClInclude Include="C:/dev/eden_industries/eden_projects/SketchEngine/tools/Tiled3.0/tiled/src/libtiled/layer.h">
+            <Filter>Header Files</Filter>
+        </ClInclude>
+        <ClInclude Include="C:/dev/eden_industries/eden_projects/SketchEngine/tools/Tiled3.0/tiled/src/libtiled/logginginterface.h">
+            <Filter>Header Files</Filter>
+        </ClInclude>
+        <ClInclude Include="C:/dev/eden_industries/eden_projects/SketchEngine/tools/Tiled3.0/tiled/src/libtiled/map.h">
+            <Filter>Header Files</Filter>
+        </ClInclude>
+        <ClInclude Include="C:/dev/eden_industries/eden_projects/SketchEngine/tools/Tiled3.0/tiled/src/libtiled/mapformat.h">
+            <Filter>Header Files</Filter>
+        </ClInclude>
+        <ClInclude Include="C:/dev/eden_industries/eden_projects/SketchEngine/tools/Tiled3.0/tiled/src/libtiled/mapobject.h">
+            <Filter>Header Files</Filter>
+        </ClInclude>
+        <ClInclude Include="C:/dev/eden_industries/eden_projects/SketchEngine/tools/Tiled3.0/tiled/src/libtiled/mapreader.h">
+            <Filter>Header Files</Filter>
+        </ClInclude>
+        <ClInclude Include="C:/dev/eden_industries/eden_projects/SketchEngine/tools/Tiled3.0/tiled/src/libtiled/maprenderer.h">
+            <Filter>Header Files</Filter>
+        </ClInclude>
+        <ClInclude Include="C:/dev/eden_industries/eden_projects/SketchEngine/tools/Tiled3.0/tiled/src/libtiled/maptovariantconverter.h">
+            <Filter>Header Files</Filter>
+        </ClInclude>
+        <ClInclude Include="C:/dev/eden_industries/eden_projects/SketchEngine/tools/Tiled3.0/tiled/src/libtiled/mapwriter.h">
+            <Filter>Header Files</Filter>
+        </ClInclude>
+        <ClInclude Include="C:/dev/eden_industries/eden_projects/SketchEngine/tools/Tiled3.0/tiled/src/libtiled/minimaprenderer.h">
+            <Filter>Header Files</Filter>
+        </ClInclude>
+        <ClInclude Include="C:/dev/eden_industries/eden_projects/SketchEngine/tools/Tiled3.0/tiled/src/libtiled/object.h">
+            <Filter>Header Files</Filter>
+        </ClInclude>
+        <ClInclude Include="C:/dev/eden_industries/eden_projects/SketchEngine/tools/Tiled3.0/tiled/src/libtiled/objectgroup.h">
+            <Filter>Header Files</Filter>
+        </ClInclude>
+        <ClInclude Include="C:/dev/eden_industries/eden_projects/SketchEngine/tools/Tiled3.0/tiled/src/libtiled/objecttemplate.h">
+            <Filter>Header Files</Filter>
+        </ClInclude>
+        <ClInclude Include="C:/dev/eden_industries/eden_projects/SketchEngine/tools/Tiled3.0/tiled/src/libtiled/objecttemplateformat.h">
+            <Filter>Header Files</Filter>
+        </ClInclude>
+        <ClInclude Include="C:/dev/eden_industries/eden_projects/SketchEngine/tools/Tiled3.0/tiled/src/libtiled/objecttypes.h">
+            <Filter>Header Files</Filter>
+        </ClInclude>
+        <ClInclude Include="C:/dev/eden_industries/eden_projects/SketchEngine/tools/Tiled3.0/tiled/src/libtiled/orthogonalrenderer.h">
+            <Filter>Header Files</Filter>
+        </ClInclude>
+        <ClInclude Include="C:/dev/eden_industries/eden_projects/SketchEngine/tools/Tiled3.0/tiled/src/libtiled/plugin.h">
+            <Filter>Header Files</Filter>
+        </ClInclude>
+        <ClInclude Include="C:/dev/eden_industries/eden_projects/SketchEngine/tools/Tiled3.0/tiled/src/libtiled/pluginmanager.h">
+            <Filter>Header Files</Filter>
+        </ClInclude>
+        <ClInclude Include="C:/dev/eden_industries/eden_projects/SketchEngine/tools/Tiled3.0/tiled/src/libtiled/properties.h">
+            <Filter>Header Files</Filter>
+        </ClInclude>
+        <ClInclude Include="C:/dev/eden_industries/eden_projects/SketchEngine/tools/Tiled3.0/tiled/src/libtiled/propertytype.h">
+            <Filter>Header Files</Filter>
+        </ClInclude>
+        <ClInclude Include="C:/dev/eden_industries/eden_projects/SketchEngine/tools/Tiled3.0/tiled/src/libtiled/savefile.h">
+            <Filter>Header Files</Filter>
+        </ClInclude>
+        <ClInclude Include="C:/dev/eden_industries/eden_projects/SketchEngine/tools/Tiled3.0/tiled/src/libtiled/staggeredrenderer.h">
+            <Filter>Header Files</Filter>
+        </ClInclude>
+        <ClInclude Include="C:/dev/eden_industries/eden_projects/SketchEngine/tools/Tiled3.0/tiled/src/libtiled/templatemanager.h">
+            <Filter>Header Files</Filter>
+        </ClInclude>
+        <ClInclude Include="C:/dev/eden_industries/eden_projects/SketchEngine/tools/Tiled3.0/tiled/src/libtiled/tile.h">
+            <Filter>Header Files</Filter>
+        </ClInclude>
+        <ClInclude Include="C:/dev/eden_industries/eden_projects/SketchEngine/tools/Tiled3.0/tiled/src/libtiled/tileanimationdriver.h">
+            <Filter>Header Files</Filter>
+        </ClInclude>
+        <ClInclude Include="C:/dev/eden_industries/eden_projects/SketchEngine/tools/Tiled3.0/tiled/src/libtiled/tiled.h">
+            <Filter>Header Files</Filter>
+        </ClInclude>
+        <ClInclude Include="C:/dev/eden_industries/eden_projects/SketchEngine/tools/Tiled3.0/tiled/src/libtiled/tiled_global.h">
+            <Filter>Header Files</Filter>
+        </ClInclude>
+        <ClInclude Include="C:/dev/eden_industries/eden_projects/SketchEngine/tools/Tiled3.0/tiled/src/libtiled/tilelayer.h">
+            <Filter>Header Files</Filter>
+        </ClInclude>
+        <ClInclude Include="C:/dev/eden_industries/eden_projects/SketchEngine/tools/Tiled3.0/tiled/src/libtiled/tileset.h">
+            <Filter>Header Files</Filter>
+        </ClInclude>
+        <ClInclude Include="C:/dev/eden_industries/eden_projects/SketchEngine/tools/Tiled3.0/tiled/src/libtiled/tilesetformat.h">
+            <Filter>Header Files</Filter>
+        </ClInclude>
+        <ClInclude Include="C:/dev/eden_industries/eden_projects/SketchEngine/tools/Tiled3.0/tiled/src/libtiled/tilesetmanager.h">
+            <Filter>Header Files</Filter>
+        </ClInclude>
+        <ClInclude Include="C:/dev/eden_industries/eden_projects/SketchEngine/tools/Tiled3.0/tiled/src/libtiled/varianttomapconverter.h">
+            <Filter>Header Files</Filter>
+        </ClInclude>
+        <ClInclude Include="C:/dev/eden_industries/eden_projects/SketchEngine/tools/Tiled3.0/tiled/src/libtiled/wangset.h">
+            <Filter>Header Files</Filter>
+        </ClInclude>
+        <ClInclude Include="C:/dev/eden_industries/eden_projects/SketchEngine/tools/Tiled3.0/tiled/src/libtiled/worldmanager.h">
+            <Filter>Header Files</Filter>
+        </ClInclude>
+    </ItemGroup>
+</Project>

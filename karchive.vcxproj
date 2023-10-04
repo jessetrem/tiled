@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Project DefaultTargets="Build" ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+    <ItemGroup Label="ProjectConfigurations">
+        <ProjectConfiguration Include="default|x64">
+            <Configuration>default</Configuration>
+            <Platform>x64</Platform>
+        </ProjectConfiguration>
+    </ItemGroup>
+    <PropertyGroup Label="Globals">
+        <ProjectGuid>{42eb120f-3475-4ecb-97ee-f99af6166705}</ProjectGuid>
+        <QbsProductName>karchive</QbsProductName>
+    </PropertyGroup>
+    <ImportGroup Label="PropertySheets">
+        <Import Project="$(SolutionDir)\qbs.props" Condition="Exists('$(SolutionDir)\qbs.props')"/>
+        <Import Project="$(SolutionDir)\qbs-shared.props"/>
+    </ImportGroup>
+    <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props"/>
+    <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='default|x64'" Label="Configuration">
+        <UseDebugLibraries>true</UseDebugLibraries>
+        <OutDir>$(SolutionDir)$(Configuration)\karchive.3dccb69d\</OutDir>
+        <TargetName>karchive</TargetName>
+        <PlatformToolset>v142</PlatformToolset>
+        <ConfigurationType>Makefile</ConfigurationType>
+        <CharacterSet>MultiByte</CharacterSet>
+        <DebuggerFlavor>WindowsLocalDebugger</DebuggerFlavor>
+        <LocalDebuggerCommand>$(OutDir)$(TargetName)$(TargetExt)</LocalDebuggerCommand>
+        <LocalDebuggerWorkingDirectory>$(OutDir)</LocalDebuggerWorkingDirectory>
+        <NMakeBuildCommandLine>$(QbsBuildCommandLine) qbs.profile:MSVC2019-x64</NMakeBuildCommandLine>
+        <NMakeReBuildCommandLine>$(QbsReBuildCommandLine) qbs.profile:MSVC2019-x64</NMakeReBuildCommandLine>
+        <NMakeCleanCommandLine>$(QbsCleanCommandLine) qbs.profile:MSVC2019-x64</NMakeCleanCommandLine>
+        <NMakeOutput>$(OutDir)$(TargetName)$(TargetExt)</NMakeOutput>
+        <NMakePreprocessorDefinitions>KARCHIVE_NO_DEPRECATED;KARCHIVE_STATIC_DEFINE;QT_NO_CAST_FROM_ASCII;QT_CORE_LIB;_ENABLE_EXTENDED_ALIGNED_STORAGE</NMakePreprocessorDefinitions>
+        <NMakeIncludeSearchPath>C:/dev/eden_industries/eden_projects/SketchEngine/tools/Tiled3.0/tiled/src/karchive/src;C:/dev/eden_industries/eden_projects/SketchEngine/tools/Tiled3.0/tiled/default/karchive.3dccb69d/qt.headers;C:/dev/tools/qt/6.6.0/msvc2019_64/include;C:/dev/tools/qt/6.6.0/msvc2019_64/include/QtCore;C:/dev/tools/qt/6.6.0/msvc2019_64/mkspecs/win32-msvc</NMakeIncludeSearchPath>
+    </PropertyGroup>
+    <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props"/>
+    <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='default|x64'">
+        <ClCompile>
+            <AdditionalIncludeDirectories>C:/dev/eden_industries/eden_projects/SketchEngine/tools/Tiled3.0/tiled/src/karchive/src;C:/dev/eden_industries/eden_projects/SketchEngine/tools/Tiled3.0/tiled/default/karchive.3dccb69d/qt.headers;C:/dev/tools/qt/6.6.0/msvc2019_64/include;C:/dev/tools/qt/6.6.0/msvc2019_64/include/QtCore;C:/dev/tools/qt/6.6.0/msvc2019_64/mkspecs/win32-msvc;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+            <WarningLevel>Level3</WarningLevel>
+            <Optimization>Disabled</Optimization>
+            <PreprocessorDefinitions>KARCHIVE_NO_DEPRECATED;KARCHIVE_STATIC_DEFINE;QT_NO_CAST_FROM_ASCII;QT_CORE_LIB;_ENABLE_EXTENDED_ALIGNED_STORAGE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+            <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+        </ClCompile>
+        <Link>
+            <AdditionalLibraryDirectories>C:/dev/tools/qt/6.6.0/msvc2019_64/lib</AdditionalLibraryDirectories>
+            <AdditionalDependencies>Shell32.lib;Shell32.lib;C:/dev/tools/qt/6.6.0/msvc2019_64/lib/Qt6EntryPointd.lib;%(AdditionalDependencies)</AdditionalDependencies>
+            <GenerateDebugInformation>true</GenerateDebugInformation>
+            <SubSystem>Windows</SubSystem>
+            <MinimumRequiredVersion>10.00</MinimumRequiredVersion>
+            <OptimizeReferences>false</OptimizeReferences>
+        </Link>
+    </ItemDefinitionGroup>
+    <ItemGroup>
+        <None Include="$(ProjectDir)src/karchive/karchive.qbs"/>
+        <None Include="$(ProjectDir)src/karchive/src/config-compression.h">
+            <ExcludedFromBuild>true</ExcludedFromBuild>
+        </None>
+        <None Include="$(ProjectDir)src/karchive/src/k7zip.h">
+            <ExcludedFromBuild>true</ExcludedFromBuild>
+        </None>
+        <None Include="$(ProjectDir)src/karchive/src/kar.cpp">
+            <ExcludedFromBuild>true</ExcludedFromBuild>
+        </None>
+        <None Include="$(ProjectDir)src/karchive/src/kar.h">
+            <ExcludedFromBuild>true</ExcludedFromBuild>
+        </None>
+        <None Include="$(ProjectDir)src/karchive/src/karchive.cpp">
+            <ExcludedFromBuild>true</ExcludedFromBuild>
+        </None>
+        <None Include="$(ProjectDir)src/karchive/src/karchive.h">
+            <ExcludedFromBuild>true</ExcludedFromBuild>
+        </None>
+        <None Include="$(ProjectDir)src/karchive/src/karchive_export.h">
+            <ExcludedFromBuild>true</ExcludedFromBuild>
+        </None>
+        <None Include="$(ProjectDir)src/karchive/src/karchive_p.h">
+            <ExcludedFromBuild>true</ExcludedFromBuild>
+        </None>
+        <None Include="$(ProjectDir)src/karchive/src/karchivedirectory.h">
+            <ExcludedFromBuild>true</ExcludedFromBuild>
+        </None>
+        <None Include="$(ProjectDir)src/karchive/src/karchiveentry.h">
+            <ExcludedFromBuild>true</ExcludedFromBuild>
+        </None>
+        <None Include="$(ProjectDir)src/karchive/src/karchivefile.h">
+            <ExcludedFromBuild>true</ExcludedFromBuild>
+        </None>
+        <None Include="$(ProjectDir)src/karchive/src/kbzip2filter.cpp">
+            <ExcludedFromBuild>true</ExcludedFromBuild>
+        </None>
+        <None Include="$(ProjectDir)src/karchive/src/kbzip2filter.h">
+            <ExcludedFromBuild>true</ExcludedFromBuild>
+        </None>
+        <None Include="$(ProjectDir)src/karchive/src/kcompressiondevice.cpp">
+            <ExcludedFromBuild>true</ExcludedFromBuild>
+        </None>
+        <None Include="$(ProjectDir)src/karchive/src/kcompressiondevice.h">
+            <ExcludedFromBuild>true</ExcludedFromBuild>
+        </None>
+        <None Include="$(ProjectDir)src/karchive/src/kcompressiondevice_p.h">
+            <ExcludedFromBuild>true</ExcludedFromBuild>
+        </None>
+        <None Include="$(ProjectDir)src/karchive/src/kfilterbase.cpp">
+            <ExcludedFromBuild>true</ExcludedFromBuild>
+        </None>
+        <None Include="$(ProjectDir)src/karchive/src/kfilterbase.h">
+            <ExcludedFromBuild>true</ExcludedFromBuild>
+        </None>
+        <None Include="$(ProjectDir)src/karchive/src/kfilterdev.cpp">
+            <ExcludedFromBuild>true</ExcludedFromBuild>
+        </None>
+        <None Include="$(ProjectDir)src/karchive/src/kfilterdev.h">
+            <ExcludedFromBuild>true</ExcludedFromBuild>
+        </None>
+        <None Include="$(ProjectDir)src/karchive/src/kgzipfilter.cpp">
+            <ExcludedFromBuild>true</ExcludedFromBuild>
+        </None>
+        <None Include="$(ProjectDir)src/karchive/src/kgzipfilter.h">
+            <ExcludedFromBuild>true</ExcludedFromBuild>
+        </None>
+        <None Include="$(ProjectDir)src/karchive/src/klimitediodevice.cpp">
+            <ExcludedFromBuild>true</ExcludedFromBuild>
+        </None>
+        <None Include="$(ProjectDir)src/karchive/src/klimitediodevice_p.h">
+            <ExcludedFromBuild>true</ExcludedFromBuild>
+        </None>
+        <None Include="$(ProjectDir)src/karchive/src/knonefilter.cpp">
+            <ExcludedFromBuild>true</ExcludedFromBuild>
+        </None>
+        <None Include="$(ProjectDir)src/karchive/src/knonefilter.h">
+            <ExcludedFromBuild>true</ExcludedFromBuild>
+        </None>
+        <None Include="$(ProjectDir)src/karchive/src/krcc.cpp">
+            <ExcludedFromBuild>true</ExcludedFromBuild>
+        </None>
+        <None Include="$(ProjectDir)src/karchive/src/krcc.h">
+            <ExcludedFromBuild>true</ExcludedFromBuild>
+        </None>
+        <None Include="$(ProjectDir)src/karchive/src/ktar.cpp">
+            <ExcludedFromBuild>true</ExcludedFromBuild>
+        </None>
+        <None Include="$(ProjectDir)src/karchive/src/ktar.h">
+            <ExcludedFromBuild>true</ExcludedFromBuild>
+        </None>
+        <None Include="$(ProjectDir)src/karchive/src/kxzfilter.h">
+            <ExcludedFromBuild>true</ExcludedFromBuild>
+        </None>
+        <None Include="$(ProjectDir)src/karchive/src/kzip.cpp">
+            <ExcludedFromBuild>true</ExcludedFromBuild>
+        </None>
+        <None Include="$(ProjectDir)src/karchive/src/kzip.h">
+            <ExcludedFromBuild>true</ExcludedFromBuild>
+        </None>
+        <None Include="$(ProjectDir)src/karchive/src/kzipfileentry.h">
+            <ExcludedFromBuild>true</ExcludedFromBuild>
+        </None>
+        <None Include="$(ProjectDir)src/karchive/src/loggingcategory.cpp">
+            <ExcludedFromBuild>true</ExcludedFromBuild>
+        </None>
+        <None Include="$(ProjectDir)src/karchive/src/loggingcategory.h">
+            <ExcludedFromBuild>true</ExcludedFromBuild>
+        </None>
+    </ItemGroup>
+    <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets"/>
+</Project>

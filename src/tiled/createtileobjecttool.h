@@ -48,11 +48,18 @@ public:
 
     void doUseStamp(bool bUse){ useStamp=bUse; }
 
-    void languageChanged() override;
-
+    /// <summary>
+    /// EDEN CHANGES
+    /// </summary>
+    
     void copySpecificProperties(MapObject* newMapObject, Tile* pTile);
     void copySpecificPropertiesFromObject(MapObject* newMapObject, const MapObject* pSourceObject);
-    void randomizeProperties(MapObject* newMapObject, Tile* pTile, int iObjectIDIncrement=0, bool bClearRandomizedProperties=false);
+    void randomizeProperties(MapObject* newMapObject, Tile* pTile, int iObjectIDIncrement = 0, bool bClearRandomizedProperties = false);
+
+    /// <summary>
+    /// EDEN CHANGES END
+    /// </summary>
+    void languageChanged() override;
 
 protected:
     void mouseMovedWhileCreatingObject(const QPointF &pos,

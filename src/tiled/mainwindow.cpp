@@ -1532,6 +1532,80 @@ void MainWindow::pasteInPlace()
         editor->performStandardAction(Editor::PasteInPlaceAction);
 }
 
+// EDEN CHANGES
+void MainWindow::randomize()
+{
+  // mMapDocument seems to no longer be available so hopefully this cast works
+  auto mapDocument = qobject_cast<MapDocument*>(mDocument);
+	const Layer *currentLayer = mapDocument->currentLayer();
+	if (!currentLayer)
+		return;
+
+	const Map *map = mapDocument->map();
+	const QRegion &selectedArea = mapDocument->selectedArea();
+	const QList<MapObject*> &selectedObjects = mapDocument->selectedObjects();
+	const TileLayer *tileLayer = dynamic_cast<const TileLayer*>(currentLayer);
+	Layer *copyLayer = nullptr;
+
+	if (!selectedObjects.isEmpty()) {
+		for(MapObject *mapObject : selectedObjects)
+		{
+			MainWindow::getMainWindow()->getCreateTileObjectTool()->copySpecificProperties(mapObject, mapObject->cell().tile());
+			MainWindow::getMainWindow()->getCreateTileObjectTool()->randomizeProperties(mapObject, mapObject->cell().tile(), 0, true);
+		}
+	}
+	else {
+		return;
+	}
+}
+
+void MainWindow::randomizeLayer()
+{
+  auto mapDocument = qobject_cast<MapDocument*>(mDocument);
+
+	const Layer *currentLayer = mapDocument->currentLayer();
+	if (!currentLayer)
+		return;
+
+	if (currentLayer->isObjectGroup())
+	{
+		const QList<MapObject*> &objects = ((ObjectGroup*)(currentLayer))->objects();
+
+		for(MapObject *mapObject : objects)
+		{
+			if (mapObject->cell().tile())
+			{
+				MainWindow::getMainWindow()->getCreateTileObjectTool()->copySpecificProperties(mapObject, mapObject->cell().tile());
+				MainWindow::getMainWindow()->getCreateTileObjectTool()->randomizeProperties(mapObject, mapObject->cell().tile(), 0, true);
+			}
+		}
+	}
+}
+
+void MainWindow::randomizeLevel()
+{
+  auto mapDocument = qobject_cast<MapDocument*>(mDocument);
+	const QList<Layer*> &layers = mapDocument->map()->layers();
+
+	for(Layer *layer : layers)
+	{
+		if (layer->isObjectGroup())
+		{
+			const QList<MapObject*> &objects = ((ObjectGroup*)(layer))->objects();
+
+			for(MapObject *mapObject : objects)
+			{
+				if (mapObject->cell().tile())
+				{
+					MainWindow::getMainWindow()->getCreateTileObjectTool()->copySpecificProperties(mapObject, mapObject->cell().tile());
+					MainWindow::getMainWindow()->getCreateTileObjectTool()->randomizeProperties(mapObject, mapObject->cell().tile(), 0, true);
+				}
+			}
+		}
+	}
+}
+// END EDEN CHANGES
+
 void MainWindow::delete_()
 {
     if (auto editor = mDocumentManager->currentEditor())
