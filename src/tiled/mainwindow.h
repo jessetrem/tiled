@@ -104,9 +104,7 @@ public:
     bool openFile(const QString &fileName, FileFormat *fileFormat = nullptr);
 
     // EDEN CHANGES
-    TilesetDock* getTilesetDock() { return mTilesetDock; }
-    StampBrush* getStampBrush() { return mStampBrush; }
-    CreateTileObjectTool* getCreateTileObjectTool() { return mTileObjectsTool; }
+    CreateTileObjectTool* getCreateTileObjectTool();
 
     static MainWindow* getMainWindow() { return mInstance; }
     // EDEN CHANGES END
@@ -156,6 +154,11 @@ private:
     void paste();
     void pasteInPlace();
     // EDEN CHANGES
+    void pasteUp();
+    void pasteDown();
+    void pasteLeft();
+    void pasteRight();
+
     void randomize();
     void randomizeLayer();
     void randomizeLevel();
@@ -291,12 +294,6 @@ private:
     SessionOption<QStringList> mLoadedWorlds { "loadedWorlds" };
 
     static MainWindow *mInstance;
-
-    // EDEN CHANGES
-    CreateTileObjectTool* mTileObjectsTool;
-    StampBrush* mStampBrush;
-    TilesetDock* mTilesetDock;
-    // EDEN CHANGES END
 };
 
 inline MainWindow *MainWindow::instance()

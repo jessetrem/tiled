@@ -40,7 +40,13 @@ public:
         CopyAction          = 0x02,
         PasteAction         = 0x04,
         PasteInPlaceAction  = 0x08,
-        DeleteAction        = 0x10
+        DeleteAction        = 0x10,
+        // EDEN CHANGE (avoid conflicting positions might have some with DELETE Action)
+        PasteUpAction = 0x40,
+        PasteDownAction = 0x50,
+        PasteLeftAction = 0x60,
+        PasteRightAction = 0x70,
+        // EDEN CHANGE END
     };
     Q_DECLARE_FLAGS(StandardActions, StandardAction)
     Q_FLAG(StandardActions)

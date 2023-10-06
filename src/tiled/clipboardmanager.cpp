@@ -256,8 +256,30 @@ void ClipboardManager::pasteObjectGroup(const ObjectGroup *objectGroup,
 
           MainWindow::getMainWindow()->getCreateTileObjectTool()->copySpecificProperties(objectClone, objectClone->cell().tile());
           MainWindow::getMainWindow()->getCreateTileObjectTool()->randomizeProperties(objectClone, objectClone->cell().tile());
-          //objectClone->parseRandomizedProperties(mapDocument->fileName(), mapDocument->map()->nextObjectId());
+          // objectClone->parseRandomizedProperties(mapDocument->fileName(), mapDocument->map()->nextObjectId());
         }
+
+        if (flags & PasteFlag::PasteUp)
+        {
+          insertPos.setX(0);
+          insertPos.setY(-objectClone->height());
+        }
+        else if (flags & PasteFlag::PasteRight)
+        {
+          insertPos.setX(objectClone->width());
+          insertPos.setY(0);
+        }
+        else if (flags & PasteFlag::PasteDown)
+        {
+          insertPos.setX(0);
+          insertPos.setY(objectClone->height());
+        }
+        else if (flags & PasteFlag::PasteLeft)
+        {
+          insertPos.setX(-objectClone->width());
+          insertPos.setY(0);
+        }
+
         // EDEN CHANGE END
 
         objectClone->setPosition(objectClone->position() + insertPos);

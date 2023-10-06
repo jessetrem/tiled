@@ -63,6 +63,12 @@ public:
         PasteDefault        = 0x0,
         PasteNoTileObjects  = 0x1,
         PasteInPlace        = 0x2,
+        // EDEN CHANGES
+        PasteUp = 0x4,
+        PasteDown = 0x8,
+        PasteLeft = 0x10,
+        PasteRight = 0x20,
+        // EDEN CHANGES END
     };
     Q_DECLARE_FLAGS(PasteFlags, PasteFlag)
     Q_FLAG(PasteFlags)

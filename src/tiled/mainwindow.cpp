@@ -355,6 +355,16 @@ MainWindow::MainWindow(QWidget *parent, Qt::WindowFlags flags)
     mUi->actionCut->setShortcuts(QKeySequence::Cut);
     mUi->actionCopy->setShortcuts(QKeySequence::Copy);
     mUi->actionPaste->setShortcuts(QKeySequence::Paste);
+
+    // EDEN CHANGE
+    mUi->actionPasteRight->setShortcut(QKeySequence(Qt::CTRL + Qt::Key_Right));
+    mUi->actionPasteLeft->setShortcut(QKeySequence(Qt::CTRL + Qt::Key_Left));
+    mUi->actionPasteUp->setShortcut(QKeySequence(Qt::CTRL + Qt::Key_Up));
+    mUi->actionPasteDown->setShortcut(QKeySequence(Qt::CTRL + Qt::Key_Down));
+
+    mUi->actionRandomize->setShortcut(QKeySequence(Qt::Key_AsciiTilde));
+    // EDEN CHANGE END
+
     QList<QKeySequence> deleteKeys = QKeySequence::keyBindings(QKeySequence::Delete);
     deleteKeys.removeAll(Qt::Key_D | Qt::ControlModifier);  // used as "duplicate" shortcut
 #ifdef Q_OS_OSX
@@ -543,6 +553,19 @@ MainWindow::MainWindow(QWidget *parent, Qt::WindowFlags flags)
     connect(mUi->actionCopy, &QAction::triggered, this, &MainWindow::copy);
     connect(mUi->actionPaste, &QAction::triggered, this, &MainWindow::paste);
     connect(mUi->actionPasteInPlace, &QAction::triggered, this, &MainWindow::pasteInPlace);
+
+    // EDEN CHANGE
+    connect(mUi->actionPasteUp, &QAction::triggered, this, &MainWindow::pasteUp);
+    connect(mUi->actionPasteDown, &QAction::triggered, this, &MainWindow::pasteDown);
+    connect(mUi->actionPasteLeft, &QAction::triggered, this, &MainWindow::pasteLeft);
+    connect(mUi->actionPasteRight, &QAction::triggered, this, &MainWindow::pasteRight);
+
+
+    connect(mUi->actionRandomize, &QAction::triggered, this, &MainWindow::randomize);
+    connect(mUi->actionRandomizeLayer, &QAction::triggered, this, &MainWindow::randomizeLayer);
+    connect(mUi->actionRandomizeLevel, &QAction::triggered, this, &MainWindow::randomizeLevel);
+    // EDEN CHANGE END
+
     connect(mUi->actionDelete, &QAction::triggered, this, &MainWindow::delete_);
     connect(mUi->actionPreferences, &QAction::triggered, this, &MainWindow::openPreferences);
 
@@ -710,6 +733,18 @@ MainWindow::MainWindow(QWidget *parent, Qt::WindowFlags flags)
     setThemeIcon(mUi->actionCopy, "edit-copy");
     setThemeIcon(mUi->actionPaste, "edit-paste");
     setThemeIcon(mUi->actionDelete, "edit-delete");
+
+    // EDEN CHANGE
+    setThemeIcon(mUi->actionPasteUp, "edit-paste");
+    setThemeIcon(mUi->actionPasteDown, "edit-paste");
+    setThemeIcon(mUi->actionPasteLeft, "edit-paste");
+    setThemeIcon(mUi->actionPasteRight, "edit-paste");
+
+    setThemeIcon(mUi->actionRandomize, "edit-paste");
+    setThemeIcon(mUi->actionRandomizeLayer, "edit-paste");
+    setThemeIcon(mUi->actionRandomizeLevel, "edit-paste");
+    // EDEN CHANGE END
+
     setThemeIcon(redoAction, "edit-redo");
     setThemeIcon(undoAction, "edit-undo");
     setThemeIcon(mUi->actionSearchActions, "edit-find");
@@ -1078,6 +1113,7 @@ bool MainWindow::openFile(const QString &fileName, FileFormat *fileFormat)
 
     return true;
 }
+
 
 void MainWindow::openFileDialog()
 {
@@ -1534,6 +1570,37 @@ void MainWindow::pasteInPlace()
 }
 
 // EDEN CHANGES
+
+void MainWindow::pasteUp()
+{
+  if (auto editor = mDocumentManager->currentEditor())
+    editor->performStandardAction(Editor::PasteUpAction);
+}
+void MainWindow::pasteDown()
+{
+  if (auto editor = mDocumentManager->currentEditor())
+    editor->performStandardAction(Editor::PasteDownAction);
+}
+
+void MainWindow::pasteLeft()
+{
+  if (auto editor = mDocumentManager->currentEditor())
+    editor->performStandardAction(Editor::PasteLeftAction);
+}
+
+void MainWindow::pasteRight()
+{
+  if (auto editor = mDocumentManager->currentEditor())
+    editor->performStandardAction(Editor::PasteRightAction);
+}
+
+
+CreateTileObjectTool* Tiled::MainWindow::getCreateTileObjectTool()
+{
+  return mDocumentManager->getMapEditor()->getCreateTileObjectTool(); // This is where the tool seems to be defined in the latest version of tiled
+}
+
+
 void MainWindow::randomize()
 {
   // mMapDocument seems to no longer be available so hopefully this cast works
@@ -1605,7 +1672,7 @@ void MainWindow::randomizeLevel()
 		}
 	}
 }
-// END EDEN CHANGES
+//EDEN CHANGES END
 
 void MainWindow::delete_()
 {
@@ -2234,6 +2301,18 @@ void MainWindow::updateActions()
     mUi->actionPaste->setEnabled(standardActions & Editor::PasteAction);
     mUi->actionPasteInPlace->setEnabled(standardActions & Editor::PasteInPlaceAction);
     mUi->actionDelete->setEnabled(standardActions & Editor::DeleteAction);
+
+    // EDEN CHANGE
+    // If you can paste you can paste directionaly
+    mUi->actionPasteUp->setEnabled(standardActions & Editor::PasteAction);
+    mUi->actionPasteDown->setEnabled(standardActions & Editor::PasteAction);
+    mUi->actionPasteLeft->setEnabled(standardActions & Editor::PasteAction);
+    mUi->actionPasteRight->setEnabled(standardActions & Editor::PasteAction);
+
+    mUi->actionRandomize->setEnabled(true);
+    mUi->actionRandomizeLayer->setEnabled(true);
+    mUi->actionRandomizeLevel->setEnabled(true);
+    // EDEN CHANGE END
 
     mUi->menuWorld->menuAction()->setVisible(mapDocument);
     mUi->menuMap->menuAction()->setVisible(mapDocument);
