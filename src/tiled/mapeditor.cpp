@@ -176,7 +176,10 @@ MapEditor::MapEditor(QObject *parent)
     mBucketFillTool = new BucketFillTool(this);
     mEditPolygonTool = new EditPolygonTool(this);
     mShapeFillTool = new ShapeFillTool(this);
-    CreateObjectTool *tileObjectsTool = new CreateTileObjectTool(this);
+    // EDEN CHANGE
+    mTileObjectTool = new CreateTileObjectTool(this);
+    // EDEN CHANGE END
+    CreateObjectTool *tileObjectsTool = mTileObjectTool;
     CreateTemplateTool *templatesTool = new CreateTemplateTool(this);
     CreateObjectTool *rectangleObjectsTool = new CreateRectangleObjectTool(this);
     CreateObjectTool *pointObjectsTool = new CreatePointObjectTool(this);
@@ -536,6 +539,22 @@ void MapEditor::performStandardAction(StandardAction action)
     case PasteInPlaceAction:
         paste(ClipboardManager::PasteInPlace);
         break;
+
+    //EDEN CHANGES
+    case PasteUpAction:
+        paste(ClipboardManager::PasteUp);
+        break;
+    case PasteDownAction:
+        paste(ClipboardManager::PasteDown);
+        break;
+    case PasteLeftAction:
+        paste(ClipboardManager::PasteLeft);
+        break;
+    case PasteRightAction:
+        paste(ClipboardManager::PasteRight);
+        break;
+    //EDEN CHANGES END
+
     case DeleteAction:
         if (mEditPolygonTool->hasSelectedHandles())
             mEditPolygonTool->deleteNodes();
