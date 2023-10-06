@@ -677,7 +677,6 @@ void MapDocument::duplicateLayers(const QList<Layer *> &layers)
               for (auto i = ((MapObject*)(mapObject))->properties().begin(); i != ((MapObject*)(mapObject))->properties().end(); )
               {
                 QString property = i.key();
-                QString value = i.value().toString();
 
                 if (((MapObject*)(mapObject))->IsPropertyRandomized(property))
                 {

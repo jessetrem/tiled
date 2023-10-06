@@ -73,6 +73,7 @@
 #include "utils.h"
 #include "worldmanager.h"
 #include "zoomable.h"
+#include "objectgroup.h"
 
 #include <QActionGroup>
 #include <QCloseEvent>
