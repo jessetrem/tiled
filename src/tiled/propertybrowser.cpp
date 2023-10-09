@@ -2033,8 +2033,9 @@ Properties PropertyBrowser::combinedProperties() const
     // Add properties from selected objects which mObject does not contain to mCombinedProperties.
     const auto currentObjects = mDocument->currentObjects();
     for (Object *obj : currentObjects) {
-        if (obj != mObject)
-            mergeProperties(combinedProperties, obj->properties());
+        if (obj == mObject || obj->wasRandomized())
+            continue;
+        mergeProperties(combinedProperties, obj->properties());
     }
 
     if (isAutomappingRulesMap(mMapDocument))
