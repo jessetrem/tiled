@@ -178,7 +178,7 @@ public:
         || (propertyName.contains(QStringLiteral("RandomSaturation"), Qt::CaseInsensitive))
         || (propertyName.contains(QStringLiteral("SaturationSet"), Qt::CaseInsensitive))
         || (propertyName.contains(QStringLiteral("RandomHueToSaturation"), Qt::CaseInsensitive))
-        || (propertyName.contains(QStringLiteral("HueToSaturationSet"), Qt::CaseInsensitive))
+        || (propertyName.contains(QStringLiteral("HueToSaturationLinkSet"), Qt::CaseInsensitive))
         || (propertyName.contains(QStringLiteral("RandomScaleToHueLink"), Qt::CaseInsensitive))
         || (propertyName.contains(QStringLiteral("ScaleToHueLinkSet"), Qt::CaseInsensitive))
         || (propertyName.contains(QStringLiteral("RandomFlip"), Qt::CaseInsensitive))
