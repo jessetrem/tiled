@@ -539,7 +539,7 @@ void CreateTileObjectTool::randomizeProperties(MapObject* newMapObject, Tile* pT
 		{
             QString saturation = value;
             QString minSaturation = saturation.left(saturation.indexOf(comma));
-            QString maxSaturation = saturation.left(saturation.indexOf(comma) + 1);
+            QString maxSaturation = saturation.right(saturation.indexOf(comma) + 1);
 
             float fMin = minSaturation.toFloat();
             float fMax = maxSaturation.toFloat();
@@ -611,34 +611,34 @@ void CreateTileObjectTool::randomizeProperties(MapObject* newMapObject, Tile* pT
 			newMapObject->setProperty(sObjectProperty, value);
 		}
 		else if (property.contains(QStringLiteral("RandomNumToSpawn")))
-		{
+        {
             QString randomNum = value;
-            QString minRandomNum(randomNum);
-            QString maxRandomNum(randomNum);
+            QString minRandomNum = randomNum.left(randomNum.indexOf(comma));
+            QString maxRandomNum = randomNum.last(randomNum.indexOf(comma));
 
-			int iMin = minRandomNum.toInt();
-			int iMax = maxRandomNum.toInt();
+            int iMin = minRandomNum.toInt();
+            int iMax = maxRandomNum.toInt();
 
-			newMapObject->removeProperty(property);
+            newMapObject->removeProperty(property);
 
-			QString token = QStringLiteral("RandomNumToSpawn");
-            QString objectName(property);
+            QString token = QStringLiteral("RandomNumToSpawn");
+            QString objectName = property.left(property.indexOf(token));
 
-			{
-				QString RandomNumToSpawnMin = QStringLiteral("RandomNumToSpawnMin");
-				QString sObjectProperty;
-				sObjectProperty += objectName;
-				sObjectProperty.append(RandomNumToSpawnMin);
-				newMapObject->setProperty(sObjectProperty, minRandomNum);
-			}
+            {
+                QString RandomNumToSpawnMin = QStringLiteral("RandomNumToSpawnMin");
+                QString sObjectProperty;
+                sObjectProperty += objectName;
+                sObjectProperty.append(RandomNumToSpawnMin);
+                newMapObject->setProperty(sObjectProperty, minRandomNum);
+            }
 
-			{
-				QString RandomNumToSpawnMax = QStringLiteral("RandomNumToSpawnMax");
-				QString sObjectProperty;
-				sObjectProperty += objectName;
-				sObjectProperty.append(RandomNumToSpawnMax);
-				newMapObject->setProperty(sObjectProperty, maxRandomNum);
-			}
+            {
+                QString RandomNumToSpawnMax = QStringLiteral("RandomNumToSpawnMax");
+                QString sObjectProperty;
+                sObjectProperty += objectName;
+                sObjectProperty.append(RandomNumToSpawnMax);
+                newMapObject->setProperty(sObjectProperty, maxRandomNum);
+            }
 		}
 		else if (property.contains(QStringLiteral("RandomInclusion")))
 		{
@@ -660,7 +660,9 @@ void CreateTileObjectTool::randomizeProperties(MapObject* newMapObject, Tile* pT
             QString randomNum = value;
             QStringList randomNumList = randomNum.split(comma);
 
-			iNumRandomObjects = randomNumList[rand() % randomNumList.size()].toInt();
+            iNumRandomObjects = randomNumList[rand() % randomNumList.size()].toInt();
+            newMapObject->setRandomized(true);
+            newMapObject->setProperty(property, iNumRandomObjects);
 		}
 		else if (property.contains(QStringLiteral("RandomNewObjectsXOffset")))
 		{
