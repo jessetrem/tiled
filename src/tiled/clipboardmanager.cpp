@@ -280,6 +280,11 @@ void ClipboardManager::pasteObjectGroup(const ObjectGroup *objectGroup,
           insertPos.setY(0);
         }
 
+        if (flags & PasteFlag::PastePreserveLayer && mapDocument->selectedObjects().count() > 0)
+        {
+          currentObjectGroup = mapDocument->selectedObjects().at(objectsToAdd.count())->objectGroup();
+        }
+
         // EDEN CHANGE END
 
         objectClone->setPosition(objectClone->position() + insertPos);

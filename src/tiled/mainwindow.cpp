@@ -361,6 +361,8 @@ MainWindow::MainWindow(QWidget *parent, Qt::WindowFlags flags)
     mUi->actionPasteUp->setShortcut(QKeySequence(Qt::CTRL + Qt::Key_Up));
     mUi->actionPasteDown->setShortcut(QKeySequence(Qt::CTRL + Qt::Key_Down));
 
+    // mUi->actionPastePreserveLayers->setShortcut(QKeySequence((Qt::CTRL | Qt::SHIFT) + Qt::Key_P)); Pretty much all shortcuts are overloaded :(
+
     mUi->actionRandomize->setShortcut(QKeySequence(Qt::Key_AsciiTilde));
     // EDEN CHANGE END
 
@@ -558,7 +560,9 @@ MainWindow::MainWindow(QWidget *parent, Qt::WindowFlags flags)
     connect(mUi->actionPasteDown, &QAction::triggered, this, &MainWindow::pasteDown);
     connect(mUi->actionPasteLeft, &QAction::triggered, this, &MainWindow::pasteLeft);
     connect(mUi->actionPasteRight, &QAction::triggered, this, &MainWindow::pasteRight);
+    connect(mUi->actionPasteRight, &QAction::triggered, this, &MainWindow::pasteRight);
 
+    connect(mUi->actionPastePreserveLayers, &QAction::triggered, this, &MainWindow::pastePreserveLayers);
 
     connect(mUi->actionRandomize, &QAction::triggered, this, &MainWindow::randomize);
     connect(mUi->actionRandomizeLayer, &QAction::triggered, this, &MainWindow::randomizeLayer);
@@ -738,6 +742,7 @@ MainWindow::MainWindow(QWidget *parent, Qt::WindowFlags flags)
     setThemeIcon(mUi->actionPasteDown, "edit-paste");
     setThemeIcon(mUi->actionPasteLeft, "edit-paste");
     setThemeIcon(mUi->actionPasteRight, "edit-paste");
+    setThemeIcon(mUi->actionPastePreserveLayers, "edit-paste");
 
     setThemeIcon(mUi->actionRandomize, "edit-paste");
     setThemeIcon(mUi->actionRandomizeLayer, "edit-paste");
@@ -1575,6 +1580,7 @@ void MainWindow::pasteUp()
   if (auto editor = mDocumentManager->currentEditor())
     editor->performStandardAction(Editor::PasteUpAction);
 }
+
 void MainWindow::pasteDown()
 {
   if (auto editor = mDocumentManager->currentEditor())
@@ -1591,6 +1597,12 @@ void MainWindow::pasteRight()
 {
   if (auto editor = mDocumentManager->currentEditor())
     editor->performStandardAction(Editor::PasteRightAction);
+}
+
+void MainWindow::pastePreserveLayers()
+{
+  if (auto editor = mDocumentManager->currentEditor())
+    editor->performStandardAction(Editor::PastePreserveLayersAction);
 }
 
 
@@ -2307,6 +2319,8 @@ void MainWindow::updateActions()
     mUi->actionPasteDown->setEnabled(standardActions & Editor::PasteAction);
     mUi->actionPasteLeft->setEnabled(standardActions & Editor::PasteAction);
     mUi->actionPasteRight->setEnabled(standardActions & Editor::PasteAction);
+
+    mUi->actionPastePreserveLayers->setEnabled(standardActions & Editor::PasteAction);
 
     mUi->actionRandomize->setEnabled(true);
     mUi->actionRandomizeLayer->setEnabled(true);

@@ -68,6 +68,7 @@ public:
         PasteDown = 0x8,
         PasteLeft = 0x10,
         PasteRight = 0x20,
+        PastePreserveLayer = 0x40,
         // EDEN CHANGES END
     };
     Q_DECLARE_FLAGS(PasteFlags, PasteFlag)
