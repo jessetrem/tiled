@@ -158,6 +158,7 @@ private:
     void pasteDown();
     void pasteLeft();
     void pasteRight();
+    void pastePreserveLayers();
 
     void randomize();
     void randomizeLayer();

@@ -43,9 +43,10 @@ public:
         DeleteAction        = 0x10,
         // EDEN CHANGE (avoid conflicting positions might have some with DELETE Action)
         PasteUpAction = 0x40,
-        PasteDownAction = 0x50,
-        PasteLeftAction = 0x60,
-        PasteRightAction = 0x70,
+        PasteDownAction = 0x80,
+        PasteLeftAction = 0x100,
+        PasteRightAction = 0x200,
+        PastePreserveLayersAction = 0x400,
         // EDEN CHANGE END
     };
     Q_DECLARE_FLAGS(StandardActions, StandardAction)
