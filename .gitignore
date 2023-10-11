@@ -39,3 +39,7 @@ gmon.out
 # Vim files
 *.swp
 *.swo
+
+# Visual Studio files
+*.vcxproj*
+*.sln
