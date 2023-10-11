@@ -183,6 +183,8 @@ public:
         || (propertyName.contains(QStringLiteral("ScaleToHueLinkSet"), Qt::CaseInsensitive))
         || (propertyName.contains(QStringLiteral("RandomFlip"), Qt::CaseInsensitive))
         || (propertyName.contains(QStringLiteral("RandomInclusion"), Qt::CaseInsensitive))
+        || (propertyName.contains(QStringLiteral("NumToSpawn"), Qt::CaseInsensitive))
+        || (propertyName.contains(QStringLiteral("RandomNewObjects"), Qt::CaseInsensitive))
         || (propertyName.contains(QStringLiteral("RandomizedProp"), Qt::CaseInsensitive));
     }
     /// EDEN CHANGES END
