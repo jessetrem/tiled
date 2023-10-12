@@ -46,10 +46,7 @@ public:
      */
     const TileStamp &stamp() const { return mStamp; }
 
-
-    /// <summary>
     /// EDEN CHANGES
-    /// </summary>
 
     void doUseStamp(bool bUse){ useStamp=bUse; }
     
@@ -57,9 +54,8 @@ public:
     void copySpecificPropertiesFromObject(MapObject* newMapObject, const MapObject* pSourceObject);
     void randomizeProperties(MapObject* newMapObject, Tile* pTile, int iObjectIDIncrement = 0, bool bClearRandomizedProperties = false);
 
-    /// <summary>
     /// EDEN CHANGES END
-    /// </summary>
+
     void languageChanged() override;
 
 protected:
