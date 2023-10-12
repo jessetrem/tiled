@@ -2033,7 +2033,9 @@ Properties PropertyBrowser::combinedProperties() const
     // Add properties from selected objects which mObject does not contain to mCombinedProperties.
     const auto currentObjects = mDocument->currentObjects();
     for (Object *obj : currentObjects) {
+        /// EDEN CHANGES: add obj->wasRandomized() to the conditional
         if (obj == mObject || obj->wasRandomized())
+        /// EDEN CHANGES END
             continue;
         mergeProperties(combinedProperties, obj->properties());
     }

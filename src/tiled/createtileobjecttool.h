@@ -46,11 +46,12 @@ public:
      */
     const TileStamp &stamp() const { return mStamp; }
 
-    void doUseStamp(bool bUse){ useStamp=bUse; }
 
     /// <summary>
     /// EDEN CHANGES
     /// </summary>
+
+    void doUseStamp(bool bUse){ useStamp=bUse; }
     
     void copySpecificProperties(MapObject* newMapObject, Tile* pTile);
     void copySpecificPropertiesFromObject(MapObject* newMapObject, const MapObject* pSourceObject);

@@ -46,7 +46,9 @@ struct TileStampVariation
         Q_ASSERT(map->layerAt(0)->isTileLayer());
     }
 
+    /// EDEN CHANGES
     TileLayer *tileLayer() const;
+    /// EDEN CHANGES END
 
     Tile* tile(){ return mTile; }
 

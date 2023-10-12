@@ -40,7 +40,10 @@ CreateTileObjectTool::CreateTileObjectTool(QObject *parent)
     setShortcut(Qt::Key_T);
     Utils::setThemeIcon(this, "insert-image");
     languageChangedImpl();
+
+    /// EDEN CHANGES
     useStamp = false;
+    /// EDEN CHANGES END
 }
 
 void CreateTileObjectTool::mouseMovedWhileCreatingObject(const QPointF &pos, Qt::KeyboardModifiers modifiers)
