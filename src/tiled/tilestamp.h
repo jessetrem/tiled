@@ -46,8 +46,18 @@ struct TileStampVariation
         Q_ASSERT(map->layerAt(0)->isTileLayer());
     }
 
+    /// EDEN CHANGES
+    TileLayer *tileLayer() const;
+    /// EDEN CHANGES END
+
+    Tile* tile(){ return mTile; }
+
+    void setTile(Tile* tile){ mTile = tile; }
+
     Map *map;
     qreal probability;
+
+    Tile* mTile;
 };
 
 class TileStampData;
@@ -81,6 +91,8 @@ public:
     void addVariation(const TileStampVariation &variation);
     Map *takeVariation(int index);
     bool isEmpty() const;
+
+    void setVariationTile(int iVariationIndex, Tile* pTile);
 
     int quickStampIndex() const;
     void setQuickStampIndex(int quickStampIndex);

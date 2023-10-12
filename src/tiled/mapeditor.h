@@ -67,6 +67,9 @@ class UndoDock;
 class WangBrush;
 class WangDock;
 class Zoomable;
+// EDEN CHANGE
+class CreateTileObjectTool;
+// EDEN CHANGE END
 
 class MapEditor final : public Editor
 {
@@ -128,6 +131,10 @@ public:
     QAction *actionSelectPreviousTileset() const;
 
     AbstractTool *selectedTool() const;
+
+    // EDEN CHANGES
+    CreateTileObjectTool* getCreateTileObjectTool() { return mTileObjectTool;  }
+    // EDEN CHANGES END
 
 signals:
     void currentWangSetChanged();
@@ -207,6 +214,10 @@ private:
     MapView *mViewWithTool;
 
     TileStampManager *mTileStampManager;
+
+    // EDEN CHANGES
+    CreateTileObjectTool* mTileObjectTool;
+    // EDEN CHANGES END
 };
 
 

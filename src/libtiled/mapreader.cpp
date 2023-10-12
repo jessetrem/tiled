@@ -573,6 +573,10 @@ void MapReaderPrivate::readTilesetTile(Tileset &tileset)
         }
     }
 
+    /// EDEN CHANGES
+    tile->checkDefaultProperties();
+    /// EDEN CHANGES END
+
     // Temporary code to support TMW-style animation frame properties
     if (!tile->isAnimated() && tile->hasProperty(QLatin1String("animation-frame0"))) {
         QVector<Frame> frames;

@@ -142,6 +142,10 @@ public:
 
     QString fileDialogStartLocation() const;
 
+    // EDEN CHANGE
+    MapEditor* getMapEditor() { return mMapEditor; }
+    // EDEN CHANGE END
+
 signals:
     void documentCreated(Document *document);
     void documentOpened(Document *document);

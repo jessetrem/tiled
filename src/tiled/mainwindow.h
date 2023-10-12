@@ -30,6 +30,14 @@
 #include "session.h"
 #include "tilededitor_global.h"
 
+// EDEN CHANGES
+#include "mapdocument.h"
+#include "consoledock.h"
+#include "tilesetdock.h"
+#include "stampbrush.h"
+#include "createtileobjecttool.h"
+// EDEN CHANGES END
+
 #include <QMainWindow>
 #include <QPointer>
 #include <QSessionManager>
@@ -95,6 +103,12 @@ public:
      */
     bool openFile(const QString &fileName, FileFormat *fileFormat = nullptr);
 
+    // EDEN CHANGES
+    CreateTileObjectTool* getCreateTileObjectTool();
+
+    static MainWindow* getMainWindow() { return mInstance; }
+    // EDEN CHANGES END
+
     bool addRecentProjectsActions(QMenu *menu) const;
 
     static MainWindow *instance();
@@ -139,6 +153,17 @@ private:
     void copy();
     void paste();
     void pasteInPlace();
+    // EDEN CHANGES
+    void pasteUp();
+    void pasteDown();
+    void pasteLeft();
+    void pasteRight();
+    void pastePreserveLayers();
+
+    void randomize();
+    void randomizeLayer();
+    void randomizeLevel();
+    // EDEN CHANGES END
     void delete_();
     void openPreferences();
     void openCrashReporterPopup();

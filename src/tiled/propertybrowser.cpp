@@ -2033,8 +2033,11 @@ Properties PropertyBrowser::combinedProperties() const
     // Add properties from selected objects which mObject does not contain to mCombinedProperties.
     const auto currentObjects = mDocument->currentObjects();
     for (Object *obj : currentObjects) {
-        if (obj != mObject)
-            mergeProperties(combinedProperties, obj->properties());
+        /// EDEN CHANGES: add obj->wasRandomized() to the conditional
+        if (obj == mObject || obj->wasRandomized())
+        /// EDEN CHANGES END
+            continue;
+        mergeProperties(combinedProperties, obj->properties());
     }
 
     if (isAutomappingRulesMap(mMapDocument))
@@ -2069,6 +2072,13 @@ void PropertyBrowser::updateCustomProperties()
     if (!mObject)
         return;
 
+    bool bOnlyShowSource = false;
+
+    if (mObject->wasRandomized() || mObject->hasProperty(QStringLiteral("RandomizedProp")))
+    {
+        bOnlyShowSource = true;
+    }
+
     UpdatingProperties updatingProperties(this, mUpdating);
 
     mCustomPropertiesHelper.clear();
@@ -2076,6 +2086,11 @@ void PropertyBrowser::updateCustomProperties()
     QMapIterator<QString,QVariant> it(combinedProperties());
     while (it.hasNext()) {
         it.next();
+
+        if (bOnlyShowSource && ((MapObject*)mObject)->IsPropertyRandomized(it.key()))
+        {
+            continue;
+        }
 
         QtVariantProperty *property = createCustomProperty(it.key(), it.value());
         mCustomPropertiesGroup->addSubProperty(property);

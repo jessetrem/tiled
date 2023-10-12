@@ -45,7 +45,7 @@ class MapObject;
 /**
  * A group of objects on a map.
  */
-class TILEDSHARED_EXPORT ObjectGroup : public Layer
+class TILEDSHARED_EXPORT  ObjectGroup : public Layer
 {
 public:
     /**

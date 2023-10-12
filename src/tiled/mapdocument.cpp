@@ -59,6 +59,7 @@
 #include "tilelayer.h"
 #include "tilesetdocument.h"
 #include "transformmapobjects.h"
+#include "mainwindow.h"
 
 #include <QFileInfo>
 #include <QRect>
@@ -658,7 +659,45 @@ void MapDocument::duplicateLayers(const QList<Layer *> &layers)
         previousParentLayer = parentLayer;
         previousIndex = index;
 
-        newLayers.append(dup.clone);
+        // EDEN CHANGE
+        Layer* clonedLayer = dup.clone;
+
+        ObjectGroup* pObjectGroup = clonedLayer->asObjectGroup();
+
+        int iObjectIndex = 0;
+
+        for (const MapObject* mapObject : pObjectGroup->objects()) {
+          if (mapObject->cell().tile())
+          {
+            if (mapObject->hasProperty(QStringLiteral("RandomizedProp")))
+            {
+              Properties properties = ((MapObject*)(mapObject))->properties();
+
+              //Remove randomize properties
+              for (auto i = ((MapObject*)(mapObject))->properties().begin(); i != ((MapObject*)(mapObject))->properties().end(); )
+              {
+                QString property = i.key();
+
+                if (((MapObject*)(mapObject))->IsPropertyRandomized(property))
+                {
+                  i = ((MapObject*)(mapObject))->properties().erase(i);
+                }
+                else
+                {
+                  ++i;
+                }
+              }
+            }
+
+            MainWindow::getMainWindow()->getCreateTileObjectTool()->copySpecificProperties((Tiled::MapObject*)(mapObject), mapObject->cell().tile());
+            MainWindow::getMainWindow()->getCreateTileObjectTool()->randomizeProperties((Tiled::MapObject*)(mapObject), mapObject->cell().tile(), iObjectIndex);
+            //objectClone->parseRandomizedProperties(mapDocument->fileName(), mapDocument->map()->nextObjectId());
+          }
+
+          iObjectIndex++;
+        }
+        // EDEN CHANGE END
+        newLayers.append(clonedLayer);
     }
 
     undoStack()->endMacro();

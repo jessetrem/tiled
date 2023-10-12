@@ -68,6 +68,11 @@ public:
 
     ~Tile() override;
 
+
+    /// EDEN CHANGES
+    void checkDefaultProperties();
+    /// EDEN CHANGES END
+
     int id() const;
 
     Tileset *tileset() const;

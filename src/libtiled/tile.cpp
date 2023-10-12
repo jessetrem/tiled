@@ -60,6 +60,26 @@ Tile::~Tile()
 {
 }
 
+/// EDEN CHANGES
+void Tile::checkDefaultProperties()
+{
+    if (hasProperty(QStringLiteral("Type")) == false)
+    {
+        setProperty(QStringLiteral("Type"), QStringLiteral("Entity"));
+    }
+
+    if (hasProperty(QStringLiteral("Source")) == false)
+    {
+        setProperty(QStringLiteral("Source"), QStringLiteral("SketchEngine/data/GameObjects/Misc/Prop.xml"));
+    }
+
+    if (hasProperty(QStringLiteral("RandomizedProp")) == true)
+    {
+        setRandomized(true);
+    }
+}
+/// EDEN CHANGES END
+
 /**
  * Returns the tileset that this tile is part of as a shared pointer.
  */
