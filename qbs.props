@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<Project DefaultTargets="Build" ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
-    <PropertyGroup Label="UserMacros">
-        <QbsExecutableDir>C:\dev\tools\qt\Tools\QtCreator\bin\</QbsExecutableDir>
-        <QbsProjectDir>C:\dev\eden_industries\eden_projects\SketchEngine\tools\Tiled3.0\tiled\</QbsProjectDir>
-    </PropertyGroup>
-</Project>
