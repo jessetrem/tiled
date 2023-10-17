@@ -1,7 +1,7 @@
 import qbs.Probes as Probes
 
 DynamicLibrary {
-    targetName: "tiled"
+    targetName: "libtiled"
 
     Depends { name: "cpp" }
     Depends { name: "Qt"; submodules: "gui"; versionAtLeast: "5.12" }
