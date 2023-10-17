@@ -45,3 +45,6 @@ gmon.out
 *.sln
 *.props
 Tiled.guid.txt
+Debug
+x64
+.vs
