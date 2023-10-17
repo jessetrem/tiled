@@ -43,3 +43,5 @@ gmon.out
 # Visual Studio files
 *.vcxproj*
 *.sln
+*.props
+Tiled.guid.txt
